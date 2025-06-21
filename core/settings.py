@@ -407,12 +407,12 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
             "SERIALIZER": "django_redis.serializers.json.JSONSerializer",
         },
-        "KEY_PREFIX": "globally",
+        "KEY_PREFIX": "berlin",
     }
 }
 
 CACHEOPS_REDIS = os.getenv("CACHEOPS_REDIS")
-CACHEOPS_PREFIX = lambda _: "globally:"
+CACHEOPS_PREFIX = lambda _: "berlin:"
 CACHEOPS = {
     "sites.site": {"ops": "all", "timeout": 60 * 15},
     "extended_contrib_models.extendedsite": {"ops": "all", "timeout": 60 * 15},

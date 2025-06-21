@@ -18,7 +18,7 @@
   {
     "@context": "https://schema.org",
     "@type": "OnlineStore",
-    "@id": "https://{{ domain_name }}",
+    "@id": "https://{{ domain_name }}#flowershop",
     "name": "{{ site_name }}",
     "logo": "https://{{ domain_name }}{% static 'defaults/logo.png' %}",
     "description": "{{ json_ld_description }}",
@@ -31,7 +31,7 @@
       "@type": "ContactPoint",
       "email": "{{ company_email }}",
       "contactType": "Customer Service",
-      "areaServed": "EU",
+      "areaServed": "{{ country_code|upper }}",
       "availableLanguage": [{% for lang_code, lang_name in LANGUAGES %}"{{ lang_code }}"{% if not forloop.last %},{% endif %}{% endfor %}]
     },
     "sameAs": [

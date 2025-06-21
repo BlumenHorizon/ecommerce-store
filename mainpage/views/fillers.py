@@ -10,6 +10,7 @@ from ..models import (
     ContactsPageModel,
     DeliveryPageModel,
     FAQPageModel,
+    MainPageModel,
 )
 
 
@@ -58,7 +59,13 @@ class AboutUsView(
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        context["show_filials"] = True
+        context["is_about_us"] = True
+        context["json_ld_description"] = (
+            MainPageModel.objects.only("json_ld_description")
+            .first()
+            .json_ld_description
+        )
+        context["filials"] = Filial.objects.only("url").all()
         return context
 
 

@@ -3,6 +3,45 @@
 {% load i18n %}
 
 {% block json_ld %}
+{% get_available_languages as LANGUAGES  %}
+<script type="application/ld+json">
+    {% if is_about_us %}
+        {
+            "@context": "https://schema.org",
+            "@type": "OnlineStore",
+            "@id": "https://{{ domain_name }}#flowershop",
+            "description": "{{ json_ld_description }}",
+            "name": "{{ site_name }}",
+            "logo": "https://{{ domain_name }}{% static 'defaults/logo.png' %}",
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "{{ country_code|upper }}",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+              },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "{{ company_email }}",
+                "contactType": "Customer Service",
+                "areaServed": "{{ country_code|upper }}",
+                "availableLanguage": [{% for lang_code, lang_name in LANGUAGES %}"{{ lang_code }}"{% if not forloop.last %},{% endif %}{% endfor %}]
+            },
+            "sameAs": [
+                {% for social in socials_right_bottom %}
+                    "{{ social.absolute_url }}"{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ],
+            "subOrganization": [
+                {% for filial in filials %}
+                {
+                    "@type": "OnlineStore",
+                    "@id": "{{ filial.url}}"
+                }{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ]
+
+        }
+    {% endif %}
+</script>
 {% endblock %}
 
 {% block localization_meta_tags %}
@@ -25,22 +64,6 @@
     <div class="mt-5">
         {{ description|safe }}
     </div>
-    {% if show_filials %}
-        <div>
-            {% blocktranslate %}
-            <p>
-                Цветочный магазин BlumenHorizon имеет филиалы и в других городах Европы.
-                Ниже представлен список наших городских сайтов, где вы можете заказать цветы с доставкой.
-                Каждый филиал предоставляет обслуживание с тем же качеством и сервисом.
-            </p>
-            {% endblocktranslate %}
-            <ul>
-                {% for filial in filials %}
-                <li><a href="{{ filial.url }}">{{ filial.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
 </div>
 {% endblock %}
 
