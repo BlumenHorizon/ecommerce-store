@@ -18,4 +18,5 @@ media/**
 static/**
 
 .env
+poetry.toml
 blumenhorizon_dump.sql
