@@ -1043,7 +1043,7 @@ msgstr "Update date"
 msgid "Изображение продукта временно недоступно."
 msgstr "Product image is temporarily unavailable."
 
-#: core/staticfiles/templates/base.html:130
+#: core/staticfiles/templates/base.html:157
 msgid ""
 "\n"
 "        Мы используем <span class=\"text-warning\">cookies</span> для улучшения работы сайта.\n"
@@ -1060,11 +1060,11 @@ msgstr ""
 "<br>  \n"
 "By continuing to use the website, you agree to the use of additional cookies.  "
 
-#: core/staticfiles/templates/base.html:138
+#: core/staticfiles/templates/base.html:165
 msgid "Принять"
 msgstr "Accept"
 
-#: core/staticfiles/templates/base.html:139
+#: core/staticfiles/templates/base.html:166
 msgid "Отклонить"
 msgstr "Reject"
 

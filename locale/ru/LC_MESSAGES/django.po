@@ -1036,7 +1036,7 @@ msgstr "Дата обновления"
 msgid "Изображение продукта временно недоступно."
 msgstr "Изображение продукта временно отсутствует."
 
-#: core/staticfiles/templates/base.html:130
+#: core/staticfiles/templates/base.html:157
 msgid ""
 "\n"
 "        Мы используем <span class=\"text-warning\">cookies</span> для улучшения работы сайта.\n"
@@ -1053,11 +1053,11 @@ msgstr ""
 "<br>  \n"
 "Продолжая использовать сайт, Вы соглашаетесь на использование дополнительных cookies.  "
 
-#: core/staticfiles/templates/base.html:138
+#: core/staticfiles/templates/base.html:165
 msgid "Принять"
 msgstr "Принять"
 
-#: core/staticfiles/templates/base.html:139
+#: core/staticfiles/templates/base.html:166
 msgid "Отклонить"
 msgstr "Отклонить"
 
@@ -1110,6 +1110,12 @@ msgid ""
 "            </p>\n"
 "            "
 msgstr ""
+"\n"
+"<p>\n"
+"Цветочный магазин BlumenHorizon имеет филиалы и в других городах Европы.\n"
+"Ниже представлен список наших городских сайтов, где вы можете заказать цветы с доставкой.\n"
+"Каждый филиал предоставляет обслуживание с тем же качеством и сервисом.\n"
+"</p>"
 
 #: mainpage/templates/mainpage/index.html:106
 #, python-format
