@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 01:47+0200\n"
+"POT-Creation-Date: 2025-06-21 23:37+0200\n"
 "PO-Revision-Date: 2025-05-01 13:06+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,9 +114,6 @@ msgstr "Repeat password"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:17
 #, python-format
-#| msgid ""
-#| "\n"
-#| "Уважаемый %(first_name)s,\n"
 msgid ""
 "\n"
 "        Уважаемый %(first_name)s,\n"
@@ -127,9 +124,6 @@ msgstr ""
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:21
 #, python-format
-#| msgid ""
-#| "\n"
-#| "Уважаемый %(last_name)s,\n"
 msgid ""
 "\n"
 "        Уважаемый %(last_name)s,\n"
@@ -147,7 +141,6 @@ msgid "Пожалуйста, нажмите на ссылку ниже чтоб�
 msgstr "Please click the link below to confirm your email. "
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:34
-#| msgid "Добавить отзыв"
 msgid "Подтвердить почту"
 msgstr "Confirm email"
 
@@ -388,8 +381,7 @@ msgstr "revolut logo"
 msgid "stripe логотип"
 msgstr "stripe logo"
 
-#: cart/templates/cart/index.html:225
-#: mainpage/templates/mainpage/index.html:44
+#: cart/templates/cart/index.html:225 mainpage/templates/mainpage/index.html:44
 #: mainpage/templates/mainpage/index.html:182
 msgid "Рекомендуемые букеты к покупке"
 msgstr "Recommended bouquets for purchase"
@@ -963,7 +955,6 @@ msgid "Фильтры"
 msgstr "Filters"
 
 #: catalogue/templates/catalog/base_list.html:91
-#| msgid "Фильтры"
 msgid "Фильтровать"
 msgstr "Filters"
 
@@ -1132,17 +1123,6 @@ msgstr "Catalog"
 #: core/staticfiles/templates/header.html:70
 msgid "Поиск"
 msgstr "Search"
-
-#: mainpage/templates/mainpage/filler.html:30
-msgid ""
-"\n"
-"            <p>\n"
-"                Цветочный магазин BlumenHorizon имеет филиалы и в других городах Европы.\n"
-"                Ниже представлен список наших городских сайтов, где вы можете заказать цветы с доставкой.\n"
-"                Каждый филиал предоставляет обслуживание с тем же качеством и сервисом.\n"
-"            </p>\n"
-"            "
-msgstr ""
 
 #: mainpage/templates/mainpage/index.html:106
 #, python-format

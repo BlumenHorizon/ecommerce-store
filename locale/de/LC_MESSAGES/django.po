@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 01:47+0200\n"
+"POT-Creation-Date: 2025-06-21 23:37+0200\n"
 "PO-Revision-Date: 2025-05-01 13:05+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,9 +116,6 @@ msgstr "Passwort wiederholen"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:17
 #, python-format
-#| msgid ""
-#| "\n"
-#| "Уважаемый %(first_name)s,\n"
 msgid ""
 "\n"
 "        Уважаемый %(first_name)s,\n"
@@ -129,9 +126,6 @@ msgstr ""
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:21
 #, python-format
-#| msgid ""
-#| "\n"
-#| "Уважаемый %(last_name)s,\n"
 msgid ""
 "\n"
 "        Уважаемый %(last_name)s,\n"
@@ -147,11 +141,10 @@ msgstr "Sehr geehrter Benutzer,"
 #: accounts/templates/accounts/email_confirmation/email_body.html:29
 msgid "Пожалуйста, нажмите на ссылку ниже чтобы подтвердить Вашу почту."
 msgstr ""
-"Bitte klicken Sie auf den untenstehenden Link, um Ihre E-Mail zu bestätigen."
-"  "
+"Bitte klicken Sie auf den untenstehenden Link, um Ihre E-Mail zu "
+"bestätigen.  "
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:34
-#| msgid "Добавить отзыв"
 msgid "Подтвердить почту"
 msgstr "E-Mail bestätigen"
 
@@ -395,8 +388,7 @@ msgstr "revolut logo"
 msgid "stripe логотип"
 msgstr "stripe logo"
 
-#: cart/templates/cart/index.html:225
-#: mainpage/templates/mainpage/index.html:44
+#: cart/templates/cart/index.html:225 mainpage/templates/mainpage/index.html:44
 #: mainpage/templates/mainpage/index.html:182
 msgid "Рекомендуемые букеты к покупке"
 msgstr "Empfohlene Blumensträuße zum Kauf"
@@ -973,7 +965,6 @@ msgid "Фильтры"
 msgstr "Filter"
 
 #: catalogue/templates/catalog/base_list.html:91
-#| msgid "Фильтры"
 msgid "Фильтровать"
 msgstr "Filter"
 
@@ -1145,17 +1136,6 @@ msgstr "Katalog"
 #: core/staticfiles/templates/header.html:70
 msgid "Поиск"
 msgstr "Suche"
-
-#: mainpage/templates/mainpage/filler.html:30
-msgid ""
-"\n"
-"            <p>\n"
-"                Цветочный магазин BlumenHorizon имеет филиалы и в других городах Европы.\n"
-"                Ниже представлен список наших городских сайтов, где вы можете заказать цветы с доставкой.\n"
-"                Каждый филиал предоставляет обслуживание с тем же качеством и сервисом.\n"
-"            </p>\n"
-"            "
-msgstr ""
 
 #: mainpage/templates/mainpage/index.html:106
 #, python-format
