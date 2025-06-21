@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 01:52+0200\n"
+"POT-Creation-Date: 2025-06-22 00:05+0200\n"
 "PO-Revision-Date: 2025-05-02 14:19+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,9 +117,6 @@ msgstr "Επαναλάβετε τον κωδικό πρόσβασης"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:17
 #, python-format
-#| msgid ""
-#| "\n"
-#| "Уважаемый %(first_name)s,\n"
 msgid ""
 "\n"
 "        Уважаемый %(first_name)s,\n"
@@ -130,9 +127,6 @@ msgstr ""
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:21
 #, python-format
-#| msgid ""
-#| "\n"
-#| "Уважаемый %(last_name)s,\n"
 msgid ""
 "\n"
 "        Уважаемый %(last_name)s,\n"
@@ -152,7 +146,6 @@ msgstr ""
 "σας."
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:34
-#| msgid "Добавить отзыв"
 msgid "Подтвердить почту"
 msgstr "Επιβεβαίωση email"
 
@@ -341,12 +334,15 @@ msgstr "Προειδοποίηση:"
 #: catalogue/templates/catalog/base_detail.html:153
 msgid ""
 "\n"
-"                            <strong>Обратите внимание:</strong> Внешний вид букета может незначительно отличаться от изображения из-за сезонности или наличия цветов.\n"
+"                            <strong>Обратите внимание:</strong> Внешний вид "
+"букета может незначительно отличаться от изображения из-за сезонности или "
+"наличия цветов.\n"
 "                            О любых изменениях мы сообщим Вам лично 🌸\n"
 "                            "
 msgstr ""
 "\n"
-"<strong>Προσοχή:</strong> Η εμφάνιση του μπουκέτου μπορεί να διαφέρει ελαφρώς από την εικόνα λόγω εποχικότητας ή διαθεσιμότητας λουλουδιών.\n"
+"<strong>Προσοχή:</strong> Η εμφάνιση του μπουκέτου μπορεί να διαφέρει "
+"ελαφρώς από την εικόνα λόγω εποχικότητας ή διαθεσιμότητας λουλουδιών.\n"
 "Οποιεσδήποτε αλλαγές θα σας τις γνωστοποιήσουμε προσωπικά 🌸"
 
 #: cart/templates/cart/index.html:207
@@ -389,8 +385,7 @@ msgstr "revolut λογότυπο"
 msgid "stripe логотип"
 msgstr "stripe λογότυπο"
 
-#: cart/templates/cart/index.html:225
-#: mainpage/templates/mainpage/index.html:44
+#: cart/templates/cart/index.html:225 mainpage/templates/mainpage/index.html:44
 #: mainpage/templates/mainpage/index.html:182
 msgid "Рекомендуемые букеты к покупке"
 msgstr "Προτεινόμενα μπουκέτα για αγορά"
@@ -404,8 +399,7 @@ msgstr "Προτεινόμενα δώρα για μπουκέτα"
 msgid "Резюме заказа"
 msgstr "Περίληψη παραγγελίας"
 
-#: cart/templates/cart/index.html:367
-#: core/staticfiles/templates/footer.html:36
+#: cart/templates/cart/index.html:367 core/staticfiles/templates/footer.html:36
 #: core/staticfiles/templates/header.html:37
 msgid "Доставка"
 msgstr "Παράδοση"
@@ -536,14 +530,19 @@ msgstr "Τι πρέπει να λάβουμε υπόψη;"
 #, python-format
 msgid ""
 "\n"
-"                                    Я согласен(-а) с <a href=\"%(agb_url)s\" class=\"link-opacity-75\">общими условиями и положениями</a> и\n"
-"                                    <a href=\"%(privacy_policy_url)s\" class=\"link-opacity-75\">политикой конфиденциальности и безопасности данных</a> \n"
+"                                    Я согласен(-а) с <a href=\"%(agb_url)s\" "
+"class=\"link-opacity-75\">общими условиями и положениями</a> и\n"
+"                                    <a href=\"%(privacy_policy_url)s\" "
+"class=\"link-opacity-75\">политикой конфиденциальности и безопасности "
+"данных</a> \n"
 "                                    %(site_name)s.\n"
 "                                    "
 msgstr ""
 "\n"
-"Συμφωνώ με τους <a href=\"%(agb_url)s\" class=\"link-opacity-75\">όρους και προϋποθέσεις</a> και  \n"
-"<a href=\"%(privacy_policy_url)s\" class=\"link-opacity-75\">την πολιτική απορρήτου και προστασίας δεδομένων</a>  \n"
+"Συμφωνώ με τους <a href=\"%(agb_url)s\" class=\"link-opacity-75\">όρους και "
+"προϋποθέσεις</a> και  \n"
+"<a href=\"%(privacy_policy_url)s\" class=\"link-opacity-75\">την πολιτική "
+"απορρήτου και προστασίας δεδομένων</a>  \n"
 "%(site_name)s."
 
 #: cart/templates/cart/index.html:654
@@ -663,15 +662,20 @@ msgstr "Κατάσταση"
 #, python-format
 msgid ""
 "\n"
-"                <strong>В скором времени мы свяжемся с Вами </strong>по поводу Вашего заказа по указанной электронной почте <strong>(%(email)s)</strong>.\n"
+"                <strong>В скором времени мы свяжемся с Вами </strong>по "
+"поводу Вашего заказа по указанной электронной почте <strong>(%(email)s)</"
+"strong>.\n"
 "                <br>\n"
-"                Так-же есть возможность связаться с нами по поводу Вашего заказа через мессенджеры. Мы ответим очень быстро! 🙏\n"
+"                Так-же есть возможность связаться с нами по поводу Вашего "
+"заказа через мессенджеры. Мы ответим очень быстро! 🙏\n"
 "                "
 msgstr ""
 "\n"
-"<strong>Σύντομα θα επικοινωνήσουμε μαζί σας </strong>σχετικά με την παραγγελία σας μέσω του αναφερόμενου email <strong>(%(email)s)</strong>.\n"
+"<strong>Σύντομα θα επικοινωνήσουμε μαζί σας </strong>σχετικά με την "
+"παραγγελία σας μέσω του αναφερόμενου email <strong>(%(email)s)</strong>.\n"
 "<br>\n"
-"Υπάρχει επίσης η δυνατότητα να επικοινωνήσετε μαζί μας σχετικά με την παραγγελία σας μέσω των μηνυμάτων. Θα απαντήσουμε πολύ γρήγορα! 🙏"
+"Υπάρχει επίσης η δυνατότητα να επικοινωνήσετε μαζί μας σχετικά με την "
+"παραγγελία σας μέσω των μηνυμάτων. Θα απαντήσουμε πολύ γρήγορα! 🙏"
 
 #: cart/templates/cart/success_order.html:53
 msgid "Задать вопрос"
@@ -923,7 +927,8 @@ msgstr "Προσθήκη κριτικής"
 #, python-format
 msgid ""
 "\n"
-"                                            \"%(author_name)s\" оценил(-а) этот продукт\n"
+"                                            \"%(author_name)s\" оценил(-а) "
+"этот продукт\n"
 "                                        "
 msgstr ""
 "\n"
@@ -949,7 +954,6 @@ msgid "Фильтры"
 msgstr "Φίλτρα"
 
 #: catalogue/templates/catalog/base_list.html:91
-#| msgid "Фильтры"
 msgid "Фильтровать"
 msgstr "Φίλτρο"
 
@@ -1026,8 +1030,7 @@ msgstr "Αποστολή για έγκριση"
 #: catalogue/views/catalogue.py:253 catalogue/views/catalogue.py:337
 msgid "Данный продукт был недавно удалён из каталога нашими администраторами"
 msgstr ""
-"Αυτό το προϊόν αφαιρέθηκε πρόσφατα από τον κατάλογο από τους διαχειριστές "
-"μας"
+"Αυτό το προϊόν αφαιρέθηκε πρόσφατα από τον κατάλογο από τους διαχειριστές μας"
 
 #: catalogue/views/catalogue.py:371 mainpage/views/mainpage.py:204
 msgid "Мы скоро с Вами свяжемся, а пока выпейте чаю 😊"
@@ -1052,19 +1055,25 @@ msgstr "Η εικόνα του προϊόντος δεν είναι προσωρ
 #: core/staticfiles/templates/base.html:157
 msgid ""
 "\n"
-"        Мы используем <span class=\"text-warning\">cookies</span> для улучшения работы сайта.\n"
-"        Технические (обязательно будут установлены в cookie файлы Вашего браузера), для персонализации рекламы\n"
+"        Мы используем <span class=\"text-warning\">cookies</span> для "
+"улучшения работы сайта.\n"
+"        Технические (обязательно будут установлены в cookie файлы Вашего "
+"браузера), для персонализации рекламы\n"
 "        и для отслеживания Ваших действий на сайте.\n"
 "        <br>\n"
-"        Продолжая использовать сайт, Вы соглашаетесь на использование дополнительных cookies.\n"
+"        Продолжая использовать сайт, Вы соглашаетесь на использование "
+"дополнительных cookies.\n"
 "        "
 msgstr ""
 "\n"
-"Χρησιμοποιούμε <span class=\"text-warning\">cookies</span> για να βελτιώσουμε τη λειτουργία της ιστοσελίδας.\n"
-"Τεχνικά (θα εγκατασταθούν απαραίτητα στα cookies του προγράμματος περιήγησής σας), για εξατομίκευση διαφημίσεων\n"
+"Χρησιμοποιούμε <span class=\"text-warning\">cookies</span> για να "
+"βελτιώσουμε τη λειτουργία της ιστοσελίδας.\n"
+"Τεχνικά (θα εγκατασταθούν απαραίτητα στα cookies του προγράμματος περιήγησής "
+"σας), για εξατομίκευση διαφημίσεων\n"
 "και για την παρακολούθηση των ενεργειών σας στον ιστότοπο.\n"
 "<br>\n"
-"Συνεχίζοντας να χρησιμοποιείτε τον ιστότοπο, συμφωνείτε με τη χρήση επιπλέον cookies."
+"Συνεχίζοντας να χρησιμοποιείτε τον ιστότοπο, συμφωνείτε με τη χρήση επιπλέον "
+"cookies."
 
 #: core/staticfiles/templates/base.html:165
 msgid "Принять"
@@ -1112,17 +1121,6 @@ msgstr "Κατάλογος"
 #: core/staticfiles/templates/header.html:86
 msgid "Поиск"
 msgstr "Αναζήτηση"
-
-#: mainpage/templates/mainpage/filler.html:30
-msgid ""
-"\n"
-"            <p>\n"
-"                Цветочный магазин BlumenHorizon имеет филиалы и в других городах Европы.\n"
-"                Ниже представлен список наших городских сайтов, где вы можете заказать цветы с доставкой.\n"
-"                Каждый филиал предоставляет обслуживание с тем же качеством и сервисом.\n"
-"            </p>\n"
-"            "
-msgstr ""
 
 #: mainpage/templates/mainpage/index.html:106
 #, python-format
@@ -1189,8 +1187,8 @@ msgstr "{site_name} | Επιβεβαίωση παραγγελίας {order_code}
 
 #, python-brace-format
 #~ msgid ""
-#~ "Дорогой пользователь, неудалось отправить письмо с просьбой о подтверждении "
-#~ "почты. Проверьте правильно ли она написана: {email}"
+#~ "Дорогой пользователь, неудалось отправить письмо с просьбой о "
+#~ "подтверждении почты. Проверьте правильно ли она написана: {email}"
 #~ msgstr ""
-#~ "Αγαπητέ χρήστη, δεν ήταν δυνατή η αποστολή του email επιβεβαίωσης. Ελέγξτε "
-#~ "αν έχει γραφτεί σωστά: {email}"
+#~ "Αγαπητέ χρήστη, δεν ήταν δυνατή η αποστολή του email επιβεβαίωσης. "
+#~ "Ελέγξτε αν έχει γραφτεί σωστά: {email}"
