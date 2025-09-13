@@ -62,6 +62,22 @@ class ExtendedSite(models.Model):
         verbose_name_plural = verbose_name
 
 
+class AdminsTelegramChatIDs(models.Model):
+    chat_id = models.CharField(
+        max_length=20,
+        verbose_name="Telegram chat ID",
+        unique=True,
+        help_text="Используется для отправки уведомлений администратору в Telegram.",
+    )
+
+    def __str__(self):
+        return self.chat_id
+
+    class Meta:
+        verbose_name = "TG chat ID администратора"
+        verbose_name_plural = "TG chat IDs администраторов"
+
+
 class Social(models.Model):
     """
     Модель для хранения информации о социальных сетях.
