@@ -39,6 +39,9 @@ for dir in "${DIRS[@]}"; do
     
     echo "📦 Сбор статических файлов"
     python3 manage.py collectstatic --noinput
+
+    echo "📦 Сжатие статических файлов"
+    python3 manage.py compress
     
     echo "✅ Готово с $dir"
     echo ""
