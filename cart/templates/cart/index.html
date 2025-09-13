@@ -1,6 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static %}
-{% load i18n %}
+{% load static i18n compress %}
 
 {% block additional_head_styles %}
 <link rel="stylesheet" href="{% static 'cart/styles/cart.css' %}">
@@ -663,6 +662,7 @@
 {% endblock %}
 
 {% block additional_scripts %}
+{% compress js %}
 <script src="{% static 'cart/scripts/setMinimalDateAndTime.js' %}" defer></script>
 <script src="{% static 'cart/scripts/addressInputsToggle.js' %}" defer></script>
 <script src="{% static 'cart/scripts/emptyCartHandler.js' %}" defer></script>
@@ -670,4 +670,5 @@
 <script src="{% static 'cart/scripts/removeProduct.js' %}" defer></script>
 <script src="{% static 'cart/scripts/clearCart.js' %}" defer></script>
 <script src="{% static 'cart/scripts/moveOrRemoveRecommendedItemFromCart.js' %}" defer></script>
+{% endcompress %}
 {% endblock %}
