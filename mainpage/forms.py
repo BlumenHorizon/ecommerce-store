@@ -10,7 +10,12 @@ from django_recaptcha.widgets import ReCaptchaV3
 
 
 class IndividualOrderForm(forms.ModelForm):
-    captcha = ReCaptchaField(widget=ReCaptchaV3, label="")
+    captcha = ReCaptchaField(
+        widget=ReCaptchaV3(
+            attrs={"required_score": 0.75}
+        ),
+        label="",
+    )
 
     class Meta:
         model = IndividualOrder

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const individualOrderForm = document.getElementById('individual-order-form');
+    const captchaInput = document.getElementById('id_captcha');
+    const siteKey = captchaInput.dataset.siteKey;
 
     async function sendAjax(form) {
         try {
@@ -30,7 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     individualOrderForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            sendAjax(individualOrderForm);
+        e.preventDefault();
+
+        grecaptcha.ready(function () {
+            grecaptcha.execute(siteKey).then(function (token) {
+                captchaInput.value = token;
+                sendAjax(individualOrderForm);
+            });
         });
     });
+});

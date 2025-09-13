@@ -239,6 +239,7 @@
           class="d-flex w-100 flex-column justify-content-start align-items-start text-start card-body"
           action="{% url 'mainpage:individual-order-negotiate' %}"
           method="POST">
+      <script src="https://www.google.com/recaptcha/api.js?render={{ RECAPTCHA_PUBLIC_KEY }}"></script>
       <fieldset class="w-100">
         <legend class="text-center">
           <h3 class="fs-4 fw-normal" id="contact-us">
@@ -271,10 +272,10 @@
             </small>
           </label>
         </div>
-        {{ individual_order_form.captcha }}
+        <input type="hidden" name="captcha" id="id_captcha" data-site-key="{{ RECAPTCHA_PUBLIC_KEY }}">
       </fieldset>
       <button type="submit" class="btn btn-dark-green">{% translate 'Связаться' %}</button>
-  </form>
+    </form>
   </div>
   
   <div class="map-container my-5">
