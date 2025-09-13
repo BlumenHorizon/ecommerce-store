@@ -144,6 +144,8 @@ THIRDPARTY_APPS = [
     "colorfield",
     "rest_framework",
     "cacheops",
+    "compressor",
+    "django_recaptcha",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRDPARTY_APPS + LOCAL_APPS
@@ -493,6 +495,19 @@ STATICFILES_DIRS = [
     "mainpage/templates/",
     MEDIA_ROOT,
 ]
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+]
+COMPRESS_ENABLED = True  
+COMPRESS_OFFLINE = True  
+COMPRESS_JS_FILTERS = [
+    'compressor.filters.jsmin.JSMinFilter',
+]
+COMPRESS_CSS_FILTERS = [
+    'compressor.filters.cssmin.CSSMinFilter',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -537,3 +552,9 @@ REST_FRAMEWORK = {
     "DEFAULT_THROTTLE_CLASSES": [],
     "DEFAULT_THROTTLE_RATES": {},
 }
+
+# CAPTCHA
+RECAPTCHA_PUBLIC_KEY = os.getenv("RECAPTCHA_PUBLIC_KEY")
+RECAPTCHA_PRIVATE_KEY = os.getenv("RECAPTCHA_PRIVATE_KEY")
+RECAPTCHA_SCORE_THRESHOLD = 0.5
+SILENCED_SYSTEM_CHECKS = ["django_recaptcha.recaptcha_test_key_error"]
