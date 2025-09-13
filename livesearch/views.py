@@ -52,7 +52,12 @@ def perform_search(query: str) -> dict:
                 "subcategory__category__slug",
                 "slug",
             )
-            .filter(name__icontains=query)[:10]
+            .filter(
+                name__icontains=query,
+                is_active=True,
+                subcategory__is_active=True,
+                subcategory__category__is_active=True,
+            )[:10]
         )
         for item in results:
             category_name = item.subcategory.category.name
