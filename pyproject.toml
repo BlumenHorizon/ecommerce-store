@@ -75,3 +75,5 @@ pytest-env = "^1.1.5"
 gunicorn = {extras = ["gthread"], version = "^23.0.0"}
 pytest-django = "^4.9.0"
 pytest = "^8.3.3"
+django-compressor = "^4.5.1"
+django-recaptcha = "^4.1.0"
