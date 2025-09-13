@@ -1,7 +1,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
-from .models import ExtendedSite, Social
+from .models import AdminsTelegramChatIDs, ExtendedSite, Social
 
 
 @admin.register(Social)
@@ -42,3 +42,11 @@ class ExtendedSiteAdmin(TranslationAdmin):
         "city",
     )
     inlines = [SocialInline]
+
+
+@admin.register(AdminsTelegramChatIDs)
+class AdminsTelegramChatIDsAdmin(admin.ModelAdmin):
+    list_display = ("id", "chat_id")
+    search_fields = ("chat_id",)
+    list_filter = ("id",)
+    ordering = ("-id",)
