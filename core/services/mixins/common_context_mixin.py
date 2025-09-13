@@ -15,6 +15,7 @@ class CommonContextMixin:
             context["site_name"] = SiteRepository.get_name()
             context["domain_name"] = SiteRepository.get_domain()
             context["company_email"] = SiteRepository.get_email()
+        context["DEBUG"] = settings.DEBUG
         context["gtag_id"] = os.getenv("GTAG_ID")
         context["merchant_id"] = os.getenv("MERCHANT_ID")
         context["currency_symbol"] = SiteRepository.get_currency_symbol()
