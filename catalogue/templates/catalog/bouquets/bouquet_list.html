@@ -1,6 +1,5 @@
 {% extends "catalog/base_list.html" %}
-{% load static %}
-{% load i18n %}
+{% load static compress %}
 
 {% block additional_filters %}
 <label for="{{ filter.form.min_diameter.id_for_label }}" class="form-label my-3">{% translate 'Диаметр букета' %}</label>
