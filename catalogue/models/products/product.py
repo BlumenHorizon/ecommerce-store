@@ -8,6 +8,7 @@ from tinymce.models import HTMLField
 from core.base_models import TimeStampAdbstractModel
 from core.services.repositories import SiteRepository
 from tg_bot import send_message_to_telegram
+from tg_bot.utils import get_admins_chat_ids
 
 from ..services import (
     CategoryAbstractModel,
@@ -167,4 +168,4 @@ def order_created(
             f"*Email автора*: `{escape_markdown(review.email)}`\n"
             f"Вперёд за модерацию! 🚀"
         )
-        send_message_to_telegram(text)
+        send_message_to_telegram(text, get_admins_chat_ids())
