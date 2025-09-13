@@ -1,12 +1,16 @@
+from cProfile import label
 from typing import Optional
 
 from django import forms
 
 from accounts.models import User
 from mainpage.models import IndividualOrder
+from django_recaptcha.fields import ReCaptchaField
+from django_recaptcha.widgets import ReCaptchaV3
 
 
 class IndividualOrderForm(forms.ModelForm):
+    captcha = ReCaptchaField(widget=ReCaptchaV3, label="")
 
     class Meta:
         model = IndividualOrder
