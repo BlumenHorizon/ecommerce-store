@@ -9,6 +9,7 @@ from telegram.helpers import escape_markdown
 from catalogue.models import Bouquet, Product, generate_sku, TaxPercent
 from core.base_models import TimeStampAdbstractModel
 from tg_bot import send_message_to_telegram
+from tg_bot.utils import get_admins_chat_ids
 
 
 class Florist(TimeStampAdbstractModel, models.Model):
@@ -399,8 +400,8 @@ def order_created(sender: Order, instance: Order, created, **kwargs):
             f"*Телефон получателя*: `{escape_markdown(order.recipient_phonenumber)}`\n\n"
             f"Вперёд за работу! 🚀"
         )
-
-        send_message_to_telegram(text)
+        
+        send_message_to_telegram(text, get_admins_chat_ids())
 
 
 class OrderItem(models.Model):
