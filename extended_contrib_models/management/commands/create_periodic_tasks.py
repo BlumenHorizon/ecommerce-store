@@ -1,12 +1,8 @@
 import json
-import logging
-
 from django.conf import settings
 from django.core.management import BaseCommand
 from django.db import transaction
 from django_celery_beat.models import CrontabSchedule, PeriodicTask
-
-logger = logging.getLogger("celery.task")
 
 
 class Command(BaseCommand):
@@ -53,11 +49,9 @@ class Command(BaseCommand):
                 )
 
                 if created:
-                    logger.info(f"PeriodicTask '{task.name}' создана успешно.")
+                    print(f"[INFO] PeriodicTask '{task.name}' создана успешно.")
                 else:
-                    logger.warning(f"PeriodicTask '{task.name}' уже существует.")
+                    print(f"[WARNING] PeriodicTask '{task.name}' уже существует.")
 
         except Exception as e:
-            logger.exception(
-                f"Ошибка при создании PeriodicTask '{task_info['name']}': {e}"
-            )
+            print(f"[ERROR] Ошибка при создании PeriodicTask '{task_info['name']}': {e}")
