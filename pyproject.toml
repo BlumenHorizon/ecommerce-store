@@ -25,6 +25,13 @@ line-length=88
 line_length=88
 profile="black"
 
+[tool.autoflake]
+remove_all_unused_imports = true
+remove_unused_variables = true
+recursive = true
+in_place = true
+ignore_init_module_imports = true
+
 [tool.mypy]
 disallow_untyped_defs = true
 show_error_codes = true
@@ -77,3 +84,5 @@ pytest-django = "^4.9.0"
 pytest = "^8.3.3"
 django-compressor = "^4.5.1"
 django-recaptcha = "^4.1.0"
+django-celery-beat = "^2.8.1"
+autoflake = "^2.3.1"
