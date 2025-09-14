@@ -21,6 +21,7 @@ collectstatic:
 
 makemessages:
     python3 manage.py makemessages -a
+    python3 manage.py makemessages -d djangojs -a
     python3 manage.py compilemessages
 
 
