@@ -2,18 +2,16 @@ from cProfile import label
 from typing import Optional
 
 from django import forms
+from django_recaptcha.fields import ReCaptchaField
+from django_recaptcha.widgets import ReCaptchaV3
 
 from accounts.models import User
 from mainpage.models import IndividualOrder
-from django_recaptcha.fields import ReCaptchaField
-from django_recaptcha.widgets import ReCaptchaV3
 
 
 class IndividualOrderForm(forms.ModelForm):
     captcha = ReCaptchaField(
-        widget=ReCaptchaV3(
-            attrs={"required_score": 0.75}
-        ),
+        widget=ReCaptchaV3(attrs={"required_score": 0.75}),
         label="",
     )
 

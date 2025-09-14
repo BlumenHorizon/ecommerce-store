@@ -6,7 +6,7 @@ from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
 from telegram.helpers import escape_markdown
 
-from catalogue.models import Bouquet, Product, generate_sku, TaxPercent
+from catalogue.models import Bouquet, Product, TaxPercent, generate_sku
 from core.base_models import TimeStampAdbstractModel
 from tg_bot import send_message_to_telegram
 from tg_bot.utils import get_admins_chat_ids
@@ -356,7 +356,7 @@ class Order(TimeStampAdbstractModel, models.Model):
         verbose_name="Разница конвертации валюты",
         help_text="При возврате",
         null=True,
-        blank=True
+        blank=True,
     )
     language_code = models.CharField(
         max_length=2, verbose_name="Язык пользователя на сайте"
@@ -400,7 +400,7 @@ def order_created(sender: Order, instance: Order, created, **kwargs):
             f"*Телефон получателя*: `{escape_markdown(order.recipient_phonenumber)}`\n\n"
             f"Вперёд за работу! 🚀"
         )
-        
+
         send_message_to_telegram(text, get_admins_chat_ids())
 
 

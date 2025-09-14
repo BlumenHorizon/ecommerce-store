@@ -496,17 +496,17 @@ STATICFILES_DIRS = [
     MEDIA_ROOT,
 ]
 STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
 ]
-COMPRESS_ENABLED = True  
-COMPRESS_OFFLINE = True  
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
 COMPRESS_JS_FILTERS = [
-    'compressor.filters.jsmin.JSMinFilter',
+    "compressor.filters.jsmin.JSMinFilter",
 ]
 COMPRESS_CSS_FILTERS = [
-    'compressor.filters.cssmin.CSSMinFilter',
+    "compressor.filters.cssmin.CSSMinFilter",
 ]
 
 # Default primary key field type
