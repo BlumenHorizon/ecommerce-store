@@ -21,7 +21,7 @@ collectstatic:
 makeautocompletions:
     mkdir -p ~/.zsh/completions
     just --completions zsh > ~/.zsh/completions/_just
-    if ! grep -q 'fpath=(~/.zsh/completions $$fpath)' ~/.zshrc; then \
-        echo '\nfpath=(~/.zsh/completions $$fpath)\nautoload -Uz compinit\ncompinit' >> ~/.zshrc; \
+    if ! grep -q 'fpath=(~/.zsh/completions $fpath)' ~/.zshrc; then \
+        echo '\nfpath=(~/.zsh/completions $fpath)\nautoload -Uz compinit\ncompinit' >> ~/.zshrc; \
     fi
     echo "✅ Just autocompletions installed. Run 'source ~/.zshrc' to activate."
