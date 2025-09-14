@@ -6,12 +6,15 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('extended_contrib_models', '0027_alter_filial_options_alter_filial_extended_site'),
+        (
+            "extended_contrib_models",
+            "0027_alter_filial_options_alter_filial_extended_site",
+        ),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='filial',
-            options={'verbose_name': 'Филиал', 'verbose_name_plural': 'Филиалы'},
+            name="filial",
+            options={"verbose_name": "Филиал", "verbose_name_plural": "Филиалы"},
         ),
     ]
