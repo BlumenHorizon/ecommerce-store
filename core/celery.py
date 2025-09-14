@@ -1,9 +1,77 @@
+import logging
 import os
+from logging.handlers import RotatingFileHandler
 
 from celery import Celery
+from celery.signals import setup_logging
+from django.conf import settings
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
-app = Celery("tasks")
-app.config_from_object("blumenhorizon.core:settings", namespace="CELERY")
+app = Celery("BlumenHorizon")
+app.config_from_object("django.conf:settings", namespace="CELERY")
 app.autodiscover_tasks()
+
+
+class LevelFilter(logging.Filter):
+    """Фильтр для записи только сообщений указанного уровня"""
+
+    def __init__(self, level):
+        super().__init__()
+        self.level = level
+
+    def filter(self, record):
+        return record.levelno == self.level
+
+
+def configure_celery_logging():
+    LOG_DIR = getattr(settings, "CELERY_LOG_DIR", "./logs/celery")
+    os.makedirs(LOG_DIR, exist_ok=True)
+
+    log_formatter = logging.Formatter(
+        fmt="[%(asctime)s: %(levelname)s/%(name)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+
+    root_logger = logging.getLogger()
+    root_logger.handlers.clear()
+    root_logger.setLevel(logging.INFO)
+
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(log_formatter)
+    root_logger.addHandler(console_handler)
+
+    info_handler = RotatingFileHandler(
+        os.path.join(LOG_DIR, "celery_info.log"),
+        maxBytes=10 * 1024 * 1024,
+        backupCount=14,
+    )
+    info_handler.setFormatter(log_formatter)
+    info_handler.setLevel(logging.INFO)
+    info_handler.addFilter(LevelFilter(logging.INFO))
+    root_logger.addHandler(info_handler)
+
+    warning_handler = RotatingFileHandler(
+        os.path.join(LOG_DIR, "celery_warning.log"),
+        maxBytes=10 * 1024 * 1024,
+        backupCount=14,
+    )
+    warning_handler.setFormatter(log_formatter)
+    warning_handler.setLevel(logging.WARNING)
+    warning_handler.addFilter(LevelFilter(logging.WARNING))
+    root_logger.addHandler(warning_handler)
+
+    error_handler = RotatingFileHandler(
+        os.path.join(LOG_DIR, "celery_error.log"),
+        maxBytes=10 * 1024 * 1024,
+        backupCount=14,
+    )
+    error_handler.setFormatter(log_formatter)
+    error_handler.setLevel(logging.ERROR)
+    error_handler.addFilter(LevelFilter(logging.ERROR))
+    root_logger.addHandler(error_handler)
+
+
+@setup_logging.connect
+def setup_loggers(**kwargs):
+    configure_celery_logging()
