@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 15:14+0200\n"
+"POT-Creation-Date: 2025-09-14 19:44+0200\n"
 "PO-Revision-Date: 2025-09-14 10:12+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,6 +202,24 @@ msgstr "Реєстрація"
 #, python-brace-format
 msgid "{site_name} | Подтвердите Ваш Email"
 msgstr "{site_name} | Підтвердьте Ваш Email"
+
+#: accounts/views/signup.py:80
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
+"аккаунта."
+msgstr ""
+"Дорогий користувач, зайдіть на пошту {to_email} та підтвердіть активацію "
+"облікового запису."
+
+#: accounts/views/signup.py:87
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, неудалось отправить письмо с просьбой о подтверждении "
+"почты. Проверьте правильно ли она написана: {email}"
+msgstr ""
+"Дорогий користувач, не вдалося відправити листа з проханням про "
+"підтвердження пошти. Перевірте, чи правильно вона написана: {email}"
 
 #: accounts/views/signup.py:147
 msgid "Ваша почта успешно подтверждена, теперь Вы можете пойти в аккаунт."
@@ -1168,22 +1186,6 @@ msgstr "Ви неправильно заповнили форму:"
 #, python-brace-format
 msgid "{site_name} | Подтверждение заказа {order_code}"
 msgstr "{site_name} | Підтвердження замовлення {order_code}"
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
-#~ "аккаунта."
-#~ msgstr ""
-#~ "Дорогий користувач, зайдіть на пошту {to_email} та підтвердіть активацію "
-#~ "облікового запису."
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, неудалось отправить письмо с просьбой о "
-#~ "подтверждении почты. Проверьте правильно ли она написана: {email}"
-#~ msgstr ""
-#~ "Дорогий користувач, не вдалося відправити листа з проханням про "
-#~ "підтвердження пошти. Перевірте, чи правильно вона написана: {email}"
 
 #~ msgid "Отказан"
 #~ msgstr "Відмовлено"

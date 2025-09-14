@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 15:14+0200\n"
+"POT-Creation-Date: 2025-09-14 19:44+0200\n"
 "PO-Revision-Date: 2025-09-14 10:10+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,6 +201,25 @@ msgstr "Registrierung"
 #, python-brace-format
 msgid "{site_name} | Подтвердите Ваш Email"
 msgstr "{site_name} | Bestätigen Sie Ihre E-Mail-Adresse"
+
+#: accounts/views/signup.py:80
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
+"аккаунта."
+msgstr ""
+"Lieber Benutzer / Liebe Benutzerin, bitte gehen Sie zu Ihrer E-Mail-Adresse "
+"{to_email} und bestätigen Sie die Aktivierung Ihres Kontos."
+
+#: accounts/views/signup.py:87
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, неудалось отправить письмо с просьбой о подтверждении "
+"почты. Проверьте правильно ли она написана: {email}"
+msgstr ""
+"Lieber Benutzer / Liebe Benutzerin, es ist nicht gelungen, die E-Mail mit "
+"der Bestätigungsanfrage zu senden. Bitte überprüfen Sie, ob die E-Mail-"
+"Adresse korrekt ist: {email}."
 
 #: accounts/views/signup.py:147
 msgid "Ваша почта успешно подтверждена, теперь Вы можете пойти в аккаунт."
@@ -1189,23 +1208,6 @@ msgstr "Sie haben das Formular falsch ausgefüllt:"
 #, python-brace-format
 msgid "{site_name} | Подтверждение заказа {order_code}"
 msgstr "{site_name} | Bestellbestätigung {order_code}"
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
-#~ "аккаунта."
-#~ msgstr ""
-#~ "Lieber Benutzer / Liebe Benutzerin, bitte gehen Sie zu Ihrer E-Mail-"
-#~ "Adresse {to_email} und bestätigen Sie die Aktivierung Ihres Kontos."
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, неудалось отправить письмо с просьбой о "
-#~ "подтверждении почты. Проверьте правильно ли она написана: {email}"
-#~ msgstr ""
-#~ "Lieber Benutzer / Liebe Benutzerin, es ist nicht gelungen, die E-Mail mit "
-#~ "der Bestätigungsanfrage zu senden. Bitte überprüfen Sie, ob die E-Mail-"
-#~ "Adresse korrekt ist: {email}."
 
 #~ msgid "Отказан"
 #~ msgstr "Abgelehnt"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 15:14+0200\n"
+"POT-Creation-Date: 2025-09-14 19:44+0200\n"
 "PO-Revision-Date: 2025-09-14 10:11+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,6 +197,22 @@ msgstr "Registration"
 #, python-brace-format
 msgid "{site_name} | Подтвердите Ваш Email"
 msgstr "{site_name} | Confirm your Email"
+
+#: accounts/views/signup.py:80
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
+"аккаунта."
+msgstr "Dear user, go to {to_email} and confirm account activation."
+
+#: accounts/views/signup.py:87
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, неудалось отправить письмо с просьбой о подтверждении "
+"почты. Проверьте правильно ли она написана: {email}"
+msgstr ""
+"Dear user, it was not possible to send an email requesting email "
+"confirmation. Check if it is written correctly: {email}"
 
 #: accounts/views/signup.py:147
 msgid "Ваша почта успешно подтверждена, теперь Вы можете пойти в аккаунт."
@@ -1173,20 +1189,6 @@ msgstr "You filled out the form incorrectly:"
 #, python-brace-format
 msgid "{site_name} | Подтверждение заказа {order_code}"
 msgstr "{site_name} | Order confirmation {order_code}"
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
-#~ "аккаунта."
-#~ msgstr "Dear user, go to {to_email} and confirm account activation."
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, неудалось отправить письмо с просьбой о "
-#~ "подтверждении почты. Проверьте правильно ли она написана: {email}"
-#~ msgstr ""
-#~ "Dear user, it was not possible to send an email requesting email "
-#~ "confirmation. Check if it is written correctly: {email}"
 
 #~ msgid "Отказан"
 #~ msgstr "Declined"
