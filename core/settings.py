@@ -146,6 +146,7 @@ THIRDPARTY_APPS = [
     "cacheops",
     "compressor",
     "django_recaptcha",
+    "django_celery_beat",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRDPARTY_APPS + LOCAL_APPS
@@ -243,18 +244,6 @@ LOGGING_HANDLERS = {
         "class": "logging.FileHandler",
         "filename": os.path.join(DJANGO_LOG_DIR, "django_info.log"),
         "formatter": "django",
-    },
-    "celery_tasks_info": {
-        "level": "INFO",
-        "class": "logging.FileHandler",
-        "filename": os.path.join(CELERY_LOG_DIR, "celery_tasks_info.log"),
-        "formatter": "verbose",
-    },
-    "celery_tasks_error": {
-        "level": "ERROR",
-        "class": "logging.FileHandler",
-        "filename": os.path.join(CELERY_LOG_DIR, "celery_tasks_error.log"),
-        "formatter": "verbose",
     },
     "celery_info": {
         "level": "INFO",
@@ -362,7 +351,9 @@ LOGGING = {
         },
         "celery.task": {
             "handlers": (
-                ["celery_info", "mail_admins"] if not DEBUG else ["celery_info"]
+                ["celery_info", "celery_error", "mail_admins"]
+                if not DEBUG
+                else ["celery_info", "celery_error"]
             ),
             "level": "INFO",
             "propagate": True,
@@ -427,6 +418,7 @@ CACHEOPS = {
 
 CELERY_BROKER_URL = os.getenv("CELERY_BROKER")
 CELERY_RESULT_BACKEND = os.getenv("CELERY_BACKEND")
+CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 
 
 # Password validation
