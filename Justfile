@@ -18,6 +18,10 @@ collectstatic:
     python3 manage.py collectstatic --noinput
     python3 manage.py compress
 
+makemessages:
+    python3 manage.py makemessages -a
+    python3 manage.py compilemessages
+
 makeautocompletions:
     mkdir -p ~/.zsh/completions
     just --completions zsh > ~/.zsh/completions/_just
