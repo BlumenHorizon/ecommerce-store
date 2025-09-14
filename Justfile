@@ -1,4 +1,5 @@
 fmt:
+    autoflake .
     black .
     isort .
 
