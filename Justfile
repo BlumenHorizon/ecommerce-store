@@ -23,6 +23,10 @@ makemessages:
     python3 manage.py makemessages -a
     python3 manage.py compilemessages
 
+
+init: collectstatic mmgt mgt makemessages
+    python3 manage.py create_periodic_tasks
+
 makeautocompletions:
     mkdir -p ~/.zsh/completions
     just --completions zsh > ~/.zsh/completions/_just
