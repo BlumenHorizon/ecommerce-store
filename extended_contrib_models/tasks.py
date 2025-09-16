@@ -1,7 +1,7 @@
 import gzip
 import logging
 import subprocess
-from datetime import datetime
+import tarfile
 from pathlib import Path
 from subprocess import SubprocessError
 
@@ -10,8 +10,8 @@ from celery.exceptions import SoftTimeLimitExceeded
 from django.conf import settings
 from telegram.error import TimedOut
 
-from tg_bot.main import send_document_to_telegram
-from tg_bot.utils import get_admins_chat_ids
+from extended_contrib_models.models import ExtendedSite
+from extended_contrib_models.utils.dumps import process_and_send_file
 
 logger = logging.getLogger(__name__)
 
@@ -33,19 +33,12 @@ logger = logging.getLogger(__name__)
 )
 def make_db_dump():
     """
-    Создаёт дамп MySQL с уникальным именем, сжимает его и отправляет админам в Telegram.
+    Создаёт дамп MySQL, сжимает и отправляет.
     """
-    dump_dir = Path("/tmp/db_dumps")
-    dump_dir.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    dump_file = dump_dir / f"db_dump_{timestamp}.sql"
-    dump_file_gz = dump_dir / f"db_dump_{timestamp}.sql.gz"
+    def create_db_dump(file_path: Path):
+        dump_file = file_path.with_suffix("")
 
-    try:
-        logger.info(
-            f"Начало создания дампа базы: {settings.DATABASES['default']['NAME']}"
-        )
         subprocess.run(
             [
                 "mysqldump",
@@ -58,29 +51,64 @@ def make_db_dump():
             check=True,
             timeout=50,
         )
-
-        with open(dump_file, "rb") as f_in, gzip.open(dump_file_gz, "wb") as f_out:
+        with open(dump_file, "rb") as f_in, gzip.open(file_path, "wb") as f_out:
             f_out.writelines(f_in)
+        dump_file.unlink(missing_ok=True)
 
-        caption = (
-            f"💾 *Резервная копия базы данных*\n\n"
-            f"База: `{settings.DATABASES['default']['NAME']}`\n"
-            f"Дата и время создания: `{timestamp}`\n"
-            f"Размер файла: `{dump_file_gz.stat().st_size / 1024:.1f} KB`\n\n"
-            f"Файл готов к загрузке и использованию для восстановления данных.\n"
-            f"#dump #{settings.DATABASES['default']['NAME']}"
-        )
-        send_document_to_telegram(str(dump_file_gz), get_admins_chat_ids(), caption)
-        logger.info(f"Дамп успешно создан и отправлен: {dump_file_gz}")
+    caption_template = (
+        "💾 *Резервная копия базы данных*\n\n"
+        f"База: `{settings.DATABASES['default']['NAME']}`\n"
+        "Дата и время создания: `{timestamp}`\n"
+        "Размер файла: `{size:.1f} KB`\n\n"
+        "Файл готов к загрузке и использованию для восстановления данных.\n"
+        f"#dump #{settings.DATABASES['default']['NAME']}"
+    )
 
-    except Exception as e:
-        logger.error(f"Ошибка при создании дампа базы: {e}", exc_info=True)
+    process_and_send_file(
+        create_db_dump, caption_template, "db_dump", ".sql.gz", logger
+    )
 
-    finally:
-        for f in [dump_file, dump_file_gz]:
-            if f.exists():
-                try:
-                    f.unlink()
-                    logger.info(f"Удалён временный файл: {f}")
-                except Exception as e:
-                    logger.warning(f"Не удалось удалить файл {f}: {e}")
+
+@shared_task(
+    autoretry_for=(
+        TimedOut,
+        TimeoutError,
+        SoftTimeLimitExceeded,
+        SubprocessError,
+        Exception,
+    ),
+    retry_backoff=True,
+    retry_backoff_max=600,
+    retry_jitter=True,
+    retry_kwargs={"max_retries": 3},
+    soft_time_limit=900,
+    time_limit=960,
+)
+def make_bills_archive():
+    0
+    bills_dir = Path(settings.BASE_DIR) / "media" / "bills"
+
+    def create_bills_archive(file_path: Path):
+        if not bills_dir.exists():
+            raise FileNotFoundError(f"Папка {bills_dir} не существует")
+        with tarfile.open(file_path, "w:gz") as tar:
+            tar.add(bills_dir, arcname="bills")
+
+    city = (
+        ExtendedSite.objects.first().city
+        if ExtendedSite.objects.exists()
+        else "unknown"
+    )
+    caption_template = (
+        "📂 *Архив счетов*\n\n"
+        "Папка: `media/bills`\n"
+        "Дата и время создания: `{timestamp}`\n"
+        "Размер файла: `{size:.1f} KB`\n\n"
+        "Файл готов для загрузки и использования.\n"
+        f"Город: {city}\n"
+        "#archive #bills"
+    )
+
+    process_and_send_file(
+        create_bills_archive, caption_template, "bills", ".tar.gz", logger
+    )

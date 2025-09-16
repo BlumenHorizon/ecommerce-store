@@ -57,6 +57,11 @@ class ExtendedSite(models.Model):
         """
         return f"{self.site.name} | {self.site.domain}"
 
+    def save(self, *args, **kwargs):
+        if not self.pk and ExtendedSite.objects.exists():
+            raise ValueError("Можно создать только одну запись ExtendedSite")
+        return super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = "Расширенные данные о сайте"
         verbose_name_plural = verbose_name
