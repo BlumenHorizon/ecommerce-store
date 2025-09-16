@@ -33,7 +33,6 @@ class CanonicalLinksAbstract(ABC):
         Будет возвращать TypeError([пример](https://imgur.com/a/tmJFO1x))
         если его не реализовать на контроллере.
         """
-        pass
 
     @abstractmethod
     def get_alternate_links(
@@ -46,7 +45,6 @@ class CanonicalLinksAbstract(ABC):
         Будет возвращать TypeError([пример](https://imgur.com/a/tmJFO1x))
         если его не реализовать на контроллере.
         """
-        pass
 
     @abstractmethod
     def get_xdefault_link(
@@ -58,7 +56,6 @@ class CanonicalLinksAbstract(ABC):
         Будет возвращать TypeError([пример](https://imgur.com/a/tmJFO1x))
         если его не реализовать на контроллере.
         """
-        pass
 
     @abstractmethod
     def get_absolute_url(self, lang_code: Optional[str] = None) -> AbsoluteUrl:
@@ -70,7 +67,6 @@ class CanonicalLinksAbstract(ABC):
         Будет возвращать TypeError([пример](https://imgur.com/a/tmJFO1x))
         если его не реализовать на контроллере.
         """
-        pass
 
     @property
     @abstractmethod
@@ -79,4 +75,3 @@ class CanonicalLinksAbstract(ABC):
         Возвращает результат функции django.urls.reverse_lazy.
         Требуется для get_absolute_url.
         """
-        pass

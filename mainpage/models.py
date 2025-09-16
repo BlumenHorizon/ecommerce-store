@@ -9,6 +9,7 @@ from tinymce.models import HTMLField
 from core.base_models import TimeStampAdbstractModel
 from core.services.repositories import SiteRepository
 from tg_bot import send_message_to_telegram
+from tg_bot.utils import get_admins_chat_ids
 
 
 class MainPageModel(models.Model):
@@ -93,7 +94,7 @@ def individual_order_created(sender, instance: IndividualOrder, created, **kwarg
             f"Вперёд за работу! 🚀"
         )
 
-        send_message_to_telegram(text)
+        send_message_to_telegram(text, get_admins_chat_ids())
 
 
 class MainPageSeoBlock(TimeStampAdbstractModel, models.Model):

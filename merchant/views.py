@@ -6,6 +6,7 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 
 from tg_bot import send_message_to_telegram
+from tg_bot.utils import get_admins_chat_ids
 
 from .exceptions import OrderNotFound
 from .services.utils import (
@@ -55,7 +56,7 @@ def stripe_webhook(request: Request):
             f"Stripe попытался связаться с веб-хуком: \n\n"
             f"{request.build_absolute_uri(request.get_full_path())}"
         )
-        send_message_to_telegram(text)
+        send_message_to_telegram(text, get_admins_chat_ids())
         return Response(status=status.HTTP_200_OK)
     except Exception as e:
         logger.error(e, stack_info=True)

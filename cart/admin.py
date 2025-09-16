@@ -256,7 +256,7 @@ class OrderAdminModel(admin.ModelAdmin):
                     "created_at",
                     "updated_at",
                     "is_reported_to_tax",
-                    "reporting_date"
+                    "reporting_date",
                 ),
             },
         ),
@@ -268,7 +268,7 @@ class OrderAdminModel(admin.ModelAdmin):
                     "sub_total",
                     "tax",
                     "payment_system_fee",
-                    "refund_currency_convertasion_fee"
+                    "refund_currency_convertasion_fee",
                 ),
             },
         ),

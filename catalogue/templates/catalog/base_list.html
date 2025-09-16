@@ -1,7 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static %}
-{% load i18n %}
-{% load replace_query_params %}
+{% load static i18n replace_query_params compress %}
 
 {% block json_ld %}
 {% endblock %}
@@ -273,7 +271,9 @@
 {% endblock %}
 
 {% block additional_scripts %}
-<script src="{% static 'catalog/scripts/filterAccordionCollaps.js' %}" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js" defer></script>
+{% compress js %}
+<script src="{% static 'catalog/scripts/filterAccordionCollaps.js' %}" defer></script>
 <script src="{% static 'catalog/scripts/noUiSlider.js' %}" defer></script>
+{% endcompress %}
 {% endblock %}

@@ -144,6 +144,9 @@ THIRDPARTY_APPS = [
     "colorfield",
     "rest_framework",
     "cacheops",
+    "compressor",
+    "django_recaptcha",
+    "django_celery_beat",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRDPARTY_APPS + LOCAL_APPS
@@ -241,18 +244,6 @@ LOGGING_HANDLERS = {
         "class": "logging.FileHandler",
         "filename": os.path.join(DJANGO_LOG_DIR, "django_info.log"),
         "formatter": "django",
-    },
-    "celery_tasks_info": {
-        "level": "INFO",
-        "class": "logging.FileHandler",
-        "filename": os.path.join(CELERY_LOG_DIR, "celery_tasks_info.log"),
-        "formatter": "verbose",
-    },
-    "celery_tasks_error": {
-        "level": "ERROR",
-        "class": "logging.FileHandler",
-        "filename": os.path.join(CELERY_LOG_DIR, "celery_tasks_error.log"),
-        "formatter": "verbose",
     },
     "celery_info": {
         "level": "INFO",
@@ -360,7 +351,9 @@ LOGGING = {
         },
         "celery.task": {
             "handlers": (
-                ["celery_info", "mail_admins"] if not DEBUG else ["celery_info"]
+                ["celery_info", "celery_error", "mail_admins"]
+                if not DEBUG
+                else ["celery_info", "celery_error"]
             ),
             "level": "INFO",
             "propagate": True,
@@ -425,6 +418,7 @@ CACHEOPS = {
 
 CELERY_BROKER_URL = os.getenv("CELERY_BROKER")
 CELERY_RESULT_BACKEND = os.getenv("CELERY_BACKEND")
+CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 
 
 # Password validation
@@ -494,6 +488,19 @@ STATICFILES_DIRS = [
     "mainpage/templates/",
     MEDIA_ROOT,
 ]
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "compressor.finders.CompressorFinder",
+]
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
+COMPRESS_JS_FILTERS = [
+    "compressor.filters.jsmin.JSMinFilter",
+]
+COMPRESS_CSS_FILTERS = [
+    "compressor.filters.cssmin.CSSMinFilter",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -538,3 +545,9 @@ REST_FRAMEWORK = {
     "DEFAULT_THROTTLE_CLASSES": [],
     "DEFAULT_THROTTLE_RATES": {},
 }
+
+# CAPTCHA
+RECAPTCHA_PUBLIC_KEY = os.getenv("RECAPTCHA_PUBLIC_KEY")
+RECAPTCHA_PRIVATE_KEY = os.getenv("RECAPTCHA_PRIVATE_KEY")
+RECAPTCHA_SCORE_THRESHOLD = 0.5
+SILENCED_SYSTEM_CHECKS = ["django_recaptcha.recaptcha_test_key_error"]

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 19:51+0100\n"
+"POT-Creation-Date: 2025-09-14 15:52+0200\n"
 "PO-Revision-Date: 2024-11-24 19:52+0100\n"
 "Last-Translator: None None <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
-#: cart/templates/cart/scripts/clearCart.js:21
-#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:23
-#: cart/templates/cart/scripts/removeProduct.js:25
+#: cart/templates/cart/scripts/clearCart.js:23
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:21
+#: cart/templates/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: cart/templates/cart/scripts/removeProduct.js:29
 #, javascript-format
 msgid "%s эл."
 msgstr "%s pcs"
 
-#: cart/templates/cart/scripts/clearCart.js:34
-#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:29
-#: cart/templates/cart/scripts/removeProduct.js:35
+#: cart/templates/cart/scripts/clearCart.js:41
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:30
+#: cart/templates/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: cart/templates/cart/scripts/removeProduct.js:40
 #: catalogue/templates/catalog/scripts/individualQuestion.js:28
-#: core/staticfiles/scripts/cartButton.js:38
-#: mainpage/templates/mainpage/scripts/individualOrder.js:28
+#: core/staticfiles/scripts/cartButton.js:34
+#: mainpage/templates/mainpage/scripts/individualOrder.js:30
 msgid "Произошла ошибка. Повторите попытку позже."
 msgstr "An error has occurred. Please try again later."
 
-#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:38
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:39
 msgid ""
 "В корзине всего один продукт. Вместо уменьшения количества - удалите его."
 msgstr "There is only one product in the cart. Instead, delete it."

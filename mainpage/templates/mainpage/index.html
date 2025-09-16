@@ -1,8 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static %}
-{% load i18n %}
-{% load chunk_filters %}
-
+{% load static i18n chunk_filters %}
 
 {% block localization_meta_tags %}
     <link rel="{{ canonical_link.rel }}" href="{{ canonical_link.href }}">
@@ -186,52 +183,7 @@
       <div data-bs-interval="5000" class="carousel-item {% if forloop.first %}active{% endif %} w-100">
         <div class="row m-0 w-100">
           {% for recommended_bouquet in recommended_bouquets_chunk %}
-          <div class="col-6 col-md-3 col-lg-3 mb-4 d-flex product-card-in-slider">
-            <a href="{{ recommended_bouquet.get_relative_url }}" class="text-decoration-none text-dark w-100">
-              <div class="card h-100 w-100" style="min-height: 404px;">
-                <div class="image-wrapper">
-                  {% if recommended_bouquet.has_discount %}
-                  <span class="badge bg-dark-green m-2 p-2 fs-5 product-discount-badge fw-bold">-{{ recommended_bouquet.discount }}%</span>
-                  {% endif %}
-                  <img src="{{ recommended_bouquet.first_image_url }}" class="card-img-top square-image"
-                    alt="{{ recommended_bouquet.first_image_alt }}"
-                    loading="lazy">
-                </div>
-                <div class="card-body d-flex flex-column">
-                  <span class="card-title fw-bold">{{ recommended_bouquet.name }}</span>
-                  <div class="mt-auto">
-                    <p class="card-text d-flex flex-column">
-                        {% if recommended_bouquet.has_discount %}
-                            <div class="d-flex justify-content-center">
-                                <span class="text-danger mb-0 product-discounted-price fw-bold">
-                                    {{ recommended_bouquet.tax_price_discounted|floatformat:"2u" }} {{ currency_symbol }}
-                                </span>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <span class="text-muted text-decoration-line-through mb-0 product-old-price fw-bold">
-                                    {{ recommended_bouquet.tax_price|floatformat:"2u" }} {{ currency_symbol }}
-                                </span>
-                            </div>
-                        {% else %}
-                        <div class="d-flex justify-content-center">
-                            <span class="product-price fw-bold">
-                                {{ recommended_bouquet.tax_price|floatformat:"2u" }} {{ currency_symbol }}
-                            </span>
-                        </div>
-                        {% endif %}
-                    </p>
-                    <form method="post" class="add-to-cart-form w-100 me-2" data-add-url="{% url 'cart:bouquet-add' %}"
-                      data-remove-url="{% url 'cart:bouquet-remove' %}"
-                      data-is-in-cart="{% if recommended_bouquet in bouquets_cart %}true{% else %}false{% endif %}">
-                      {% csrf_token %}
-                      <input type="hidden" name="product_slug" value="{{ recommended_bouquet.slug }}">
-                      {% include 'templates/cartButton.html' %}
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+            {% include 'mainpage/product_card_in_slider.html' with recommended_product=recommended_bouquet %}
           {% endfor %}
         </div>
       </div>
@@ -261,52 +213,7 @@
       <div data-bs-interval="5000" class="carousel-item {% if forloop.first %}active{% endif %} w-100">
         <div class="row m-0 w-100">
           {% for recommended_product in recommended_products_chunk %}
-          <div class="col-6 col-md-3 col-lg-3 mb-4 d-flex product-card-in-slider">
-            <a href="{{ recommended_product.get_relative_url }}" class="text-decoration-none text-dark w-100">
-              <div class="card h-100 w-100" style="min-height: 404px;">
-                <div class="image-wrapper">
-                  {% if recommended_product.has_discount %}
-                  <span class="badge bg-dark-green m-2 p-2 fs-5 product-discount-badge">-{{ recommended_product.discount }}%</span>
-                  {% endif %}
-                  <img src="{{ recommended_product.first_image_url }}" class="card-img-top square-image"
-                    alt="{{ recommended_product.first_image_alt }}"
-                    loading="lazy">
-                </div>
-                <div class="card-body d-flex flex-column">
-                  <span class="card-title fw-bold">{{ recommended_product.name }}</span>
-                  <div class="mt-auto">
-                    <p class="card-text d-flex flex-column">
-                        {% if recommended_product.has_discount %}
-                            <div class="d-flex justify-content-center">
-                                <span class="text-danger mb-0 product-discounted-price fw-bold">
-                                    {{ recommended_product.tax_price_discounted|floatformat:"2u" }} {{ currency_symbol }}
-                                </span>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <span class="text-muted text-decoration-line-through mb-0 product-old-price fw-bold">
-                                    {{ recommended_product.tax_price|floatformat:"2u" }} {{ currency_symbol }}
-                                </span>
-                            </div>
-                        {% else %}
-                        <div class="d-flex justify-content-center">
-                            <span class="product-price fw-bold">
-                                {{ recommended_product.tax_price|floatformat:"2u" }} {{ currency_symbol }}
-                            </span>
-                        </div>
-                        {% endif %}
-                    </p>
-                    <form method="post" class="add-to-cart-form w-100 me-2" data-add-url="{% url 'cart:product-add' %}"
-                      data-remove-url="{% url 'cart:product-remove' %}"
-                      data-is-in-cart="{% if recommended_product in products_cart %}true{% else %}false{% endif %}">
-                      {% csrf_token %}
-                      <input type="hidden" name="product_slug" value="{{ recommended_product.slug }}">
-                      {% include 'templates/cartButton.html' %}
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+            {% include 'mainpage/product_card_in_slider.html' with recommended_product=recommended_product %}
           {% endfor %}
         </div>
       </div>
@@ -332,40 +239,42 @@
           class="d-flex w-100 flex-column justify-content-start align-items-start text-start card-body"
           action="{% url 'mainpage:individual-order-negotiate' %}"
           method="POST">
-        <fieldset class="w-100">
-          <legend class="text-center">
-            <h3 class="fs-4 fw-normal" id="contact-us">
-              {% translate 'Свяжитесь с нами' %}
-            </h3>
-          </legend>
-          {% csrf_token %}
-          <div class="form-text text-success">{% translate 'Заполните форму, чтобы заказать букет из индивидуального состава.' %}</div>
-          <div class="mb-3 w-100">
-            <label for="{{ individual_order_form.first_name.id_for_label }}" class="form-label">
-              {% translate 'Имя' %}
-            </label>
-            <div class="d-flex">
-              {{ individual_order_form.first_name }}
-            </div>
+      <script src="https://www.google.com/recaptcha/api.js?render={{ RECAPTCHA_PUBLIC_KEY }}"></script>
+      <fieldset class="w-100">
+        <legend class="text-center">
+          <h3 class="fs-4 fw-normal" id="contact-us">
+            {% translate 'Свяжитесь с нами' %}
+          </h3>
+        </legend>
+        {% csrf_token %}
+        <div class="form-text text-success">{% translate 'Заполните форму, чтобы заказать букет из индивидуального состава.' %}</div>
+        <div class="mb-3 w-100">
+          <label for="{{ individual_order_form.first_name.id_for_label }}" class="form-label">
+            {% translate 'Имя' %}
+          </label>
+          <div class="d-flex">
+            {{ individual_order_form.first_name }}
           </div>
-          <div class="mb-3">
-            <label for="{{ individual_order_form.contact_method.id_for_label }}" class="form-label">
-              {% translate 'Тел. номер в любой соц. сети или ссылка профиля' %}
-            </label>
-            <div class="d-flex">
-              {{ individual_order_form.contact_method }}
-            </div>
+        </div>
+        <div class="mb-3">
+          <label for="{{ individual_order_form.contact_method.id_for_label }}" class="form-label">
+            {% translate 'Тел. номер в любой соц. сети или ссылка профиля' %}
+          </label>
+          <div class="d-flex">
+            {{ individual_order_form.contact_method }}
           </div>
-          <div class="mb-3 form-check">
-            {{ individual_order_form.recall_me }}
-            <label class="form-check-label" for="{{ individual_order_form.recall_me.id_for_label }}">
-              <small>
-                {% translate 'Разрешаю мне перезвонить' %}
-              </small>
-            </label>
-          </div>
-        </fieldset>
-        <button type="submit" class="btn btn-dark-green">{% translate 'Связаться' %}</button>
+        </div>
+        <div class="mb-3 form-check">
+          {{ individual_order_form.recall_me }}
+          <label class="form-check-label" for="{{ individual_order_form.recall_me.id_for_label }}">
+            <small>
+              {% translate 'Разрешаю мне перезвонить' %}
+            </small>
+          </label>
+        </div>
+        <input type="hidden" name="captcha" id="id_captcha" data-site-key="{{ RECAPTCHA_PUBLIC_KEY }}">
+      </fieldset>
+      <button type="submit" class="btn btn-dark-green">{% translate 'Связаться' %}</button>
     </form>
   </div>
 

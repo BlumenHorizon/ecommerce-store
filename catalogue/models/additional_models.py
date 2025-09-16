@@ -10,6 +10,7 @@ from catalogue.models.products.product import Product
 from core.base_models import TimeStampAdbstractModel
 from core.services.repositories import SiteRepository
 from tg_bot import send_message_to_telegram
+from tg_bot.utils import get_admins_chat_ids
 
 
 class CatalogPageModel(models.Model):
@@ -88,4 +89,4 @@ def individual_question_created(
             f"Вперёд за работу! 🚀"
         )
 
-        send_message_to_telegram(text)
+        send_message_to_telegram(text, get_admins_chat_ids())

@@ -58,9 +58,30 @@ class ExtendedSite(models.Model):
         """
         return f"{self.site.name} | {self.site.domain}"
 
+    def save(self, *args, **kwargs):
+        if not self.pk and ExtendedSite.objects.exists():
+            raise ValueError("Можно создать только одну запись ExtendedSite")
+        return super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = "Расширенные данные о сайте"
         verbose_name_plural = verbose_name
+
+
+class AdminsTelegramChatIDs(models.Model):
+    chat_id = models.CharField(
+        max_length=20,
+        verbose_name="Telegram chat ID",
+        unique=True,
+        help_text="Используется для отправки уведомлений администратору в Telegram.",
+    )
+
+    def __str__(self):
+        return self.chat_id
+
+    class Meta:
+        verbose_name = "TG chat ID администратора"
+        verbose_name_plural = "TG chat IDs администраторов"
 
 
 class Social(models.Model):
