@@ -1,4 +1,5 @@
 import json
+
 from django.conf import settings
 from django.core.management import BaseCommand
 from django.db import transaction
@@ -14,6 +15,15 @@ class Command(BaseCommand):
             "task_path": "extended_contrib_models.tasks.make_db_dump",
             "description": "Создаёт дамп MySQL с уникальным именем, сжимает его и отправляет админам в Telegram.",
             "hour": "2",
+            "minute": "0",
+            "args": [],
+            "kwargs": {},
+        },
+        {
+            "name": "make_bills_archive",
+            "task_path": "extended_contrib_models.tasks.make_bills_archive",
+            "description": "Создаёт архив папки media/bills и отправляет админам в Telegram.",
+            "hour": "3",
             "minute": "0",
             "args": [],
             "kwargs": {},
@@ -54,4 +64,6 @@ class Command(BaseCommand):
                     print(f"[WARNING] PeriodicTask '{task.name}' уже существует.")
 
         except Exception as e:
-            print(f"[ERROR] Ошибка при создании PeriodicTask '{task_info['name']}': {e}")
+            print(
+                f"[ERROR] Ошибка при создании PeriodicTask '{task_info['name']}': {e}"
+            )
