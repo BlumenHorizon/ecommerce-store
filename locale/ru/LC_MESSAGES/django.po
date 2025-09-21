@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-22 00:05+0200\n"
+"POT-Creation-Date: 2025-09-21 15:06+0200\n"
 "PO-Revision-Date: 2025-05-01 13:07+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -414,7 +414,7 @@ msgstr "Рекомендуемые подарки к букетам"
 msgid "Резюме заказа"
 msgstr "Итого"
 
-#: cart/templates/cart/index.html:367 core/staticfiles/templates/footer.html:36
+#: cart/templates/cart/index.html:366 core/staticfiles/templates/footer.html:36
 #: core/staticfiles/templates/header.html:37
 msgid "Доставка"
 msgstr "Доставка"
@@ -1064,7 +1064,7 @@ msgstr "Дата обновления"
 msgid "Изображение продукта временно недоступно."
 msgstr "Изображение продукта временно отсутствует."
 
-#: core/staticfiles/templates/base.html:167
+#: core/staticfiles/templates/base.html:168
 msgid ""
 "\n"
 "            Мы используем <span class=\"text-warning\">cookies</span> для "
@@ -1087,11 +1087,11 @@ msgstr ""
 "Продолжая использовать сайт, Вы соглашаетесь на использование дополнительных "
 "cookies.  "
 
-#: core/staticfiles/templates/base.html:175
+#: core/staticfiles/templates/base.html:176
 msgid "Принять"
 msgstr "Принять"
 
-#: core/staticfiles/templates/base.html:176
+#: core/staticfiles/templates/base.html:177
 msgid "Отклонить"
 msgstr "Отклонить"
 

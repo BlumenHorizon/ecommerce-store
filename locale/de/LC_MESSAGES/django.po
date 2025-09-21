@@ -8,13 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2025-06-22 00:05+0200\n"
 "PO-Revision-Date: 2025-05-01 13:05+0200\n"
-=======
-"POT-Creation-Date: 2025-09-14 19:44+0200\n"
-"PO-Revision-Date: 2025-09-14 10:10+0200\n"
->>>>>>> main
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -426,13 +421,8 @@ msgstr "Empfohlene Geschenke zu den Blumensträußen"
 msgid "Резюме заказа"
 msgstr "Bestellübersicht"
 
-<<<<<<< HEAD
 #: cart/templates/cart/index.html:367 core/staticfiles/templates/footer.html:36
 #: core/staticfiles/templates/header.html:37
-=======
-#: cart/templates/cart/index.html:366 core/staticfiles/templates/footer.html:36
-#: core/staticfiles/templates/header.html:30
->>>>>>> main
 msgid "Доставка"
 msgstr "Lieferung"
 
