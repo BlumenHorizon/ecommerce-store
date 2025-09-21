@@ -575,7 +575,7 @@ LOCALE_PATHS = [
 ]
 
 if not os.path.exists(LOCALE_PATHS[0]):
-    raise RuntimeError(f"ERROR: Locale folder '{LOCALE_PATHS[0]}' does not exist!")
+    os.makedirs(LOCALE_PATHS[0])
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
@@ -590,7 +590,7 @@ STATIC_ROOT = BASE_DIR / "static" / CITY
 
 for folder in [MEDIA_ROOT, STATIC_ROOT]:
     if not os.path.exists(folder):
-        os.makedirs(folder, exist_ok=True)
+        os.makedirs(folder)
 
 STATICFILES_DIRS = [
     BASE_DIR / "core" / "staticfiles",
