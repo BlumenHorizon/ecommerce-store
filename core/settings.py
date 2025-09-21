@@ -15,7 +15,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv(override=True)
+CITY = os.getenv("CITY", "dev")
+load_dotenv(f"core/cities/{CITY}.env", override=True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -400,12 +401,12 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
             "SERIALIZER": "django_redis.serializers.json.JSONSerializer",
         },
-        "KEY_PREFIX": "berlin",
+        "KEY_PREFIX": CITY,
     }
 }
 
 CACHEOPS_REDIS = os.getenv("CACHEOPS_REDIS")
-CACHEOPS_PREFIX = lambda _: "berlin:"
+CACHEOPS_PREFIX = lambda _: f"{CITY}:"
 CACHEOPS = {
     "sites.site": {"ops": "all", "timeout": 60 * 15},
     "extended_contrib_models.extendedsite": {"ops": "all", "timeout": 60 * 15},
@@ -457,41 +458,153 @@ LOGOUT_REDIRECT_URL = "accounts:signin"
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
 LANGUAGE_CODE = "de" if not TEST_MODE else "ru"
-LANGUAGES = [
-    ("de", "🇩🇪 Deutsch"),
-    ("en", "🇺🇸 English"),
-    ("ru", "🇷🇺 Русский"),
-    ("uk", "🇺🇦 Українська"),
-]
+CITY_LANGUAGES = {
+    "berlin": {
+        "default": "de",
+        "languages": [
+            ("de", "🇩🇪 Deutsch"),
+            ("en", "🇺🇸 English"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+        ],
+    },
+    "athens": {
+        "default": "el",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+            ("el", "🇬🇷 Ελληνικά"),
+        ],
+    },
+    "madrid": {
+        "default": "es",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("es", "🇪🇸 Spanish"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+        ],
+    },
+    "larnaca": {
+        "default": "en",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+            ("el", "🇬🇷 Ελληνικά"),
+        ],
+    },
+    "limassol": {
+        "default": "en",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+            ("el", "🇬🇷 Ελληνικά"),
+        ],
+    },
+    "cannes": {
+        "default": "fr",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+        ],
+    },
+    "monaco": {
+        "default": "fr",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+        ],
+    },
+    "paris": {
+        "default": "fr",
+        "languages": [
+            ("en", "🇺🇸 English"),
+            ("de", "🇩🇪 Deutsch"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+        ],
+    },
+    "dev": {
+        "default": "de" if not TEST_MODE else "ru",
+        "languages": [
+            ("de", "🇩🇪 Deutsch"),
+            ("en", "🇺🇸 English"),
+            ("ru", "🇷🇺 Русский"),
+            ("uk", "🇺🇦 Українська"),
+        ],
+    },
+}
+LANGUAGE_CODE = CITY_LANGUAGES[CITY]["default"]
+LANGUAGES = CITY_LANGUAGES[CITY]["languages"]
 
-TIME_ZONE = "Europe/Berlin"
+CITY_TIMEZONES = {
+    "berlin": "Europe/Berlin",
+    "athens": "Europe/Athens",
+    "madrid": "Europe/Madrid",
+    "larnaca": "Asia/Nicosia",
+    "limassol": "Asia/Nicosia",
+    "europe": "Europe/Paris",
+    "cannes": "Europe/Paris",
+    "monaco": "Europe/Monaco",
+    "paris": "Europe/Paris",
+    "dev": "UTC",
+}
+
+if CITY not in CITY_TIMEZONES:
+    raise RuntimeError(
+        f"Unknown CITY='{CITY}'. Please add it to CITY_TIMEZONES or check value."
+    )
+
+TIME_ZONE = CITY_TIMEZONES[CITY]
 USE_I18N = True
 USE_TZ = True
 USE_L10N = True
+
 LOCALE_PATHS = [
-    BASE_DIR / "locale",
+    BASE_DIR / "locale" / CITY,
 ]
+
+if not os.path.exists(LOCALE_PATHS[0]):
+    raise RuntimeError(f"ERROR: Locale folder '{LOCALE_PATHS[0]}' does not exist!")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = f"/media/{CITY}/"
+MEDIA_ROOT = BASE_DIR / "media" / CITY
 
-STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR / "static"
+STATIC_URL = f"/static/{CITY}/"
+STATIC_ROOT = BASE_DIR / "static" / CITY
+
+for folder in [MEDIA_ROOT, STATIC_ROOT]:
+    if not os.path.exists(LOCALE_PATHS[0]):
+        raise RuntimeError(f"ERROR: Folder '{folder}' does not exist!")
+
 STATICFILES_DIRS = [
-    "core/staticfiles/",
-    "accounts/templates/",
-    "catalogue/templates/",
-    "cart/templates/",
-    "mainpage/templates/",
+    BASE_DIR / "core" / "staticfiles",
+    BASE_DIR / "accounts" / "templates",
+    BASE_DIR / "catalogue" / "templates",
+    BASE_DIR / "cart" / "templates",
+    BASE_DIR / "mainpage" / "templates",
     MEDIA_ROOT,
 ]
+
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
     "compressor.finders.CompressorFinder",
 ]
+
 COMPRESS_ENABLED = True
 COMPRESS_OFFLINE = True
 COMPRESS_JS_FILTERS = [
@@ -548,5 +661,5 @@ REST_FRAMEWORK = {
 # CAPTCHA
 RECAPTCHA_PUBLIC_KEY = os.getenv("RECAPTCHA_PUBLIC_KEY")
 RECAPTCHA_PRIVATE_KEY = os.getenv("RECAPTCHA_PRIVATE_KEY")
-RECAPTCHA_SCORE_THRESHOLD = 0.5
+RECAPTCHA_SCORE_THRESHOLD = 0.7
 SILENCED_SYSTEM_CHECKS = ["django_recaptcha.recaptcha_test_key_error"]

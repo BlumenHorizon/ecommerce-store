@@ -16,7 +16,8 @@ core/nginx/ssl/
 media/**
 !media/defaults/
 static/**
-locale/**/*.mo
+core/cities/*.env
+!core/cities/example.env
 
 .env
 poetry.toml
