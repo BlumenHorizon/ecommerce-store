@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("extended_contrib_models", "0029_adminstelegramchatids"),
+        ("extended_contrib_models", "0032_adminstelegramchatids"),
     ]
 
     operations = [
