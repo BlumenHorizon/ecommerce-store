@@ -38,7 +38,7 @@ class ExtendedSite(models.Model):
     )
     header_alert_message = models.CharField(
         max_length=174,
-        verbose_name="Текст для красного уведомления под хедером, белый текст на красном фоне во всю ширину строки.",
+        verbose_name="Текстт для красного уведомления под хедером, белый текст на красном фоне во всю ширину строки.",
         null=True,
         blank=True,
     )
