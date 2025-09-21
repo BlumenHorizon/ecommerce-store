@@ -1,9 +1,9 @@
 {% load i18n %}
-{% load static %}
+{% load static static_defaults %}
 <div id="footer-container" class="container-fluid bg-soft-turquoise d-flex justify-content-center align-items-center mt-5">
     <footer class="pt-2 pb-3 text-light" style="font-size: .75rem;">
         <a href="{% url 'mainpage:offers' %}" class="navbar-brand fs-3 text-light d-flex flex-column align-items-center mb-3">
-            <img id="footer-logo" src="{% static 'defaults/logo.png' %}" alt="{{ site_name }} logo" class="my-2">
+            <img id="footer-logo" src="{% static_defaults 'logo.png' %}" alt="{{ site_name }} logo" class="my-2">
         </a>
         <div id="footer-sections" class="d-flex justify-content-center gap-5">
             <div id="footer-section-left" class="mb-3" style="max-width: 300px;">

@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static %}
+{% load static static_defaults %}
 {% load i18n %}
 
 {% block json_ld %}
@@ -12,7 +12,7 @@
             "@id": "https://{{ domain_name }}#flowershop",
             "description": "{{ json_ld_description }}",
             "name": "{{ site_name }}",
-            "logo": "https://{{ domain_name }}{% static 'defaults/logo.png' %}",
+            "logo": "https://{{ domain_name }}{% static_defaults 'logo.png' %}",
             "hasMerchantReturnPolicy": {
                 "@type": "MerchantReturnPolicy",
                 "applicableCountry": "{{ country_code|upper }}",

@@ -16,6 +16,7 @@ core/nginx/ssl/
 media/**
 !media/defaults/
 static/**
+!static/defaults/
 core/cities/*.env
 !core/cities/example.env
 

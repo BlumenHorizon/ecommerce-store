@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static i18n compress %}
+{% load static static_defaults i18n compress %}
 
 {% block additional_head_styles %}
 <link rel="stylesheet" href="{% static 'cart/styles/cart.css' %}">
@@ -206,16 +206,16 @@
                         <h3 class="mt-2">{% translate 'Способы оплаты:' %}</h3>
                     </div>
                     <div class="card-body payment-options">
-                        <!-- <img alt="{% translate 'способ оплаты по IBAN' %}" src="{% static 'defaults/iban.png' %}" /> -->
-                        <img alt="{% translate 'visa логотип' %}" src="{% static 'defaults/visa-logo.png' %}" />
-                        <img alt="{% translate 'mastercard логотип' %}" src="{% static 'defaults/mc-logo.png' %}" />
-                        <img alt="{% translate 'american express логотип' %}" src="{% static 'defaults/amex-logo.png' %}" />
-                        <!-- <img alt="{% translate 'jcb логотип' %}" src="{% static 'defaults/jcb-logo.png' %}" /> -->
-                        <img alt="{% translate 'paypal логотип' %}" src="{% static 'defaults/paypal-logo.png' %}" />
-                        <img alt="{% translate 'klarna логотип' %}" src="{% static 'defaults/klarna-logo.webp' %}"
+                        <!-- <img alt="{% translate 'способ оплаты по IBAN' %}" src="{% static_defaults 'iban.png' %}" /> -->
+                        <img alt="{% translate 'visa логотип' %}" src="{% static_defaults 'visa-logo.png' %}" />
+                        <img alt="{% translate 'mastercard логотип' %}" src="{% static_defaults 'mc-logo.png' %}" />
+                        <img alt="{% translate 'american express логотип' %}" src="{% static_defaults 'amex-logo.png' %}" />
+                        <!-- <img alt="{% translate 'jcb логотип' %}" src="{% static_defaults 'jcb-logo.png' %}" /> -->
+                        <img alt="{% translate 'paypal логотип' %}" src="{% static_defaults 'paypal-logo.png' %}" />
+                        <img alt="{% translate 'klarna логотип' %}" src="{% static_defaults 'klarna-logo.webp' %}"
                              style="border-radius: 25%;"/>
-                        <img alt="{% translate 'revolut логотип' %}" src="{% static 'defaults/revolut-logo.png' %}"/>
-                        <img alt="{% translate 'stripe логотип' %}" src="{% static 'defaults/stripe-logo.svg' %}"/>
+                        <img alt="{% translate 'revolut логотип' %}" src="{% static_defaults 'revolut-logo.png' %}"/>
+                        <img alt="{% translate 'stripe логотип' %}" src="{% static_defaults 'stripe-logo.svg' %}"/>
                     </div>
                 </div>
                 {% if recommended_bouquets %}

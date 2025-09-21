@@ -1,5 +1,5 @@
 {% load i18n %}
-{% load static %}
+{% load static static_defaults %}
 
 <!DOCTYPE html>
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="ru-RU">
@@ -137,7 +137,7 @@
 															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="center" style="line-height:10px">
 																	<div style="max-width: 200px;">
-																		<img src="https://{{ domain }}{% static 'defaults/logo-rectangle.png' %}"
+																		<img src="https://{{ domain }}{% static_defaults 'logo-rectangle.png' %}"
 																			 style="display: block; height: auto; border: 0; width: 100%;"
 																			 width="200"
 																			 alt="{{ site_name }} flower shop logo"

@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static %}
+{% load static static_defaults %}
 {% load i18n %}
 {% load chunk_filters %}
 
@@ -124,7 +124,7 @@
                     {% empty %}
                     <div class="carousel-item active">
                         <div class="image-wrapper">
-                            <img src="{% static 'defaults/no-image.webp' %}" class="square-image rounded img-thumbnail"
+                            <img src="{% static_defaults 'no-image.webp' %}" class="square-image rounded img-thumbnail"
                                  alt="{% translate 'Изображение продукта временно отсутствует.' %}">
                         </div>
                     </div>

@@ -457,7 +457,6 @@ LOGOUT_REDIRECT_URL = "accounts:signin"
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = "de" if not TEST_MODE else "ru"
 CITY_LANGUAGES = {
     "berlin": {
         "default": "de",
@@ -583,12 +582,15 @@ if not os.path.exists(LOCALE_PATHS[0]):
 MEDIA_URL = f"/media/{CITY}/"
 MEDIA_ROOT = BASE_DIR / "media" / CITY
 
+STATIC_DEFAULTS_URL = "/static/defaults/"
+STATIC_DEFAULTS_ROOT = BASE_DIR / "static" / "defaults"
+
 STATIC_URL = f"/static/{CITY}/"
 STATIC_ROOT = BASE_DIR / "static" / CITY
 
 for folder in [MEDIA_ROOT, STATIC_ROOT]:
-    if not os.path.exists(LOCALE_PATHS[0]):
-        raise RuntimeError(f"ERROR: Folder '{folder}' does not exist!")
+    if not os.path.exists(folder):
+        os.makedirs(folder, exist_ok=True)
 
 STATICFILES_DIRS = [
     BASE_DIR / "core" / "staticfiles",

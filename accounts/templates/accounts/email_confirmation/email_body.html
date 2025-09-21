@@ -1,5 +1,4 @@
-{% load i18n %}
-{% load static %}
+{% load i18n static static_defaults %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,7 +7,7 @@
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; color: #333; margin: 0;">
   <div style="max-width: 600px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <img src="{{ protocol }}://{{ domain }}{% static 'defaults/logo-rectangle.png' %}" alt="Логотип магазина" style="width: 100px; height: 100px; object-fit: contain;">
+      <img src="{{ protocol }}://{{ domain }}{% static_defaults 'logo-rectangle.png' %}" alt="Логотип магазина" style="width: 100px; height: 100px; object-fit: contain;">
       <h1>{{ site_name }}</h1>
     </div>
     

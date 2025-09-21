@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static i18n chunk_filters %}
+{% load static i18n chunk_filters static_defaults %}
 
 {% block localization_meta_tags %}
     <link rel="{{ canonical_link.rel }}" href="{{ canonical_link.href }}">
@@ -17,7 +17,7 @@
     "@type": "OnlineStore",
     "@id": "https://{{ domain_name }}#flowershop",
     "name": "{{ site_name }}",
-    "logo": "https://{{ domain_name }}{% static 'defaults/logo.png' %}",
+    "logo": "https://{{ domain_name }}{% static_defaults 'logo.png' %}",
     "description": "{{ json_ld_description }}",
     "hasMerchantReturnPolicy": {
               "@type": "MerchantReturnPolicy",
@@ -301,7 +301,7 @@
 
   <div class="seo-block">
     <img
-      src="{% if seo_block.image %}{{ seo_block.image.url }}{% else %}{% static 'defaults/no-image.webp' %}{% endif %}"
+      src="{% if seo_block.image %}{{ seo_block.image.url }}{% else %}{% static_defaults 'no-image.webp' %}{% endif %}"
       alt="{{ seo_block.image_alt }}" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
 </div>

@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% load static %}
+{% load static static_defaults %}
 {% load i18n %}
 
 {% block additional_head_styles %}
@@ -13,7 +13,7 @@
 <div class="container px-4">
     <div id="content">
         <div id="logo-container" class="d-flex justify-content-center">
-            <img src="{% static 'defaults/logo-rectangle.png' %}"
+            <img src="{% static_defaults 'logo-rectangle.png' %}"
                  alt="{{ site_name }} logo"
                  style="max-height: 200px;"
                  class="mb-4">

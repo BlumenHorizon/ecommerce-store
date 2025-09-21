@@ -1,4 +1,4 @@
-{% load static %}
+{% load static static_defaults %}
 {% load i18n %}
 
 <header class="d-flex flex-column {% if not alert %}mb-5{% endif %}">
@@ -6,7 +6,7 @@
     <div class="container">
       <a href="{% url 'mainpage:offers' %}"
          class="navbar-brand fs-2 text-light fw-bold d-flex align-items-center">
-        <img id="header-logo" src="{% static 'defaults/logo.png' %}" alt="{{ site_name }} logo" class="me-2">
+        <img id="header-logo" src="{% static_defaults 'logo.png' %}" alt="{{ site_name }} logo" class="me-2">
       </a>
       <button id="menu-button-right" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

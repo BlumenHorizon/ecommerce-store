@@ -74,7 +74,7 @@ class CartView(CommonContextMixin, FormView):
                 line_items=line_items,
             )
         except InvalidRequestError:
-            logger.debug(
+            logger.error(
                 "Ошибка в генерации ссылки для оплаты, возможно введён некорректный метод оплаты.",
                 stack_info=True,
             )
