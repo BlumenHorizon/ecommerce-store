@@ -8,8 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2025-06-22 00:05+0200\n"
 "PO-Revision-Date: 2025-05-01 13:05+0200\n"
+=======
+"POT-Creation-Date: 2025-09-14 19:44+0200\n"
+"PO-Revision-Date: 2025-09-14 10:10+0200\n"
+>>>>>>> main
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.1\n"
+"X-Translated-Using: django-rosetta 0.10.2\n"
 
 #: accounts/forms/user_form.py:11 accounts/models.py:35
 #: accounts/templates/accounts/authorization/sign_in.html:33
@@ -67,7 +72,7 @@ msgstr "E-Mail-Adresse"
 #: accounts/templates/accounts/authorization/sign_up.html:52
 #: accounts/templates/accounts/index.html:62
 #: catalogue/templates/catalog/review.html:60
-#: mainpage/templates/mainpage/index.html:345
+#: mainpage/templates/mainpage/index.html:253
 msgid "Имя"
 msgstr "Vorname"
 
@@ -202,6 +207,25 @@ msgstr "Registrierung"
 msgid "{site_name} | Подтвердите Ваш Email"
 msgstr "{site_name} | Bestätigen Sie Ihre E-Mail-Adresse"
 
+#: accounts/views/signup.py:80
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
+"аккаунта."
+msgstr ""
+"Lieber Benutzer / Liebe Benutzerin, bitte gehen Sie zu Ihrer E-Mail-Adresse "
+"{to_email} und bestätigen Sie die Aktivierung Ihres Kontos."
+
+#: accounts/views/signup.py:87
+#, python-brace-format
+msgid ""
+"Дорогой пользователь, неудалось отправить письмо с просьбой о подтверждении "
+"почты. Проверьте правильно ли она написана: {email}"
+msgstr ""
+"Lieber Benutzer / Liebe Benutzerin, es ist nicht gelungen, die E-Mail mit "
+"der Bestätigungsanfrage zu senden. Bitte überprüfen Sie, ob die E-Mail-"
+"Adresse korrekt ist: {email}."
+
 #: accounts/views/signup.py:147
 msgid "Ваша почта успешно подтверждена, теперь Вы можете пойти в аккаунт."
 msgstr ""
@@ -216,45 +240,45 @@ msgstr "Der Bestätigungslink ist abgelaufen oder ungültig."
 msgid "Вы должны согласиться с данными правилами."
 msgstr "Sie müssen diesen Bedingungen zustimmen."
 
-#: cart/models.py:185
+#: cart/models.py:186
 msgid "В обработке"
 msgstr "In Bearbeitung"
 
-#: cart/models.py:186
+#: cart/models.py:187
 msgid "Возврат"
 msgstr "Rückgabe"
 
-#: cart/models.py:187
+#: cart/models.py:188
 msgid "Ожидание оплаты"
 msgstr "Zahlung ausstehend"
 
-#: cart/models.py:188
+#: cart/models.py:189
 msgid "В доставке"
 msgstr "In Lieferung"
 
-#: cart/models.py:189
+#: cart/models.py:190
 msgid "Доставлен"
 msgstr "Geliefert"
 
-#: cart/models.py:192 cart/templates/cart/index.html:433
-#: cart/templates/cart/index.html:566
+#: cart/models.py:193 cart/templates/cart/index.html:432
+#: cart/templates/cart/index.html:565
 msgid "Уважаемый"
 msgstr "Herr"
 
-#: cart/models.py:193 cart/templates/cart/index.html:434
-#: cart/templates/cart/index.html:567
+#: cart/models.py:194 cart/templates/cart/index.html:433
+#: cart/templates/cart/index.html:566
 msgid "Уважаемая"
 msgstr "Frau"
 
-#: cart/models.py:329 cart/templates/cart/index.html:348
+#: cart/models.py:330 cart/templates/cart/index.html:347
 msgid "Чистая стоимость"
 msgstr "Nettowert"
 
-#: cart/models.py:335 cart/templates/cart/index.html:358
+#: cart/models.py:336 cart/templates/cart/index.html:357
 msgid "Налоговая стоимость"
 msgstr "MwSt-betrag"
 
-#: cart/models.py:349 cart/templates/cart/index.html:373
+#: cart/models.py:350 cart/templates/cart/index.html:372
 msgid "Итоговая стоимость"
 msgstr "Gesamtbetrag"
 
@@ -280,11 +304,11 @@ msgstr "Warenkorb leeren"
 msgid "Уменьшить количество продукта в корзине"
 msgstr "Menge des Produkts im Warenkorb verringern"
 
-#: cart/templates/cart/index.html:12 cart/templates/cart/index.html:25
+#: cart/templates/cart/index.html:11 cart/templates/cart/index.html:24
 msgid "Корзина"
 msgstr "Warenkorb"
 
-#: cart/templates/cart/index.html:13
+#: cart/templates/cart/index.html:12
 #, python-format
 msgid ""
 "Оформите заказ на букеты в интернет-магазине %(site_name)s. Ваша корзина "
@@ -293,14 +317,14 @@ msgstr ""
 "Bestellen Sie Ihre Blumensträuße im Online-Shop %(site_name)s. Ihr Warenkorb "
 "ist bereit zur Bestellung. Schnelle Lieferung."
 
-#: cart/templates/cart/index.html:14
+#: cart/templates/cart/index.html:13
 msgid ""
 "корзина букетов, интернет-магазин букетов, доставка цветов, оформить заказ"
 msgstr ""
 "Blumenstrauß-Warenkorb, Online-Blumenladen, Blumenlieferung, Bestellung "
 "aufgeben"
 
-#: cart/templates/cart/index.html:27
+#: cart/templates/cart/index.html:26
 #, python-format
 msgid ""
 "\n"
@@ -310,26 +334,26 @@ msgstr ""
 "\n"
 "%(total_amount)s Elemente"
 
-#: cart/templates/cart/index.html:62 cart/templates/cart/index.html:107
+#: cart/templates/cart/index.html:61 cart/templates/cart/index.html:106
 #: cart/templates/cart/order_confirmation.html:309
 #: cart/templates/cart/order_confirmation.html:413
 msgid "Количество"
 msgstr "Menge"
 
-#: cart/templates/cart/index.html:128
-#: catalogue/templates/catalog/base_list.html:159
+#: cart/templates/cart/index.html:127
+#: catalogue/templates/catalog/base_list.html:157
 msgid "Отсутствие продуктов"
 msgstr "Produkt nicht verfügbar"
 
-#: cart/templates/cart/index.html:188
+#: cart/templates/cart/index.html:187
 msgid "К сожалению, корзина пуста."
 msgstr "Leider ist der Warenkorb leer."
 
-#: cart/templates/cart/index.html:194
+#: cart/templates/cart/index.html:193
 msgid "Предупреждение:"
 msgstr "Warnung:"
 
-#: cart/templates/cart/index.html:198
+#: cart/templates/cart/index.html:197
 #: catalogue/templates/catalog/base_detail.html:153
 msgid ""
 "\n"
@@ -348,140 +372,145 @@ msgstr ""
 "umfassen. Wenn Ihnen der angebotene Vorschlag nicht gefällt, besprechen wir "
 "eine andere Lösung oder erstatten Ihnen das Geld."
 
-#: cart/templates/cart/index.html:207
+#: cart/templates/cart/index.html:206
 msgid "Способы оплаты:"
 msgstr "Zahlungsmethoden:"
 
-#: cart/templates/cart/index.html:210
+#: cart/templates/cart/index.html:209
 msgid "способ оплаты по IBAN"
 msgstr "Zahlungsmethode per IBAN"
 
-#: cart/templates/cart/index.html:211
+#: cart/templates/cart/index.html:210
 msgid "visa логотип"
 msgstr "visa logo"
 
-#: cart/templates/cart/index.html:212
+#: cart/templates/cart/index.html:211
 msgid "mastercard логотип"
 msgstr "mastercard logo"
 
-#: cart/templates/cart/index.html:213
+#: cart/templates/cart/index.html:212
 msgid "american express логотип"
 msgstr "american express logo"
 
-#: cart/templates/cart/index.html:214
+#: cart/templates/cart/index.html:213
 msgid "jcb логотип"
 msgstr "jcb logo"
 
-#: cart/templates/cart/index.html:215
+#: cart/templates/cart/index.html:214
 msgid "paypal логотип"
 msgstr "paypal logo"
 
-#: cart/templates/cart/index.html:216
+#: cart/templates/cart/index.html:215
 msgid "klarna логотип"
 msgstr "klarna logo"
 
-#: cart/templates/cart/index.html:218
+#: cart/templates/cart/index.html:217
 msgid "revolut логотип"
 msgstr "revolut logo"
 
-#: cart/templates/cart/index.html:219
+#: cart/templates/cart/index.html:218
 msgid "stripe логотип"
 msgstr "stripe logo"
 
-#: cart/templates/cart/index.html:225 mainpage/templates/mainpage/index.html:44
-#: mainpage/templates/mainpage/index.html:182
+#: cart/templates/cart/index.html:224 mainpage/templates/mainpage/index.html:41
+#: mainpage/templates/mainpage/index.html:179
 msgid "Рекомендуемые букеты к покупке"
 msgstr "Empfohlene Blumensträuße zum Kauf"
 
-#: cart/templates/cart/index.html:283
-#: mainpage/templates/mainpage/index.html:257
+#: cart/templates/cart/index.html:282
+#: mainpage/templates/mainpage/index.html:209
 msgid "Рекомендуемые подарки к букетам"
 msgstr "Empfohlene Geschenke zu den Blumensträußen"
 
-#: cart/templates/cart/index.html:342
+#: cart/templates/cart/index.html:341
 msgid "Резюме заказа"
 msgstr "Bestellübersicht"
 
+<<<<<<< HEAD
 #: cart/templates/cart/index.html:367 core/staticfiles/templates/footer.html:36
 #: core/staticfiles/templates/header.html:37
+=======
+#: cart/templates/cart/index.html:366 core/staticfiles/templates/footer.html:36
+#: core/staticfiles/templates/header.html:30
+>>>>>>> main
 msgid "Доставка"
 msgstr "Lieferung"
 
-#: cart/templates/cart/index.html:368
+#: cart/templates/cart/index.html:367
 msgid "Бесплатно"
 msgstr "Kostenlos"
 
-#: cart/templates/cart/index.html:375
+#: cart/templates/cart/index.html:374
 msgid "Включая НДС"
 msgstr "Inklusive MwSt"
 
-#: cart/templates/cart/index.html:390
+#: cart/templates/cart/index.html:389
 msgid "Адрес доставки"
 msgstr "Lieferadresse"
 
-#: cart/templates/cart/index.html:398
+#: cart/templates/cart/index.html:397
 msgid "Уточнить адрес у получателя?"
 msgstr "Den Empfänger nach der Adresse fragen?"
 
-#: cart/templates/cart/index.html:409
+#: cart/templates/cart/index.html:408
 msgid "Email"
 msgstr "E-Mail"
 
-#: cart/templates/cart/index.html:428
+#: cart/templates/cart/index.html:427
 msgid "Форма обращения"
 msgstr "Anredeform"
 
-#: cart/templates/cart/index.html:432 cart/templates/cart/index.html:565
+#: cart/templates/cart/index.html:431 cart/templates/cart/index.html:564
 msgid "Выберите форму обращения"
 msgstr "Wählen Sie die Anredeform"
 
-#: cart/templates/cart/index.html:445
+#: cart/templates/cart/index.html:444
 msgid "Имя заказчика"
 msgstr "Name des Auftraggebers"
 
-#: cart/templates/cart/index.html:464
+#: cart/templates/cart/index.html:463
 #: cart/templates/cart/order_confirmation.html:529
 msgid "Страна"
 msgstr "Land"
 
-#: cart/templates/cart/index.html:478
+#: cart/templates/cart/index.html:477
 #: cart/templates/cart/order_confirmation.html:532
 msgid "Город"
 msgstr "Stadt"
 
-#: cart/templates/cart/index.html:492
+#: cart/templates/cart/index.html:491
 #: cart/templates/cart/order_confirmation.html:535
 msgid "Почтовый индекс"
 msgstr "PLZ"
 
-#: cart/templates/cart/index.html:503
+#: cart/templates/cart/index.html:502
 #: cart/templates/cart/order_confirmation.html:542
 msgid "Улица"
 msgstr "Straße"
 
-#: cart/templates/cart/index.html:514
+#: cart/templates/cart/index.html:513
 #: cart/templates/cart/order_confirmation.html:549
 msgid "Номер здания"
 msgstr "Hausnummer"
 
-#: cart/templates/cart/index.html:525
+#: cart/templates/cart/index.html:524
 #: cart/templates/cart/order_confirmation.html:556
 msgid "Номер квартиры/офиса"
 msgstr "Wohnungsnummer / Bürozimmernummer"
 
-#: cart/templates/cart/index.html:536
+#: cart/templates/cart/index.html:535
 #: cart/templates/cart/order_confirmation.html:563
 #: cart/templates/cart/success_order.html:34
 msgid "Дата доставки"
 msgstr "Liefertermin"
 
-#: cart/templates/cart/index.html:547
+#: cart/templates/cart/index.html:546
 #: cart/templates/cart/order_confirmation.html:566
 #: cart/templates/cart/success_order.html:37
 msgid "Время доставки"
 msgstr "Lieferzeit"
 
-#: cart/templates/cart/index.html:557
+#: cart/templates/cart/index.html:556
 msgid ""
 "Минимум 3 часа после оформления заказа. Мы сообщим Вам о возможности "
 "доставки."
@@ -489,29 +518,29 @@ msgstr ""
 "Mindestens 3 Stunden nach der Bestellung. Über die Möglichkeit der Lieferung "
 "informieren wir Sie gerne."
 
-#: cart/templates/cart/index.html:561
+#: cart/templates/cart/index.html:560
 msgid "Форма обращения к получателю"
 msgstr "Anredeform des Empfängers"
 
-#: cart/templates/cart/index.html:578
+#: cart/templates/cart/index.html:577
 #: cart/templates/cart/order_confirmation.html:570
 msgid "Имя получателя"
 msgstr "Empfängername"
 
-#: cart/templates/cart/index.html:590
+#: cart/templates/cart/index.html:589
 #: cart/templates/cart/order_confirmation.html:574
 msgid "Номер телефона получателя"
 msgstr "Empfängernummer"
 
-#: cart/templates/cart/index.html:604
+#: cart/templates/cart/index.html:603
 msgid "Получатель - заказчик?"
 msgstr "Empfänger - Auftraggeber?"
 
-#: cart/templates/cart/index.html:617
+#: cart/templates/cart/index.html:616
 msgid "Сюрприз до последнего!"
 msgstr "Überraschung bis zum letzten Moment!"
 
-#: cart/templates/cart/index.html:618
+#: cart/templates/cart/index.html:617
 msgid ""
 "Мы не раскроем тайну вашего подарка, чтобы сделать момент ещё более "
 "волшебным."
@@ -519,17 +548,17 @@ msgstr ""
 "Wir werden das Geheimnis Ihres Geschenks nicht verraten, um den Moment noch "
 "magischer zu machen."
 
-#: cart/templates/cart/index.html:630
+#: cart/templates/cart/index.html:629
 #: cart/templates/cart/order_confirmation.html:578
 msgid "Записка получателю"
 msgstr "Nachrichtenkarte an den Empfänger"
 
-#: cart/templates/cart/index.html:634
+#: cart/templates/cart/index.html:633
 #: cart/templates/cart/order_confirmation.html:582
 msgid "Что нам стоит учесть?"
 msgstr "Was sollten wir beachten?"
 
-#: cart/templates/cart/index.html:639
+#: cart/templates/cart/index.html:638
 #, python-format
 msgid ""
 "\n"
@@ -547,7 +576,7 @@ msgstr ""
 "class=\"link-opacity-75\">Datenschutz- und Sicherheitsrichtlinie</a> von "
 "%(site_name)s zu."
 
-#: cart/templates/cart/index.html:654
+#: cart/templates/cart/index.html:653
 msgid "Оформить заказ"
 msgstr "Bestellung aufgeben"
 
@@ -592,12 +621,12 @@ msgstr "Bestellübersicht"
 
 #: cart/templates/cart/order_confirmation.html:306
 #: cart/templates/cart/order_confirmation.html:410
-#: catalogue/templates/catalog/base_list.html:75
+#: catalogue/templates/catalog/base_list.html:73
 msgid "Цена"
 msgstr "Preis"
 
 #: cart/templates/cart/order_confirmation.html:312
-#: catalogue/templates/catalog/bouquets/bouquet_list.html:38
+#: catalogue/templates/catalog/bouquets/bouquet_list.html:37
 msgid "Цветовая гамма"
 msgstr "Farbpalette"
 
@@ -762,7 +791,7 @@ msgstr "Farbenpalette des Blumenstraußes"
 
 #: catalogue/filters/bouquets.py:17
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:18
-#: catalogue/templates/catalog/bouquets/bouquet_list.html:63
+#: catalogue/templates/catalog/bouquets/bouquet_list.html:62
 msgid "Состав"
 msgstr "Zusammensetzung"
 
@@ -821,7 +850,7 @@ msgstr ""
 "Feedback ☺️"
 
 #: catalogue/templates/catalog/base_detail.html:98
-#: catalogue/templates/catalog/base_list.html:31
+#: catalogue/templates/catalog/base_list.html:29
 msgid "Главная страница"
 msgstr "Startseite"
 
@@ -838,7 +867,7 @@ msgid "Следующее фото букета"
 msgstr "Nächstes Foto des Blumenstraußes"
 
 #: catalogue/templates/catalog/base_detail.html:179
-#: mainpage/templates/mainpage/index.html:166
+#: mainpage/templates/mainpage/index.html:163
 msgid "Состав букета можно менять"
 msgstr "Der Inhalt des Buketts kann geändert werden"
 
@@ -847,7 +876,7 @@ msgid "Связь на каждом этапе"
 msgstr "Kontakt in jedem Schritt"
 
 #: catalogue/templates/catalog/base_detail.html:188
-#: mainpage/templates/mainpage/index.html:176
+#: mainpage/templates/mainpage/index.html:173
 msgid "Анонимная доставка"
 msgstr "Anonyme Lieferung"
 
@@ -864,12 +893,12 @@ msgid "Предложим решение в течении 10 минут"
 msgstr "Wir werden eine Lösung innerhalb von 10 Minuten vorschlagen"
 
 #: catalogue/templates/catalog/base_detail.html:217
-#: mainpage/templates/mainpage/index.html:363
+#: mainpage/templates/mainpage/index.html:271
 msgid "Разрешаю мне перезвонить"
 msgstr "Ich erlaube Ihnen, mich zurückzurufen"
 
 #: catalogue/templates/catalog/base_detail.html:221
-#: mainpage/templates/mainpage/index.html:368
+#: mainpage/templates/mainpage/index.html:277
 msgid "Связаться"
 msgstr "Kontaktieren"
 
@@ -900,9 +929,9 @@ msgid "Купить"
 msgstr "Kaufen"
 
 #: catalogue/templates/catalog/base_detail.html:297
-#: catalogue/templates/catalog/review.html:86 mainpage/models.py:26
-#: mainpage/models.py:124 mainpage/models.py:149 mainpage/models.py:174
-#: mainpage/models.py:199 mainpage/models.py:217
+#: catalogue/templates/catalog/review.html:86 mainpage/models.py:27
+#: mainpage/models.py:125 mainpage/models.py:150 mainpage/models.py:175
+#: mainpage/models.py:200 mainpage/models.py:218
 msgid "Описание"
 msgstr "Beschreibung"
 
@@ -915,12 +944,12 @@ msgid "Рекомендуемые продукты к покупке"
 msgstr "Empfohlene Produkte zum Kauf"
 
 #: catalogue/templates/catalog/base_detail.html:376
-#: mainpage/templates/mainpage/index.html:245
+#: mainpage/templates/mainpage/index.html:197
 msgid "Предыдущий слайд букетов"
 msgstr "Vorheriger Blumenstrauß-Slide"
 
 #: catalogue/templates/catalog/base_detail.html:381
-#: mainpage/templates/mainpage/index.html:250
+#: mainpage/templates/mainpage/index.html:202
 msgid "Следующий слайд букетов"
 msgstr "Nächster Blumenstrauß-Slide"
 
@@ -956,32 +985,32 @@ msgstr ""
 "Leider sind die Bewertungen derzeit leer, <br> aber Sie können die erste "
 "Bewertung verfassen!"
 
-#: catalogue/templates/catalog/base_list.html:51
+#: catalogue/templates/catalog/base_list.html:49
 msgid "Сортировка"
 msgstr "Sortierung"
 
-#: catalogue/templates/catalog/base_list.html:65
+#: catalogue/templates/catalog/base_list.html:63
 msgid "Фильтры"
 msgstr "Filter"
 
-#: catalogue/templates/catalog/base_list.html:91
+#: catalogue/templates/catalog/base_list.html:89
 msgid "Фильтровать"
 msgstr "Filter"
 
-#: catalogue/templates/catalog/base_list.html:219
+#: catalogue/templates/catalog/base_list.html:217
 msgid "К сожалению не нашлось продуктов по заданным фильтрам."
 msgstr "Leider wurden keine Produkte nach den angegebenen Filtern gefunden."
 
-#: catalogue/templates/catalog/base_list.html:228
-#: mainpage/templates/mainpage/index.html:150
+#: catalogue/templates/catalog/base_list.html:226
+#: mainpage/templates/mainpage/index.html:147
 msgid "Назад"
 msgstr "Zurück"
 
-#: catalogue/templates/catalog/base_list.html:255
+#: catalogue/templates/catalog/base_list.html:253
 msgid "Предыдущая страница букетов"
 msgstr "Vorherige Seite der Blumensträuße"
 
-#: catalogue/templates/catalog/base_list.html:261
+#: catalogue/templates/catalog/base_list.html:259
 msgid "Следующая страница букетов"
 msgstr "Nächste Seite der Blumensträuße"
 
@@ -1009,11 +1038,11 @@ msgstr "Größen"
 msgid "шт."
 msgstr "Stk."
 
-#: catalogue/templates/catalog/bouquets/bouquet_list.html:6
+#: catalogue/templates/catalog/bouquets/bouquet_list.html:5
 msgid "Диаметр букета"
 msgstr "Durchmesser des Buketts"
 
-#: catalogue/templates/catalog/bouquets/bouquet_list.html:20
+#: catalogue/templates/catalog/bouquets/bouquet_list.html:19
 msgid "Количество цветов в букете"
 msgstr "Anzahl der Blumen im Bukett"
 
@@ -1069,26 +1098,26 @@ msgstr "Produktbild vorübergehend nicht verfügbar."
 #: core/staticfiles/templates/base.html:167
 msgid ""
 "\n"
-"        Мы используем <span class=\"text-warning\">cookies</span> для "
+"            Мы используем <span class=\"text-warning\">cookies</span> для "
 "улучшения работы сайта.\n"
-"        Технические (обязательно будут установлены в cookie файлы Вашего "
+"            Технические (обязательно будут установлены в cookie файлы Вашего "
 "браузера), для персонализации рекламы\n"
-"        и для отслеживания Ваших действий на сайте.\n"
-"        <br>\n"
-"        Продолжая использовать сайт, Вы соглашаетесь на использование "
+"            и для отслеживания Ваших действий на сайте.\n"
+"            <br>\n"
+"            Продолжая использовать сайт, Вы соглашаетесь на использование "
 "дополнительных cookies.\n"
-"        "
+"            "
 msgstr ""
 "\n"
 "Wir verwenden <span class=\"text-warning\">Cookies</span>, um die "
 "Funktionalität der Website zu verbessern.\n"
 "<br>\n"
-"Technische Cookies (werden zwingend in die Cookie-Dateien Ihres Browsers "
-"gespeichert), für die Personalisierung von Werbung und zur Verfolgung Ihrer "
-"Aktivitäten auf der Website.  \n"
-"<br>  \n"
-"Indem Sie die Website weiter nutzen, stimmen Sie der Verwendung zusätzlicher "
-"Cookies zu.  "
+"Technische Cookies (werden unbedingt in Ihrem Browser gespeichert), für "
+"personalisierte Werbung und zur Nachverfolgung Ihrer Aktivitäten auf der "
+"Website.\n"
+"<br>\n"
+"Wenn Sie die Website weiterhin nutzen, stimmen Sie der Verwendung "
+"zusätzlicher Cookies zu."
 
 #: core/staticfiles/templates/base.html:175
 msgid "Принять"
@@ -1137,7 +1166,7 @@ msgstr "Katalog"
 msgid "Поиск"
 msgstr "Suche"
 
-#: mainpage/templates/mainpage/index.html:106
+#: mainpage/templates/mainpage/index.html:103
 #, python-format
 msgid ""
 "\n"
@@ -1147,37 +1176,37 @@ msgstr ""
 "\n"
 "Blumenladen %(site_name)s in Berlin"
 
-#: mainpage/templates/mainpage/index.html:154
+#: mainpage/templates/mainpage/index.html:151
 msgid "Вперёд"
 msgstr "Vorwärts"
 
-#: mainpage/templates/mainpage/index.html:161
+#: mainpage/templates/mainpage/index.html:158
 msgid "Наши преимущества"
 msgstr "Unsere Vorteile"
 
-#: mainpage/templates/mainpage/index.html:171
+#: mainpage/templates/mainpage/index.html:168
 msgid "Связь с клиентом на каждом этапе заказа"
 msgstr "Kontakt mit dem Kunden in jedem Schritt der Bestellung"
 
-#: mainpage/templates/mainpage/index.html:319
+#: mainpage/templates/mainpage/index.html:226
 msgid "Предыдущий слайд подарков"
 msgstr "Vorheriger Geschenke-Slide"
 
-#: mainpage/templates/mainpage/index.html:324
+#: mainpage/templates/mainpage/index.html:231
 msgid "Следующий слайд подарков"
 msgstr "Nächster Geschenke-Slide"
 
-#: mainpage/templates/mainpage/index.html:338
+#: mainpage/templates/mainpage/index.html:246
 msgid "Свяжитесь с нами"
 msgstr "Kontaktieren Sie uns"
 
-#: mainpage/templates/mainpage/index.html:342
+#: mainpage/templates/mainpage/index.html:250
 msgid "Заполните форму, чтобы заказать букет из индивидуального состава."
 msgstr ""
 "Füllen Sie das Formular aus, um einen Blumenstrauß mit individueller "
 "Zusammenstellung zu bestellen."
 
-#: mainpage/templates/mainpage/index.html:353
+#: mainpage/templates/mainpage/index.html:261
 msgid "Тел. номер в любой соц. сети или ссылка профиля"
 msgstr "Telefonnummer in einem beliebigen sozialen Netzwerk oder Profil-Link"
 
@@ -1195,23 +1224,6 @@ msgstr "{site_name} | Bestellbestätigung {order_code}"
 
 #~ msgid "НДС"
 #~ msgstr "MwSt"
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
-#~ "аккаунта."
-#~ msgstr ""
-#~ "Lieber Benutzer / Liebe Benutzerin, bitte gehen Sie zu Ihrer E-Mail-"
-#~ "Adresse {to_email} und bestätigen Sie die Aktivierung Ihres Kontos."
-
-#, python-brace-format
-#~ msgid ""
-#~ "Дорогой пользователь, неудалось отправить письмо с просьбой о "
-#~ "подтверждении почты. Проверьте правильно ли она написана: {email}"
-#~ msgstr ""
-#~ "Lieber Benutzer / Liebe Benutzerin, es ist nicht gelungen, die E-Mail mit "
-#~ "der Bestätigungsanfrage zu senden. Bitte überprüfen Sie, ob die E-Mail-"
-#~ "Adresse korrekt ist: {email}."
 
 #~ msgid "НДС Германия"
 #~ msgstr "MwSt Deutschland"
