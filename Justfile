@@ -25,10 +25,10 @@ makemessages:
     python3 manage.py compilemessages
 
 set-merge-driver:
-    @echo "Setting up keep-ours merge driver…"
-    @git config --local merge.keep-ours.name "Keep local version for certain files"
-    @git config --local merge.keep-ours.driver "./core/scripts/merge-driver.sh %O %A %B"
-    @echo "Merge driver 'keep-ours' configured."
+    @echo "Setting up 'ours' merge driver…"
+    @git config --local merge.ours.name "Keep local version for certain files"
+    @git config --local merge.ours.driver "./core/scripts/merge-driver.sh %O %A %B"
+    @echo "Merge driver 'ours' configured."
 
 init: collectstatic mmgt mgt makemessages set-merge-driver
     python3 manage.py create_periodic_tasks
