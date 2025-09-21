@@ -24,8 +24,11 @@ makemessages:
     python3 manage.py makemessages -d djangojs -a
     python3 manage.py compilemessages
 
+set-merge-driver:
+    git config merge.ours.driver true
+    git config merge.ours.name "always keep our version"
 
-init: collectstatic mmgt mgt makemessages
+init: collectstatic mmgt mgt makemessages set-merge-driver
     python3 manage.py create_periodic_tasks
 
 makeautocompletions:

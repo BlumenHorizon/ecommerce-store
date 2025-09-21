@@ -1,2 +1,4 @@
-locale/** merge=ours
-migrations/** merge=ours
+locale//*.po merge=ours
+locale//*.mo merge=ours
+locale//*.mo binary
+migrations//*.py merge=ours
