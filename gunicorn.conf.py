@@ -1,9 +1,8 @@
 import os
 
-from django.conf import settings
 from dotenv import load_dotenv
 
-load_dotenv(f"core/cities/{settings.CITY}.env", override=True)
+load_dotenv(f"core/cities/{os.getenv("CITY")}.env", override=True)
 
 bind = os.getenv("GUNICORN_DOMAIN")
 workers = 2
