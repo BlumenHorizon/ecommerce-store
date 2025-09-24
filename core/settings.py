@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 import os
 from pathlib import Path
+from pprint import pprint
 
 from dotenv import load_dotenv
 
@@ -547,6 +548,13 @@ CITY_LANGUAGES = {
 LANGUAGE_CODE = CITY_LANGUAGES[CITY]["default"]
 LANGUAGES = CITY_LANGUAGES[CITY]["languages"]
 
+LOCALE_PATHS = [
+    BASE_DIR / "city_locale" / CITY,
+]
+
+if not os.path.exists(LOCALE_PATHS[0]):
+    os.makedirs(LOCALE_PATHS[0])
+
 CITY_TIMEZONES = {
     "berlin": "Europe/Berlin",
     "athens": "Europe/Athens",
@@ -569,13 +577,6 @@ TIME_ZONE = CITY_TIMEZONES[CITY]
 USE_I18N = True
 USE_TZ = True
 USE_L10N = True
-
-LOCALE_PATHS = [
-    BASE_DIR / "locale" / CITY,
-]
-
-if not os.path.exists(LOCALE_PATHS[0]):
-    os.makedirs(LOCALE_PATHS[0])
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
