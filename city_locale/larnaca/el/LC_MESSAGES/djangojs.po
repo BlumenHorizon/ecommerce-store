@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-23 18:51+0100\n"
+"PO-Revision-Date: 2025-02-24 13:57+0100\n"
+"Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: cart/templates/cart/scripts/clearCart.js:23
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:21
+#: cart/templates/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: cart/templates/cart/scripts/removeProduct.js:29
+#, javascript-format
+msgid "%s эл."
+msgstr "%s ελ."
+
+#: cart/templates/cart/scripts/clearCart.js:41
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:30
+#: cart/templates/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: cart/templates/cart/scripts/removeProduct.js:40
+#: catalogue/templates/catalog/scripts/individualQuestion.js:28
+#: core/staticfiles/scripts/cartButton.js:34
+#: mainpage/templates/mainpage/scripts/individualOrder.js:28
+msgid "Произошла ошибка. Повторите попытку позже."
+msgstr "Παρουσιάστηκε σφάλμα. Παρακαλούμε προσπαθήστε ξανά αργότερα."
+
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:39
+msgid ""
+"В корзине всего один продукт. Вместо уменьшения количества - удалите его."
+msgstr ""
+"Υπάρχει μόνο ένα προϊόν στο καλάθι. Αντί να μειώσετε την ποσότητα, διαγράψτε"
+" το."
+
+#: core/staticfiles/scripts/liveSearch.js:70
+msgid "Продукты:"
+msgstr "Προϊόντα:"
+
+#: core/staticfiles/scripts/liveSearch.js:77
+msgid "Букеты:"
+msgstr "Μπουκέτα:"
+
+#: core/staticfiles/scripts/liveSearch.js:83
+msgid "Нет результатов"
+msgstr "Δεν βρέθηκαν αποτελέσματα"
+
+#: core/staticfiles/scripts/liveSearch.js:100
+msgid "Ошибка при поиске"
+msgstr "Σφάλμα κατά την αναζήτηση"
