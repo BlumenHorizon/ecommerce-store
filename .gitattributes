@@ -1,4 +1,0 @@
-locale/**/*.po merge=ours
-locale/**/*.mo merge=ours
-locale/**/*.mo binary
-**/migrations/*.py merge=ours
