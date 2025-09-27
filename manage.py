@@ -7,13 +7,13 @@ from dotenv import load_dotenv
 
 def main():
     """Run administrative tasks."""
-    load_dotenv(".env", override=True)
+    load_dotenv("core/cities/envs/base.env", override=True)
 
-    city = os.getenv("CITY")
+    city = os.getenv("CITY", "dev")
     if not city:
         raise Exception("CITY environment variable is not set.")
 
-    load_dotenv(f"core/cities/{city}.env", override=True)
+    load_dotenv(f"core/cities/envs/{city}.env", override=True)
 
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"core.cities.settings.{city}")
 
