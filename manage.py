@@ -2,11 +2,21 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from dotenv import load_dotenv
 
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+    load_dotenv(".env", override=True)
+
+    city = os.getenv("CITY")
+    if not city:
+        raise Exception("CITY environment variable is not set.")
+
+    load_dotenv(f"core/cities/{city}.env", override=True)
+
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"core.cities.settings.{city}")
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
