@@ -498,6 +498,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "cart" / "templates",
     BASE_DIR / "mainpage" / "templates",
     MEDIA_ROOT,
+    STATIC_DEFAULTS_ROOT,
 ]
 
 STATICFILES_FINDERS = [
