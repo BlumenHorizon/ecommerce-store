@@ -4,7 +4,7 @@ fmt:
     isort .
 
 dev:
-    CITY=dev python3 manage.py runserver 0.0.0.0:8000
+    set CITY environment variable in dev shortcut
 
 inst group="main":
     poetry install --only {{group}}
