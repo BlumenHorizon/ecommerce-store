@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 19:49+0100\n"
+"POT-Creation-Date: 2025-09-27 16:36+0000\n"
 "PO-Revision-Date: 2024-11-26 05:33+0100\n"
 "Last-Translator: None None <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,43 +16,905 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
-#: cart/templates/cart/scripts/clearCart.js:21
-#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:23
-#: cart/templates/cart/scripts/removeProduct.js:25
+#: cart/templates/cart/scripts/clearCart.js:23
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:21
+#: cart/templates/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: cart/templates/cart/scripts/removeProduct.js:29
+#: static/CACHE/js/output.a50df6fa0c35.js:5
+#: static/CACHE/js/output.a50df6fa0c35.js:11
+#: static/CACHE/js/output.a50df6fa0c35.js:15
+#: static/CACHE/js/output.a50df6fa0c35.js:18
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:5
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:11
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:15
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:18
+#: static/athens/cart/scripts/clearCart.js:23
+#: static/athens/cart/scripts/increaseOrDecreaseProduct.js:21
+#: static/athens/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: static/athens/cart/scripts/removeProduct.js:29
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:5
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:11
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:15
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:18
+#: static/berlin/cart/scripts/clearCart.js:23
+#: static/berlin/cart/scripts/increaseOrDecreaseProduct.js:21
+#: static/berlin/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: static/berlin/cart/scripts/removeProduct.js:29
+#: static/cart/scripts/clearCart.js:23
+#: static/cart/scripts/increaseOrDecreaseProduct.js:21
+#: static/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: static/cart/scripts/removeProduct.js:29
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:5
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:11
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:15
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:18
+#: static/larnaca/cart/scripts/clearCart.js:23
+#: static/larnaca/cart/scripts/increaseOrDecreaseProduct.js:21
+#: static/larnaca/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: static/larnaca/cart/scripts/removeProduct.js:29
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:5
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:11
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:15
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:18
+#: static/limassol/cart/scripts/clearCart.js:23
+#: static/limassol/cart/scripts/increaseOrDecreaseProduct.js:21
+#: static/limassol/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: static/limassol/cart/scripts/removeProduct.js:29
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:5
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:11
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:15
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:18
+#: static/madrid/cart/scripts/clearCart.js:23
+#: static/madrid/cart/scripts/increaseOrDecreaseProduct.js:21
+#: static/madrid/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:25
+#: static/madrid/cart/scripts/removeProduct.js:29
 #, javascript-format
 msgid "%s эл."
 msgstr "%s эл."
 
-#: cart/templates/cart/scripts/clearCart.js:34
-#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:29
-#: cart/templates/cart/scripts/removeProduct.js:35
+#: cart/templates/cart/scripts/clearCart.js:41
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:30
+#: cart/templates/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: cart/templates/cart/scripts/removeProduct.js:40
 #: catalogue/templates/catalog/scripts/individualQuestion.js:28
-#: core/staticfiles/scripts/cartButton.js:38
-#: mainpage/templates/mainpage/scripts/individualOrder.js:28
+#: core/staticfiles/scripts/cartButton.js:34
+#: mainpage/templates/mainpage/scripts/individualOrder.js:30
+#: static/CACHE/js/output.a50df6fa0c35.js:5
+#: static/CACHE/js/output.a50df6fa0c35.js:12
+#: static/CACHE/js/output.a50df6fa0c35.js:16
+#: static/CACHE/js/output.a50df6fa0c35.js:18
+#: static/CACHE/js/output.f3bf178d5ce9.js:1
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:5
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:12
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:16
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:18
+#: static/athens/CACHE/js/output.f3bf178d5ce9.js:1
+#: static/athens/cart/scripts/clearCart.js:41
+#: static/athens/cart/scripts/increaseOrDecreaseProduct.js:30
+#: static/athens/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: static/athens/cart/scripts/removeProduct.js:40
+#: static/athens/catalog/scripts/individualQuestion.js:28
+#: static/athens/mainpage/scripts/individualOrder.js:30
+#: static/athens/scripts/cartButton.js:34
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:5
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:12
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:16
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:18
+#: static/berlin/CACHE/js/output.f3bf178d5ce9.js:1
+#: static/berlin/cart/scripts/clearCart.js:41
+#: static/berlin/cart/scripts/increaseOrDecreaseProduct.js:30
+#: static/berlin/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: static/berlin/cart/scripts/removeProduct.js:40
+#: static/berlin/catalog/scripts/individualQuestion.js:28
+#: static/berlin/mainpage/scripts/individualOrder.js:30
+#: static/berlin/scripts/cartButton.js:34 static/cart/scripts/clearCart.js:41
+#: static/cart/scripts/increaseOrDecreaseProduct.js:30
+#: static/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: static/cart/scripts/removeProduct.js:40
+#: static/catalog/scripts/individualQuestion.js:28
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:5
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:12
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:16
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:18
+#: static/larnaca/CACHE/js/output.f3bf178d5ce9.js:1
+#: static/larnaca/cart/scripts/clearCart.js:41
+#: static/larnaca/cart/scripts/increaseOrDecreaseProduct.js:30
+#: static/larnaca/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: static/larnaca/cart/scripts/removeProduct.js:40
+#: static/larnaca/catalog/scripts/individualQuestion.js:28
+#: static/larnaca/mainpage/scripts/individualOrder.js:30
+#: static/larnaca/scripts/cartButton.js:34
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:5
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:12
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:16
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:18
+#: static/limassol/CACHE/js/output.f3bf178d5ce9.js:1
+#: static/limassol/cart/scripts/clearCart.js:41
+#: static/limassol/cart/scripts/increaseOrDecreaseProduct.js:30
+#: static/limassol/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: static/limassol/cart/scripts/removeProduct.js:40
+#: static/limassol/catalog/scripts/individualQuestion.js:28
+#: static/limassol/mainpage/scripts/individualOrder.js:30
+#: static/limassol/scripts/cartButton.js:34
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:5
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:12
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:16
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:18
+#: static/madrid/CACHE/js/output.f3bf178d5ce9.js:1
+#: static/madrid/cart/scripts/clearCart.js:41
+#: static/madrid/cart/scripts/increaseOrDecreaseProduct.js:30
+#: static/madrid/cart/scripts/moveOrRemoveRecommendedItemFromCart.js:37
+#: static/madrid/cart/scripts/removeProduct.js:40
+#: static/madrid/catalog/scripts/individualQuestion.js:28
+#: static/madrid/mainpage/scripts/individualOrder.js:30
+#: static/madrid/scripts/cartButton.js:34
+#: static/mainpage/scripts/individualOrder.js:30
+#: static/products/scripts/individualQuestion.js:28
+#: static/scripts/cartButton.js:34
 msgid "Произошла ошибка. Повторите попытку позже."
 msgstr "Произошла ошибка. Повторите попытку позже."
 
-#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:38
+#: cart/templates/cart/scripts/increaseOrDecreaseProduct.js:39
+#: static/CACHE/js/output.a50df6fa0c35.js:6
+#: static/athens/CACHE/js/output.a50df6fa0c35.js:6
+#: static/athens/cart/scripts/increaseOrDecreaseProduct.js:39
+#: static/berlin/CACHE/js/output.a50df6fa0c35.js:6
+#: static/berlin/cart/scripts/increaseOrDecreaseProduct.js:39
+#: static/cart/scripts/increaseOrDecreaseProduct.js:39
+#: static/larnaca/CACHE/js/output.a50df6fa0c35.js:6
+#: static/larnaca/cart/scripts/increaseOrDecreaseProduct.js:39
+#: static/limassol/CACHE/js/output.a50df6fa0c35.js:6
+#: static/limassol/cart/scripts/increaseOrDecreaseProduct.js:39
+#: static/madrid/CACHE/js/output.a50df6fa0c35.js:6
+#: static/madrid/cart/scripts/increaseOrDecreaseProduct.js:39
 msgid ""
 "В корзине всего один продукт. Вместо уменьшения количества - удалите его."
 msgstr ""
 "В корзине всего один продукт. Вместо уменьшения количества - удалите его."
 
 #: core/staticfiles/scripts/liveSearch.js:70
+#: static/CACHE/js/output.f3bf178d5ce9.js:16
+#: static/athens/CACHE/js/output.f3bf178d5ce9.js:16
+#: static/athens/scripts/liveSearch.js:70
+#: static/berlin/CACHE/js/output.f3bf178d5ce9.js:16
+#: static/berlin/scripts/liveSearch.js:70
+#: static/larnaca/CACHE/js/output.f3bf178d5ce9.js:16
+#: static/larnaca/scripts/liveSearch.js:70
+#: static/limassol/CACHE/js/output.f3bf178d5ce9.js:16
+#: static/limassol/scripts/liveSearch.js:70
+#: static/madrid/CACHE/js/output.f3bf178d5ce9.js:16
+#: static/madrid/scripts/liveSearch.js:70 static/scripts/liveSearch.js:70
 msgid "Продукты:"
 msgstr "Продукты:"
 
 #: core/staticfiles/scripts/liveSearch.js:77
+#: static/CACHE/js/output.f3bf178d5ce9.js:17
+#: static/athens/CACHE/js/output.f3bf178d5ce9.js:17
+#: static/athens/scripts/liveSearch.js:77
+#: static/berlin/CACHE/js/output.f3bf178d5ce9.js:17
+#: static/berlin/scripts/liveSearch.js:77
+#: static/larnaca/CACHE/js/output.f3bf178d5ce9.js:17
+#: static/larnaca/scripts/liveSearch.js:77
+#: static/limassol/CACHE/js/output.f3bf178d5ce9.js:17
+#: static/limassol/scripts/liveSearch.js:77
+#: static/madrid/CACHE/js/output.f3bf178d5ce9.js:17
+#: static/madrid/scripts/liveSearch.js:77 static/scripts/liveSearch.js:77
 msgid "Букеты:"
 msgstr "Букеты:"
 
 #: core/staticfiles/scripts/liveSearch.js:83
+#: static/CACHE/js/output.f3bf178d5ce9.js:18
+#: static/athens/CACHE/js/output.f3bf178d5ce9.js:18
+#: static/athens/scripts/liveSearch.js:83
+#: static/berlin/CACHE/js/output.f3bf178d5ce9.js:18
+#: static/berlin/scripts/liveSearch.js:83
+#: static/larnaca/CACHE/js/output.f3bf178d5ce9.js:18
+#: static/larnaca/scripts/liveSearch.js:83
+#: static/limassol/CACHE/js/output.f3bf178d5ce9.js:18
+#: static/limassol/scripts/liveSearch.js:83
+#: static/madrid/CACHE/js/output.f3bf178d5ce9.js:18
+#: static/madrid/scripts/liveSearch.js:83 static/scripts/liveSearch.js:83
 msgid "Нет результатов"
 msgstr "Нет результатов"
 
 #: core/staticfiles/scripts/liveSearch.js:100
+#: static/CACHE/js/output.f3bf178d5ce9.js:21
+#: static/athens/CACHE/js/output.f3bf178d5ce9.js:21
+#: static/athens/scripts/liveSearch.js:100
+#: static/berlin/CACHE/js/output.f3bf178d5ce9.js:21
+#: static/berlin/scripts/liveSearch.js:100
+#: static/larnaca/CACHE/js/output.f3bf178d5ce9.js:21
+#: static/larnaca/scripts/liveSearch.js:100
+#: static/limassol/CACHE/js/output.f3bf178d5ce9.js:21
+#: static/limassol/scripts/liveSearch.js:100
+#: static/madrid/CACHE/js/output.f3bf178d5ce9.js:21
+#: static/madrid/scripts/liveSearch.js:100 static/scripts/liveSearch.js:100
 msgid "Ошибка при поиске"
 msgstr "Ошибка при поиске"
+
+#: static/admin/js/SelectFilter2.js:41
+#: static/athens/admin/js/SelectFilter2.js:41
+#: static/berlin/admin/js/SelectFilter2.js:41
+#: static/larnaca/admin/js/SelectFilter2.js:41
+#: static/limassol/admin/js/SelectFilter2.js:41
+#: static/madrid/admin/js/SelectFilter2.js:41
+#, javascript-format
+msgid "Available %s"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:47
+#: static/athens/admin/js/SelectFilter2.js:47
+#: static/berlin/admin/js/SelectFilter2.js:47
+#: static/larnaca/admin/js/SelectFilter2.js:47
+#: static/limassol/admin/js/SelectFilter2.js:47
+#: static/madrid/admin/js/SelectFilter2.js:47
+#, javascript-format
+msgid ""
+"This is the list of available %s. You may choose some by selecting them in "
+"the box below and then clicking the \"Choose\" arrow between the two boxes."
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:63
+#: static/athens/admin/js/SelectFilter2.js:63
+#: static/berlin/admin/js/SelectFilter2.js:63
+#: static/larnaca/admin/js/SelectFilter2.js:63
+#: static/limassol/admin/js/SelectFilter2.js:63
+#: static/madrid/admin/js/SelectFilter2.js:63
+#, javascript-format
+msgid "Type into this box to filter down the list of available %s."
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:68 static/admin/js/SelectFilter2.js:113
+#: static/athens/admin/js/SelectFilter2.js:68
+#: static/athens/admin/js/SelectFilter2.js:113
+#: static/berlin/admin/js/SelectFilter2.js:68
+#: static/berlin/admin/js/SelectFilter2.js:113
+#: static/larnaca/admin/js/SelectFilter2.js:68
+#: static/larnaca/admin/js/SelectFilter2.js:113
+#: static/limassol/admin/js/SelectFilter2.js:68
+#: static/limassol/admin/js/SelectFilter2.js:113
+#: static/madrid/admin/js/SelectFilter2.js:68
+#: static/madrid/admin/js/SelectFilter2.js:113
+msgid "Filter"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:72
+#: static/athens/admin/js/SelectFilter2.js:72
+#: static/berlin/admin/js/SelectFilter2.js:72
+#: static/larnaca/admin/js/SelectFilter2.js:72
+#: static/limassol/admin/js/SelectFilter2.js:72
+#: static/madrid/admin/js/SelectFilter2.js:72
+msgid "Choose all"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:72
+#: static/athens/admin/js/SelectFilter2.js:72
+#: static/berlin/admin/js/SelectFilter2.js:72
+#: static/larnaca/admin/js/SelectFilter2.js:72
+#: static/limassol/admin/js/SelectFilter2.js:72
+#: static/madrid/admin/js/SelectFilter2.js:72
+#, javascript-format
+msgid "Click to choose all %s at once."
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:78
+#: static/athens/admin/js/SelectFilter2.js:78
+#: static/berlin/admin/js/SelectFilter2.js:78
+#: static/larnaca/admin/js/SelectFilter2.js:78
+#: static/limassol/admin/js/SelectFilter2.js:78
+#: static/madrid/admin/js/SelectFilter2.js:78
+msgid "Choose"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:80
+#: static/athens/admin/js/SelectFilter2.js:80
+#: static/berlin/admin/js/SelectFilter2.js:80
+#: static/larnaca/admin/js/SelectFilter2.js:80
+#: static/limassol/admin/js/SelectFilter2.js:80
+#: static/madrid/admin/js/SelectFilter2.js:80
+msgid "Remove"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:86
+#: static/athens/admin/js/SelectFilter2.js:86
+#: static/berlin/admin/js/SelectFilter2.js:86
+#: static/larnaca/admin/js/SelectFilter2.js:86
+#: static/limassol/admin/js/SelectFilter2.js:86
+#: static/madrid/admin/js/SelectFilter2.js:86
+#, javascript-format
+msgid "Chosen %s"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:92
+#: static/athens/admin/js/SelectFilter2.js:92
+#: static/berlin/admin/js/SelectFilter2.js:92
+#: static/larnaca/admin/js/SelectFilter2.js:92
+#: static/limassol/admin/js/SelectFilter2.js:92
+#: static/madrid/admin/js/SelectFilter2.js:92
+#, javascript-format
+msgid ""
+"This is the list of chosen %s. You may remove some by selecting them in the "
+"box below and then clicking the \"Remove\" arrow between the two boxes."
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:108
+#: static/athens/admin/js/SelectFilter2.js:108
+#: static/berlin/admin/js/SelectFilter2.js:108
+#: static/larnaca/admin/js/SelectFilter2.js:108
+#: static/limassol/admin/js/SelectFilter2.js:108
+#: static/madrid/admin/js/SelectFilter2.js:108
+#, javascript-format
+msgid "Type into this box to filter down the list of selected %s."
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:123
+#: static/athens/admin/js/SelectFilter2.js:123
+#: static/berlin/admin/js/SelectFilter2.js:123
+#: static/larnaca/admin/js/SelectFilter2.js:123
+#: static/limassol/admin/js/SelectFilter2.js:123
+#: static/madrid/admin/js/SelectFilter2.js:123
+msgid "Remove all"
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:123
+#: static/athens/admin/js/SelectFilter2.js:123
+#: static/berlin/admin/js/SelectFilter2.js:123
+#: static/larnaca/admin/js/SelectFilter2.js:123
+#: static/limassol/admin/js/SelectFilter2.js:123
+#: static/madrid/admin/js/SelectFilter2.js:123
+#, javascript-format
+msgid "Click to remove all chosen %s at once."
+msgstr ""
+
+#: static/admin/js/SelectFilter2.js:214
+#: static/athens/admin/js/SelectFilter2.js:214
+#: static/berlin/admin/js/SelectFilter2.js:214
+#: static/larnaca/admin/js/SelectFilter2.js:214
+#: static/limassol/admin/js/SelectFilter2.js:214
+#: static/madrid/admin/js/SelectFilter2.js:214
+#, javascript-format
+msgid "%s selected option not visible"
+msgid_plural "%s selected options not visible"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: static/admin/js/actions.js:67 static/athens/admin/js/actions.js:67
+#: static/berlin/admin/js/actions.js:67 static/larnaca/admin/js/actions.js:67
+#: static/limassol/admin/js/actions.js:67 static/madrid/admin/js/actions.js:67
+msgid "%(sel)s of %(cnt)s selected"
+msgid_plural "%(sel)s of %(cnt)s selected"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: static/admin/js/actions.js:161 static/athens/admin/js/actions.js:161
+#: static/berlin/admin/js/actions.js:161 static/larnaca/admin/js/actions.js:161
+#: static/limassol/admin/js/actions.js:161
+#: static/madrid/admin/js/actions.js:161
+msgid ""
+"You have unsaved changes on individual editable fields. If you run an "
+"action, your unsaved changes will be lost."
+msgstr ""
+
+#: static/admin/js/actions.js:174 static/athens/admin/js/actions.js:174
+#: static/berlin/admin/js/actions.js:174 static/larnaca/admin/js/actions.js:174
+#: static/limassol/admin/js/actions.js:174
+#: static/madrid/admin/js/actions.js:174
+msgid ""
+"You have selected an action, but you haven’t saved your changes to "
+"individual fields yet. Please click OK to save. You’ll need to re-run the "
+"action."
+msgstr ""
+
+#: static/admin/js/actions.js:175 static/athens/admin/js/actions.js:175
+#: static/berlin/admin/js/actions.js:175 static/larnaca/admin/js/actions.js:175
+#: static/limassol/admin/js/actions.js:175
+#: static/madrid/admin/js/actions.js:175
+msgid ""
+"You have selected an action, and you haven’t made any changes on individual "
+"fields. You’re probably looking for the Go button rather than the Save "
+"button."
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:13
+#: static/admin/js/admin/DateTimeShortcuts.js:110
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:13
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:110
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:13
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:110
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:13
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:110
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:13
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:110
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:13
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:110
+msgid "Now"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:14
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:14
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:14
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:14
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:14
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:14
+msgid "Midnight"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:15
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:15
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:15
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:15
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:15
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:15
+msgid "6 a.m."
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:16
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:16
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:16
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:16
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:16
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:16
+msgid "Noon"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:17
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:17
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:17
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:17
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:17
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:17
+msgid "6 p.m."
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:78
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:78
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:78
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:78
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:78
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:78
+#, javascript-format
+msgid "Note: You are %s hour ahead of server time."
+msgid_plural "Note: You are %s hours ahead of server time."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:86
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:86
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:86
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:86
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:86
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:86
+#, javascript-format
+msgid "Note: You are %s hour behind server time."
+msgid_plural "Note: You are %s hours behind server time."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:128
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:128
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:128
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:128
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:128
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:128
+msgid "Choose a Time"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:158
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:158
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:158
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:158
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:158
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:158
+msgid "Choose a time"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:175
+#: static/admin/js/admin/DateTimeShortcuts.js:333
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:175
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:333
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:175
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:333
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:175
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:333
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:175
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:333
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:175
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:333
+msgid "Cancel"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:238
+#: static/admin/js/admin/DateTimeShortcuts.js:318
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:238
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:318
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:238
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:318
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:238
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:318
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:238
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:318
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:238
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:318
+msgid "Today"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:255
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:255
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:255
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:255
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:255
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:255
+msgid "Choose a Date"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:312
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:312
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:312
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:312
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:312
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:312
+msgid "Yesterday"
+msgstr ""
+
+#: static/admin/js/admin/DateTimeShortcuts.js:324
+#: static/athens/admin/js/admin/DateTimeShortcuts.js:324
+#: static/berlin/admin/js/admin/DateTimeShortcuts.js:324
+#: static/larnaca/admin/js/admin/DateTimeShortcuts.js:324
+#: static/limassol/admin/js/admin/DateTimeShortcuts.js:324
+#: static/madrid/admin/js/admin/DateTimeShortcuts.js:324
+msgid "Tomorrow"
+msgstr ""
+
+#: static/admin/js/calendar.js:11 static/athens/admin/js/calendar.js:11
+#: static/berlin/admin/js/calendar.js:11 static/larnaca/admin/js/calendar.js:11
+#: static/limassol/admin/js/calendar.js:11
+#: static/madrid/admin/js/calendar.js:11
+msgid "January"
+msgstr ""
+
+#: static/admin/js/calendar.js:12 static/athens/admin/js/calendar.js:12
+#: static/berlin/admin/js/calendar.js:12 static/larnaca/admin/js/calendar.js:12
+#: static/limassol/admin/js/calendar.js:12
+#: static/madrid/admin/js/calendar.js:12
+msgid "February"
+msgstr ""
+
+#: static/admin/js/calendar.js:13 static/athens/admin/js/calendar.js:13
+#: static/berlin/admin/js/calendar.js:13 static/larnaca/admin/js/calendar.js:13
+#: static/limassol/admin/js/calendar.js:13
+#: static/madrid/admin/js/calendar.js:13
+msgid "March"
+msgstr ""
+
+#: static/admin/js/calendar.js:14 static/athens/admin/js/calendar.js:14
+#: static/berlin/admin/js/calendar.js:14 static/larnaca/admin/js/calendar.js:14
+#: static/limassol/admin/js/calendar.js:14
+#: static/madrid/admin/js/calendar.js:14
+msgid "April"
+msgstr ""
+
+#: static/admin/js/calendar.js:15 static/athens/admin/js/calendar.js:15
+#: static/berlin/admin/js/calendar.js:15 static/larnaca/admin/js/calendar.js:15
+#: static/limassol/admin/js/calendar.js:15
+#: static/madrid/admin/js/calendar.js:15
+msgid "May"
+msgstr ""
+
+#: static/admin/js/calendar.js:16 static/athens/admin/js/calendar.js:16
+#: static/berlin/admin/js/calendar.js:16 static/larnaca/admin/js/calendar.js:16
+#: static/limassol/admin/js/calendar.js:16
+#: static/madrid/admin/js/calendar.js:16
+msgid "June"
+msgstr ""
+
+#: static/admin/js/calendar.js:17 static/athens/admin/js/calendar.js:17
+#: static/berlin/admin/js/calendar.js:17 static/larnaca/admin/js/calendar.js:17
+#: static/limassol/admin/js/calendar.js:17
+#: static/madrid/admin/js/calendar.js:17
+msgid "July"
+msgstr ""
+
+#: static/admin/js/calendar.js:18 static/athens/admin/js/calendar.js:18
+#: static/berlin/admin/js/calendar.js:18 static/larnaca/admin/js/calendar.js:18
+#: static/limassol/admin/js/calendar.js:18
+#: static/madrid/admin/js/calendar.js:18
+msgid "August"
+msgstr ""
+
+#: static/admin/js/calendar.js:19 static/athens/admin/js/calendar.js:19
+#: static/berlin/admin/js/calendar.js:19 static/larnaca/admin/js/calendar.js:19
+#: static/limassol/admin/js/calendar.js:19
+#: static/madrid/admin/js/calendar.js:19
+msgid "September"
+msgstr ""
+
+#: static/admin/js/calendar.js:20 static/athens/admin/js/calendar.js:20
+#: static/berlin/admin/js/calendar.js:20 static/larnaca/admin/js/calendar.js:20
+#: static/limassol/admin/js/calendar.js:20
+#: static/madrid/admin/js/calendar.js:20
+msgid "October"
+msgstr ""
+
+#: static/admin/js/calendar.js:21 static/athens/admin/js/calendar.js:21
+#: static/berlin/admin/js/calendar.js:21 static/larnaca/admin/js/calendar.js:21
+#: static/limassol/admin/js/calendar.js:21
+#: static/madrid/admin/js/calendar.js:21
+msgid "November"
+msgstr ""
+
+#: static/admin/js/calendar.js:22 static/athens/admin/js/calendar.js:22
+#: static/berlin/admin/js/calendar.js:22 static/larnaca/admin/js/calendar.js:22
+#: static/limassol/admin/js/calendar.js:22
+#: static/madrid/admin/js/calendar.js:22
+msgid "December"
+msgstr ""
+
+#: static/admin/js/calendar.js:25 static/athens/admin/js/calendar.js:25
+#: static/berlin/admin/js/calendar.js:25 static/larnaca/admin/js/calendar.js:25
+#: static/limassol/admin/js/calendar.js:25
+#: static/madrid/admin/js/calendar.js:25
+msgctxt "abbrev. month January"
+msgid "Jan"
+msgstr ""
+
+#: static/admin/js/calendar.js:26 static/athens/admin/js/calendar.js:26
+#: static/berlin/admin/js/calendar.js:26 static/larnaca/admin/js/calendar.js:26
+#: static/limassol/admin/js/calendar.js:26
+#: static/madrid/admin/js/calendar.js:26
+msgctxt "abbrev. month February"
+msgid "Feb"
+msgstr ""
+
+#: static/admin/js/calendar.js:27 static/athens/admin/js/calendar.js:27
+#: static/berlin/admin/js/calendar.js:27 static/larnaca/admin/js/calendar.js:27
+#: static/limassol/admin/js/calendar.js:27
+#: static/madrid/admin/js/calendar.js:27
+msgctxt "abbrev. month March"
+msgid "Mar"
+msgstr ""
+
+#: static/admin/js/calendar.js:28 static/athens/admin/js/calendar.js:28
+#: static/berlin/admin/js/calendar.js:28 static/larnaca/admin/js/calendar.js:28
+#: static/limassol/admin/js/calendar.js:28
+#: static/madrid/admin/js/calendar.js:28
+msgctxt "abbrev. month April"
+msgid "Apr"
+msgstr ""
+
+#: static/admin/js/calendar.js:29 static/athens/admin/js/calendar.js:29
+#: static/berlin/admin/js/calendar.js:29 static/larnaca/admin/js/calendar.js:29
+#: static/limassol/admin/js/calendar.js:29
+#: static/madrid/admin/js/calendar.js:29
+msgctxt "abbrev. month May"
+msgid "May"
+msgstr ""
+
+#: static/admin/js/calendar.js:30 static/athens/admin/js/calendar.js:30
+#: static/berlin/admin/js/calendar.js:30 static/larnaca/admin/js/calendar.js:30
+#: static/limassol/admin/js/calendar.js:30
+#: static/madrid/admin/js/calendar.js:30
+msgctxt "abbrev. month June"
+msgid "Jun"
+msgstr ""
+
+#: static/admin/js/calendar.js:31 static/athens/admin/js/calendar.js:31
+#: static/berlin/admin/js/calendar.js:31 static/larnaca/admin/js/calendar.js:31
+#: static/limassol/admin/js/calendar.js:31
+#: static/madrid/admin/js/calendar.js:31
+msgctxt "abbrev. month July"
+msgid "Jul"
+msgstr ""
+
+#: static/admin/js/calendar.js:32 static/athens/admin/js/calendar.js:32
+#: static/berlin/admin/js/calendar.js:32 static/larnaca/admin/js/calendar.js:32
+#: static/limassol/admin/js/calendar.js:32
+#: static/madrid/admin/js/calendar.js:32
+msgctxt "abbrev. month August"
+msgid "Aug"
+msgstr ""
+
+#: static/admin/js/calendar.js:33 static/athens/admin/js/calendar.js:33
+#: static/berlin/admin/js/calendar.js:33 static/larnaca/admin/js/calendar.js:33
+#: static/limassol/admin/js/calendar.js:33
+#: static/madrid/admin/js/calendar.js:33
+msgctxt "abbrev. month September"
+msgid "Sep"
+msgstr ""
+
+#: static/admin/js/calendar.js:34 static/athens/admin/js/calendar.js:34
+#: static/berlin/admin/js/calendar.js:34 static/larnaca/admin/js/calendar.js:34
+#: static/limassol/admin/js/calendar.js:34
+#: static/madrid/admin/js/calendar.js:34
+msgctxt "abbrev. month October"
+msgid "Oct"
+msgstr ""
+
+#: static/admin/js/calendar.js:35 static/athens/admin/js/calendar.js:35
+#: static/berlin/admin/js/calendar.js:35 static/larnaca/admin/js/calendar.js:35
+#: static/limassol/admin/js/calendar.js:35
+#: static/madrid/admin/js/calendar.js:35
+msgctxt "abbrev. month November"
+msgid "Nov"
+msgstr ""
+
+#: static/admin/js/calendar.js:36 static/athens/admin/js/calendar.js:36
+#: static/berlin/admin/js/calendar.js:36 static/larnaca/admin/js/calendar.js:36
+#: static/limassol/admin/js/calendar.js:36
+#: static/madrid/admin/js/calendar.js:36
+msgctxt "abbrev. month December"
+msgid "Dec"
+msgstr ""
+
+#: static/admin/js/calendar.js:39 static/athens/admin/js/calendar.js:39
+#: static/berlin/admin/js/calendar.js:39 static/larnaca/admin/js/calendar.js:39
+#: static/limassol/admin/js/calendar.js:39
+#: static/madrid/admin/js/calendar.js:39
+msgid "Sunday"
+msgstr ""
+
+#: static/admin/js/calendar.js:40 static/athens/admin/js/calendar.js:40
+#: static/berlin/admin/js/calendar.js:40 static/larnaca/admin/js/calendar.js:40
+#: static/limassol/admin/js/calendar.js:40
+#: static/madrid/admin/js/calendar.js:40
+msgid "Monday"
+msgstr ""
+
+#: static/admin/js/calendar.js:41 static/athens/admin/js/calendar.js:41
+#: static/berlin/admin/js/calendar.js:41 static/larnaca/admin/js/calendar.js:41
+#: static/limassol/admin/js/calendar.js:41
+#: static/madrid/admin/js/calendar.js:41
+msgid "Tuesday"
+msgstr ""
+
+#: static/admin/js/calendar.js:42 static/athens/admin/js/calendar.js:42
+#: static/berlin/admin/js/calendar.js:42 static/larnaca/admin/js/calendar.js:42
+#: static/limassol/admin/js/calendar.js:42
+#: static/madrid/admin/js/calendar.js:42
+msgid "Wednesday"
+msgstr ""
+
+#: static/admin/js/calendar.js:43 static/athens/admin/js/calendar.js:43
+#: static/berlin/admin/js/calendar.js:43 static/larnaca/admin/js/calendar.js:43
+#: static/limassol/admin/js/calendar.js:43
+#: static/madrid/admin/js/calendar.js:43
+msgid "Thursday"
+msgstr ""
+
+#: static/admin/js/calendar.js:44 static/athens/admin/js/calendar.js:44
+#: static/berlin/admin/js/calendar.js:44 static/larnaca/admin/js/calendar.js:44
+#: static/limassol/admin/js/calendar.js:44
+#: static/madrid/admin/js/calendar.js:44
+msgid "Friday"
+msgstr ""
+
+#: static/admin/js/calendar.js:45 static/athens/admin/js/calendar.js:45
+#: static/berlin/admin/js/calendar.js:45 static/larnaca/admin/js/calendar.js:45
+#: static/limassol/admin/js/calendar.js:45
+#: static/madrid/admin/js/calendar.js:45
+msgid "Saturday"
+msgstr ""
+
+#: static/admin/js/calendar.js:48 static/athens/admin/js/calendar.js:48
+#: static/berlin/admin/js/calendar.js:48 static/larnaca/admin/js/calendar.js:48
+#: static/limassol/admin/js/calendar.js:48
+#: static/madrid/admin/js/calendar.js:48
+msgctxt "abbrev. day Sunday"
+msgid "Sun"
+msgstr ""
+
+#: static/admin/js/calendar.js:49 static/athens/admin/js/calendar.js:49
+#: static/berlin/admin/js/calendar.js:49 static/larnaca/admin/js/calendar.js:49
+#: static/limassol/admin/js/calendar.js:49
+#: static/madrid/admin/js/calendar.js:49
+msgctxt "abbrev. day Monday"
+msgid "Mon"
+msgstr ""
+
+#: static/admin/js/calendar.js:50 static/athens/admin/js/calendar.js:50
+#: static/berlin/admin/js/calendar.js:50 static/larnaca/admin/js/calendar.js:50
+#: static/limassol/admin/js/calendar.js:50
+#: static/madrid/admin/js/calendar.js:50
+msgctxt "abbrev. day Tuesday"
+msgid "Tue"
+msgstr ""
+
+#: static/admin/js/calendar.js:51 static/athens/admin/js/calendar.js:51
+#: static/berlin/admin/js/calendar.js:51 static/larnaca/admin/js/calendar.js:51
+#: static/limassol/admin/js/calendar.js:51
+#: static/madrid/admin/js/calendar.js:51
+msgctxt "abbrev. day Wednesday"
+msgid "Wed"
+msgstr ""
+
+#: static/admin/js/calendar.js:52 static/athens/admin/js/calendar.js:52
+#: static/berlin/admin/js/calendar.js:52 static/larnaca/admin/js/calendar.js:52
+#: static/limassol/admin/js/calendar.js:52
+#: static/madrid/admin/js/calendar.js:52
+msgctxt "abbrev. day Thursday"
+msgid "Thur"
+msgstr ""
+
+#: static/admin/js/calendar.js:53 static/athens/admin/js/calendar.js:53
+#: static/berlin/admin/js/calendar.js:53 static/larnaca/admin/js/calendar.js:53
+#: static/limassol/admin/js/calendar.js:53
+#: static/madrid/admin/js/calendar.js:53
+msgctxt "abbrev. day Friday"
+msgid "Fri"
+msgstr ""
+
+#: static/admin/js/calendar.js:54 static/athens/admin/js/calendar.js:54
+#: static/berlin/admin/js/calendar.js:54 static/larnaca/admin/js/calendar.js:54
+#: static/limassol/admin/js/calendar.js:54
+#: static/madrid/admin/js/calendar.js:54
+msgctxt "abbrev. day Saturday"
+msgid "Sat"
+msgstr ""
+
+#: static/admin/js/calendar.js:57 static/athens/admin/js/calendar.js:57
+#: static/berlin/admin/js/calendar.js:57 static/larnaca/admin/js/calendar.js:57
+#: static/limassol/admin/js/calendar.js:57
+#: static/madrid/admin/js/calendar.js:57
+msgctxt "one letter Sunday"
+msgid "S"
+msgstr ""
+
+#: static/admin/js/calendar.js:58 static/athens/admin/js/calendar.js:58
+#: static/berlin/admin/js/calendar.js:58 static/larnaca/admin/js/calendar.js:58
+#: static/limassol/admin/js/calendar.js:58
+#: static/madrid/admin/js/calendar.js:58
+msgctxt "one letter Monday"
+msgid "M"
+msgstr ""
+
+#: static/admin/js/calendar.js:59 static/athens/admin/js/calendar.js:59
+#: static/berlin/admin/js/calendar.js:59 static/larnaca/admin/js/calendar.js:59
+#: static/limassol/admin/js/calendar.js:59
+#: static/madrid/admin/js/calendar.js:59
+msgctxt "one letter Tuesday"
+msgid "T"
+msgstr ""
+
+#: static/admin/js/calendar.js:60 static/athens/admin/js/calendar.js:60
+#: static/berlin/admin/js/calendar.js:60 static/larnaca/admin/js/calendar.js:60
+#: static/limassol/admin/js/calendar.js:60
+#: static/madrid/admin/js/calendar.js:60
+msgctxt "one letter Wednesday"
+msgid "W"
+msgstr ""
+
+#: static/admin/js/calendar.js:61 static/athens/admin/js/calendar.js:61
+#: static/berlin/admin/js/calendar.js:61 static/larnaca/admin/js/calendar.js:61
+#: static/limassol/admin/js/calendar.js:61
+#: static/madrid/admin/js/calendar.js:61
+msgctxt "one letter Thursday"
+msgid "T"
+msgstr ""
+
+#: static/admin/js/calendar.js:62 static/athens/admin/js/calendar.js:62
+#: static/berlin/admin/js/calendar.js:62 static/larnaca/admin/js/calendar.js:62
+#: static/limassol/admin/js/calendar.js:62
+#: static/madrid/admin/js/calendar.js:62
+msgctxt "one letter Friday"
+msgid "F"
+msgstr ""
+
+#: static/admin/js/calendar.js:63 static/athens/admin/js/calendar.js:63
+#: static/berlin/admin/js/calendar.js:63 static/larnaca/admin/js/calendar.js:63
+#: static/limassol/admin/js/calendar.js:63
+#: static/madrid/admin/js/calendar.js:63
+msgctxt "one letter Saturday"
+msgid "S"
+msgstr ""
