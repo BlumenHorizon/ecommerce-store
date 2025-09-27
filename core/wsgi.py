@@ -10,7 +10,16 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
+from dotenv import load_dotenv
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+load_dotenv("core/cities/envs/base.env", override=True)
+
+city = os.getenv("CITY", "dev")
+if not city:
+    raise Exception("CITY environment variable is not set.")
+
+load_dotenv(f"core/cities/envs/{city}.env", override=True)
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"core.cities.settings.{city}")
 
 application = get_wsgi_application()

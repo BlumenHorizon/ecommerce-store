@@ -5,8 +5,17 @@ from logging.handlers import RotatingFileHandler
 from celery import Celery
 from celery.signals import setup_logging
 from django.conf import settings
+from dotenv import load_dotenv
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+load_dotenv("core/cities/envs/base.env", override=True)
+
+city = os.getenv("CITY", "dev")
+if not city:
+    raise Exception("CITY environment variable is not set.")
+
+load_dotenv(f"core/cities/envs/{city}.env", override=True)
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"core.cities.settings.{city}")
 
 app = Celery("BlumenHorizon")
 app.config_from_object("django.conf:settings", namespace="CELERY")
