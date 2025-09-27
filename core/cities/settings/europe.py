@@ -1,6 +1,6 @@
 from core.cities.settings.base import *
 
-TIME_ZONE = "Europe/"
+TIME_ZONE = "Europe/Berlin"
 LANGUAGES = [
     ("en", "🇺🇸 English"),
     ("de", "🇩🇪 Deutsch"),
