@@ -4,7 +4,7 @@ fmt:
     isort .
 
 dev:
-    python3 manage.py runserver 0.0.0.0:8000
+    CITY=dev python3 manage.py runserver 0.0.0.0:8000
 
 inst group="main":
     poetry install --only {{group}}
