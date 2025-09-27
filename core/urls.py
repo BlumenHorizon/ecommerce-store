@@ -52,5 +52,7 @@ if settings.DEBUG and not settings.TEST_MODE:
 if "rosetta" in settings.INSTALLED_APPS:
     urlpatterns += [re_path(r"^rosetta/", include("rosetta.urls"))]
 
-urlpatterns.extend(static(settings.STATIC_DEFAULTS_URL, document_root=settings.STATIC_DEFAULTS_ROOT))
+urlpatterns.extend(
+    static(settings.STATIC_DEFAULTS_URL, document_root=settings.STATIC_DEFAULTS_ROOT)
+)
 urlpatterns.extend(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
