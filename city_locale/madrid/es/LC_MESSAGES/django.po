@@ -9,16 +9,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-27 18:27+0200\n"
-"PO-Revision-Date: 2025-05-01 13:21+0200\n"
+"PO-Revision-Date: 2025-09-27 19:10+0200\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
-"X-Translated-Using: django-rosetta 0.10.1\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"X-Translated-Using: django-rosetta 0.10.2\n"
 
 #: accounts/forms/user_form.py:11 accounts/models.py:35
 #: accounts/templates/accounts/authorization/sign_in.html:33
@@ -298,6 +297,8 @@ msgid ""
 "Дорогой пользователь, зайдите на почту {to_email} и подтвердите активацию "
 "аккаунта."
 msgstr ""
+"Estimado usuario, por favor acceda a su correo {to_email} y confirme la "
+"activación de su cuenta."
 
 #: accounts/views/signup.py:87
 #, python-brace-format
@@ -305,12 +306,14 @@ msgid ""
 "Дорогой пользователь, неудалось отправить письмо с просьбой о подтверждении "
 "почты. Проверьте правильно ли она написана: {email}"
 msgstr ""
+"Estimado usuario, no se pudo enviar el correo de confirmación. Verifique que"
+" la dirección de correo {email} esté escrita correctamente."
 
 #: accounts/views/signup.py:147
 msgid "Ваша почта успешно подтверждена, теперь Вы можете пойти в аккаунт."
 msgstr ""
-"Su correo electrónico ha sido confirmado exitosamente, ahora puede acceder a "
-"su cuenta."
+"Su correo electrónico ha sido confirmado exitosamente, ahora puede acceder a"
+" su cuenta."
 
 #: accounts/views/signup.py:153
 msgid "Ссылка для подтверждения почты истекла или неверна."
@@ -476,20 +479,19 @@ msgstr "Advertencia:"
 
 #: cart/templates/cart/index.html:197
 #: catalogue/templates/catalog/base_detail.html:153
-#: static/athens/cart/index.html:197 static/athens/catalog/base_detail.html:153
-#: static/berlin/cart/index.html:197 static/berlin/catalog/base_detail.html:153
-#: static/cart/index.html:197 static/catalog/base_detail.html:153
+#: static/athens/cart/index.html:197
+#: static/athens/catalog/base_detail.html:153
+#: static/berlin/cart/index.html:197
+#: static/berlin/catalog/base_detail.html:153 static/cart/index.html:197
+#: static/catalog/base_detail.html:153
 msgid ""
 "\n"
-"                            <strong>Обратите внимание:</strong> Внешний вид "
-"букета может незначительно отличаться от изображения из-за сезонности или "
-"наличия цветов.\n"
+"                            <strong>Обратите внимание:</strong> Внешний вид букета может незначительно отличаться от изображения из-за сезонности или наличия цветов.\n"
 "                            О любых изменениях мы сообщим Вам лично 🌸\n"
 "                            "
 msgstr ""
 "\n"
-"<strong>Atención:</strong> El aspecto del ramo puede diferir ligeramente de "
-"la imagen debido a la estacionalidad o la disponibilidad de flores.\n"
+"<strong>Atención:</strong> El aspecto del ramo puede diferir ligeramente de la imagen debido a la estacionalidad o la disponibilidad de flores.\n"
 "Le informaremos personalmente sobre cualquier cambio 🌸"
 
 #: cart/templates/cart/index.html:206 static/athens/cart/index.html:206
@@ -542,20 +544,22 @@ msgstr " logo de Revolut"
 msgid "stripe логотип"
 msgstr "logo de Stripe"
 
-#: cart/templates/cart/index.html:224 mainpage/templates/mainpage/index.html:41
-#: mainpage/templates/mainpage/index.html:179 static/athens/cart/index.html:224
-#: static/athens/mainpage/index.html:41 static/athens/mainpage/index.html:179
-#: static/berlin/cart/index.html:224 static/berlin/mainpage/index.html:41
-#: static/berlin/mainpage/index.html:179 static/cart/index.html:224
-#: static/mainpage/index.html:41 static/mainpage/index.html:179
+#: cart/templates/cart/index.html:224
+#: mainpage/templates/mainpage/index.html:41
+#: mainpage/templates/mainpage/index.html:179
+#: static/athens/cart/index.html:224 static/athens/mainpage/index.html:41
+#: static/athens/mainpage/index.html:179 static/berlin/cart/index.html:224
+#: static/berlin/mainpage/index.html:41 static/berlin/mainpage/index.html:179
+#: static/cart/index.html:224 static/mainpage/index.html:41
+#: static/mainpage/index.html:179
 msgid "Рекомендуемые букеты к покупке"
 msgstr "Ramos recomendados para comprar"
 
 #: cart/templates/cart/index.html:282
-#: mainpage/templates/mainpage/index.html:209 static/athens/cart/index.html:282
-#: static/athens/mainpage/index.html:209 static/berlin/cart/index.html:282
-#: static/berlin/mainpage/index.html:209 static/cart/index.html:282
-#: static/mainpage/index.html:209
+#: mainpage/templates/mainpage/index.html:209
+#: static/athens/cart/index.html:282 static/athens/mainpage/index.html:209
+#: static/berlin/cart/index.html:282 static/berlin/mainpage/index.html:209
+#: static/cart/index.html:282 static/mainpage/index.html:209
 msgid "Рекомендуемые подарки к букетам"
 msgstr "Regalos recomendados para los ramos"
 
@@ -564,7 +568,8 @@ msgstr "Regalos recomendados para los ramos"
 msgid "Резюме заказа"
 msgstr "Resumen del pedido"
 
-#: cart/templates/cart/index.html:366 core/staticfiles/templates/footer.html:36
+#: cart/templates/cart/index.html:366
+#: core/staticfiles/templates/footer.html:36
 #: core/staticfiles/templates/header.html:30 static/athens/cart/index.html:366
 #: static/athens/templates/footer.html:36
 #: static/athens/templates/header.html:30 static/berlin/cart/index.html:366
@@ -775,19 +780,14 @@ msgstr "¿Qué debemos tener en cuenta?"
 #, python-format
 msgid ""
 "\n"
-"                                    Я согласен(-а) с <a href=\"%(agb_url)s\" "
-"class=\"link-opacity-75\">общими условиями и положениями</a> и\n"
-"                                    <a href=\"%(privacy_policy_url)s\" "
-"class=\"link-opacity-75\">политикой конфиденциальности и безопасности "
-"данных</a> \n"
+"                                    Я согласен(-а) с <a href=\"%(agb_url)s\" class=\"link-opacity-75\">общими условиями и положениями</a> и\n"
+"                                    <a href=\"%(privacy_policy_url)s\" class=\"link-opacity-75\">политикой конфиденциальности и безопасности данных</a> \n"
 "                                    %(site_name)s.\n"
 "                                    "
 msgstr ""
 "\n"
-"Acepto los <a href=\"%(agb_url)s\" class=\"link-opacity-75\">términos y "
-"condiciones</a> y la\n"
-"<a href=\"%(privacy_policy_url)s\" class=\"link-opacity-75\">política de "
-"privacidad y seguridad de datos</a>\n"
+"Acepto los <a href=\"%(agb_url)s\" class=\"link-opacity-75\">términos y condiciones</a> y la\n"
+"<a href=\"%(privacy_policy_url)s\" class=\"link-opacity-75\">política de privacidad y seguridad de datos</a>\n"
 "de %(site_name)s."
 
 #: cart/templates/cart/index.html:653 static/athens/cart/index.html:653
@@ -995,20 +995,15 @@ msgstr "Estado"
 #, python-format
 msgid ""
 "\n"
-"                <strong>В скором времени мы свяжемся с Вами </strong>по "
-"поводу Вашего заказа по указанной электронной почте <strong>(%(email)s)</"
-"strong>.\n"
+"                <strong>В скором времени мы свяжемся с Вами </strong>по поводу Вашего заказа по указанной электронной почте <strong>(%(email)s)</strong>.\n"
 "                <br>\n"
-"                Так-же есть возможность связаться с нами по поводу Вашего "
-"заказа через мессенджеры. Мы ответим очень быстро! 🙏\n"
+"                Так-же есть возможность связаться с нами по поводу Вашего заказа через мессенджеры. Мы ответим очень быстро! 🙏\n"
 "                "
 msgstr ""
 "\n"
-"<strong>Nos pondremos en contacto con usted muy pronto</strong> con respecto "
-"a su pedido al correo electrónico indicado <strong>(%(email)s)</strong>.\n"
+"<strong>Nos pondremos en contacto con usted muy pronto</strong> con respecto a su pedido al correo electrónico indicado <strong>(%(email)s)</strong>.\n"
 "<br>\n"
-"También puede contactarnos sobre su pedido a través de mensajeros. "
-"¡Responderemos muy rápido! 🙏"
+"También puede contactarnos sobre su pedido a través de mensajeros. ¡Responderemos muy rápido! 🙏"
 
 #: cart/templates/cart/success_order.html:53
 #: static/athens/cart/success_order.html:53
@@ -1153,7 +1148,8 @@ msgstr "Con descuento"
 #: catalogue/services/mixins/views/reviews.py:49
 msgid "Отзыв успешно отправлен на модерацию, благодарим за обратную связь ☺️"
 msgstr ""
-"La reseña ha sido enviada para su moderación. ¡Gracias por sus comentarios! ☺️"
+"La reseña ha sido enviada para su moderación. ¡Gracias por sus comentarios! "
+"☺️"
 
 #: catalogue/templates/catalog/base_detail.html:98
 #: catalogue/templates/catalog/base_list.html:29
@@ -1374,8 +1370,7 @@ msgstr "Agregar reseña"
 #, python-format
 msgid ""
 "\n"
-"                                            \"%(author_name)s\" оценил(-а) "
-"этот продукт\n"
+"                                            \"%(author_name)s\" оценил(-а) этот продукт\n"
 "                                        "
 msgstr ""
 "\n"
@@ -1560,13 +1555,15 @@ msgstr "Error:"
 
 #: core/base_models.py:8 mainpage/templates/mainpage/conditions.html:22
 #: static/athens/mainpage/conditions.html:22
-#: static/berlin/mainpage/conditions.html:22 static/mainpage/conditions.html:22
+#: static/berlin/mainpage/conditions.html:22
+#: static/mainpage/conditions.html:22
 msgid "Дата создания"
 msgstr "Fecha de creación"
 
 #: core/base_models.py:13 mainpage/templates/mainpage/conditions.html:23
 #: static/athens/mainpage/conditions.html:23
-#: static/berlin/mainpage/conditions.html:23 static/mainpage/conditions.html:23
+#: static/berlin/mainpage/conditions.html:23
+#: static/mainpage/conditions.html:23
 msgid "Дата обновления"
 msgstr "Fecha de actualización"
 
@@ -1577,35 +1574,26 @@ msgstr "La imagen del producto no está disponible temporalmente."
 #: core/staticfiles/templates/base.html:157
 #: static/athens/templates/base.html:157 static/berlin/templates/base.html:157
 #: static/templates/base.html:157
-#, fuzzy
 #| msgid ""
 #| "\n"
-#| "        Мы используем <span class=\"text-warning\">cookies</span> для "
-#| "улучшения работы сайта.\n"
-#| "        Технические (обязательно будут установлены в cookie файлы Вашего "
-#| "браузера), для персонализации рекламы\n"
+#| "        Мы используем <span class=\"text-warning\">cookies</span> для улучшения работы сайта.\n"
+#| "        Технические (обязательно будут установлены в cookie файлы Вашего браузера), для персонализации рекламы\n"
 #| "        и для отслеживания Ваших действий на сайте.\n"
 #| "        <br>\n"
-#| "        Продолжая использовать сайт, Вы соглашаетесь на использование "
-#| "дополнительных cookies.\n"
+#| "        Продолжая использовать сайт, Вы соглашаетесь на использование дополнительных cookies.\n"
 #| "        "
 msgid ""
 "\n"
-"            Мы используем <span class=\"text-warning\">cookies</span> для "
-"улучшения работы сайта.\n"
-"            Технические (обязательно будут установлены в cookie файлы Вашего "
-"браузера), для персонализации рекламы\n"
+"            Мы используем <span class=\"text-warning\">cookies</span> для улучшения работы сайта.\n"
+"            Технические (обязательно будут установлены в cookie файлы Вашего браузера), для персонализации рекламы\n"
 "            и для отслеживания Ваших действий на сайте.\n"
 "            <br>\n"
-"            Продолжая использовать сайт, Вы соглашаетесь на использование "
-"дополнительных cookies.\n"
+"            Продолжая использовать сайт, Вы соглашаетесь на использование дополнительных cookies.\n"
 "            "
 msgstr ""
 "\n"
-"Utilizamos <span class=\"text-warning\">cookies</span> para mejorar el "
-"funcionamiento del sitio web.\n"
-"Técnicas (se instalarán obligatoriamente en los archivos cookie de su "
-"navegador), para personalizar la publicidad\n"
+"Utilizamos <span class=\"text-warning\">cookies</span> para mejorar el funcionamiento del sitio web.\n"
+"Técnicas (se instalarán obligatoriamente en los archivos cookie de su navegador), para personalizar la publicidad\n"
 "y para realizar el seguimiento de sus acciones en el sitio.\n"
 "<br>\n"
 "Al continuar utilizando el sitio, acepta el uso de cookies adicionales."

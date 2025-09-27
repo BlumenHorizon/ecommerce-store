@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 18:24+0200\n"
+"POT-Creation-Date: 2025-09-27 18:57+0200\n"
 "PO-Revision-Date: 2025-09-21 19:02+0000\n"
 "Last-Translator: Vitalii Melnykov <blumenhorizon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,21 @@ msgstr ""
 #: accounts/templates/accounts/authorization/sign_in.html:33
 #: accounts/templates/accounts/authorization/sign_up.html:36
 #: accounts/templates/accounts/index.html:49
-#: static/accounts/authorization/sign_in.html:33
-#: static/accounts/authorization/sign_up.html:36 static/accounts/index.html:49
+#: static/athens/accounts/authorization/sign_in.html:33
+#: static/athens/accounts/authorization/sign_up.html:36
+#: static/athens/accounts/index.html:49
+#: static/europe/accounts/authorization/sign_in.html:33
+#: static/europe/accounts/authorization/sign_up.html:36
+#: static/europe/accounts/index.html:49
+#: static/larnaca/accounts/authorization/sign_in.html:33
+#: static/larnaca/accounts/authorization/sign_up.html:36
+#: static/larnaca/accounts/index.html:49
+#: static/limassol/accounts/authorization/sign_in.html:33
+#: static/limassol/accounts/authorization/sign_up.html:36
+#: static/limassol/accounts/index.html:49
+#: static/madrid/accounts/authorization/sign_in.html:33
+#: static/madrid/accounts/authorization/sign_up.html:36
+#: static/madrid/accounts/index.html:49
 msgid "Номер телефона"
 msgstr "Telefonnummer"
 
@@ -70,49 +83,104 @@ msgstr "E-Mail-Adresse"
 #: accounts/templates/accounts/index.html:62
 #: catalogue/templates/catalog/review.html:60
 #: mainpage/templates/mainpage/index.html:253
-#: static/accounts/authorization/sign_up.html:52 static/accounts/index.html:62
-#: static/catalog/review.html:60 static/mainpage/index.html:253
+#: static/athens/accounts/authorization/sign_up.html:52
+#: static/athens/accounts/index.html:62 static/athens/catalog/review.html:60
+#: static/athens/mainpage/index.html:253
+#: static/europe/accounts/authorization/sign_up.html:52
+#: static/europe/accounts/index.html:62 static/europe/catalog/review.html:60
+#: static/europe/mainpage/index.html:253
+#: static/larnaca/accounts/authorization/sign_up.html:52
+#: static/larnaca/accounts/index.html:62 static/larnaca/catalog/review.html:60
+#: static/larnaca/mainpage/index.html:253
+#: static/limassol/accounts/authorization/sign_up.html:52
+#: static/limassol/accounts/index.html:62
+#: static/limassol/catalog/review.html:60
+#: static/limassol/mainpage/index.html:253
+#: static/madrid/accounts/authorization/sign_up.html:52
+#: static/madrid/accounts/index.html:62 static/madrid/catalog/review.html:60
+#: static/madrid/mainpage/index.html:253
 msgid "Имя"
 msgstr "Vorname"
 
 #: accounts/models.py:41
 #: accounts/templates/accounts/authorization/sign_up.html:63
 #: accounts/templates/accounts/index.html:74
-#: static/accounts/authorization/sign_up.html:63 static/accounts/index.html:74
+#: static/athens/accounts/authorization/sign_up.html:63
+#: static/athens/accounts/index.html:74
+#: static/europe/accounts/authorization/sign_up.html:63
+#: static/europe/accounts/index.html:74
+#: static/larnaca/accounts/authorization/sign_up.html:63
+#: static/larnaca/accounts/index.html:74
+#: static/limassol/accounts/authorization/sign_up.html:63
+#: static/limassol/accounts/index.html:74
+#: static/madrid/accounts/authorization/sign_up.html:63
+#: static/madrid/accounts/index.html:74
 msgid "Фамилия"
 msgstr "Name"
 
 #: accounts/templates/accounts/authorization/sign_in.html:38
-#: static/accounts/authorization/sign_in.html:38
+#: static/athens/accounts/authorization/sign_in.html:38
+#: static/europe/accounts/authorization/sign_in.html:38
+#: static/larnaca/accounts/authorization/sign_in.html:38
+#: static/limassol/accounts/authorization/sign_in.html:38
+#: static/madrid/accounts/authorization/sign_in.html:38
 msgid "Введите пароль"
 msgstr "Geben Sie das Passwort ein"
 
 #: accounts/templates/accounts/authorization/sign_in.html:44
-#: static/accounts/authorization/sign_in.html:44
+#: static/athens/accounts/authorization/sign_in.html:44
+#: static/europe/accounts/authorization/sign_in.html:44
+#: static/larnaca/accounts/authorization/sign_in.html:44
+#: static/limassol/accounts/authorization/sign_in.html:44
+#: static/madrid/accounts/authorization/sign_in.html:44
 msgid "Запомнить меня"
 msgstr "Mich erinnern"
 
 #: accounts/templates/accounts/authorization/sign_in.html:47
 #: accounts/templates/accounts/authorization/sign_up.html:97
-#: static/accounts/authorization/sign_in.html:47
-#: static/accounts/authorization/sign_up.html:97
+#: static/athens/accounts/authorization/sign_in.html:47
+#: static/athens/accounts/authorization/sign_up.html:97
+#: static/europe/accounts/authorization/sign_in.html:47
+#: static/europe/accounts/authorization/sign_up.html:97
+#: static/larnaca/accounts/authorization/sign_in.html:47
+#: static/larnaca/accounts/authorization/sign_up.html:97
+#: static/limassol/accounts/authorization/sign_in.html:47
+#: static/limassol/accounts/authorization/sign_up.html:97
+#: static/madrid/accounts/authorization/sign_in.html:47
+#: static/madrid/accounts/authorization/sign_up.html:97
 msgid "Войти"
 msgstr "Einloggen"
 
 #: accounts/templates/accounts/authorization/sign_in.html:49
 #: accounts/templates/accounts/authorization/sign_up.html:98
-#: static/accounts/authorization/sign_in.html:49
-#: static/accounts/authorization/sign_up.html:98
+#: static/athens/accounts/authorization/sign_in.html:49
+#: static/athens/accounts/authorization/sign_up.html:98
+#: static/europe/accounts/authorization/sign_in.html:49
+#: static/europe/accounts/authorization/sign_up.html:98
+#: static/larnaca/accounts/authorization/sign_in.html:49
+#: static/larnaca/accounts/authorization/sign_up.html:98
+#: static/limassol/accounts/authorization/sign_in.html:49
+#: static/limassol/accounts/authorization/sign_up.html:98
+#: static/madrid/accounts/authorization/sign_in.html:49
+#: static/madrid/accounts/authorization/sign_up.html:98
 msgid "Зарегистрироваться"
 msgstr "Registrieren"
 
 #: accounts/templates/accounts/authorization/sign_up.html:32
-#: static/accounts/authorization/sign_up.html:32
+#: static/athens/accounts/authorization/sign_up.html:32
+#: static/europe/accounts/authorization/sign_up.html:32
+#: static/larnaca/accounts/authorization/sign_up.html:32
+#: static/limassol/accounts/authorization/sign_up.html:32
+#: static/madrid/accounts/authorization/sign_up.html:32
 msgid "Мы не передаём Ваш Email третьим лицам."
 msgstr "Wir geben Ihre E-Mail-Adresse nicht an Dritte weiter."
 
 #: accounts/templates/accounts/authorization/sign_up.html:41
-#: static/accounts/authorization/sign_up.html:41
+#: static/athens/accounts/authorization/sign_up.html:41
+#: static/europe/accounts/authorization/sign_up.html:41
+#: static/larnaca/accounts/authorization/sign_up.html:41
+#: static/limassol/accounts/authorization/sign_up.html:41
+#: static/madrid/accounts/authorization/sign_up.html:41
 msgid ""
 "Мы передаём Ваш номер телефона нашим партнёрам при доставке на Ваше имя."
 msgstr ""
@@ -120,17 +188,29 @@ msgstr ""
 "auf Ihren Namen erfolgt."
 
 #: accounts/templates/accounts/authorization/sign_up.html:74
-#: static/accounts/authorization/sign_up.html:74
+#: static/athens/accounts/authorization/sign_up.html:74
+#: static/europe/accounts/authorization/sign_up.html:74
+#: static/larnaca/accounts/authorization/sign_up.html:74
+#: static/limassol/accounts/authorization/sign_up.html:74
+#: static/madrid/accounts/authorization/sign_up.html:74
 msgid "Пароль"
 msgstr "Passwort"
 
 #: accounts/templates/accounts/authorization/sign_up.html:85
-#: static/accounts/authorization/sign_up.html:85
+#: static/athens/accounts/authorization/sign_up.html:85
+#: static/europe/accounts/authorization/sign_up.html:85
+#: static/larnaca/accounts/authorization/sign_up.html:85
+#: static/limassol/accounts/authorization/sign_up.html:85
+#: static/madrid/accounts/authorization/sign_up.html:85
 msgid "Повторите пароль"
 msgstr "Passwort wiederholen"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:16
-#: static/accounts/email_confirmation/email_body.html:17
+#: static/athens/accounts/email_confirmation/email_body.html:16
+#: static/europe/accounts/email_confirmation/email_body.html:16
+#: static/larnaca/accounts/email_confirmation/email_body.html:16
+#: static/limassol/accounts/email_confirmation/email_body.html:16
+#: static/madrid/accounts/email_confirmation/email_body.html:16
 #, python-format
 msgid ""
 "\n"
@@ -141,7 +221,11 @@ msgstr ""
 "Sehr geehrte(r) %(first_name)s,"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:20
-#: static/accounts/email_confirmation/email_body.html:21
+#: static/athens/accounts/email_confirmation/email_body.html:20
+#: static/europe/accounts/email_confirmation/email_body.html:20
+#: static/larnaca/accounts/email_confirmation/email_body.html:20
+#: static/limassol/accounts/email_confirmation/email_body.html:20
+#: static/madrid/accounts/email_confirmation/email_body.html:20
 #, python-format
 msgid ""
 "\n"
@@ -152,50 +236,102 @@ msgstr ""
 "Sehr geehrte(r) %(last_name)s,"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:24
-#: static/accounts/email_confirmation/email_body.html:25
+#: static/athens/accounts/email_confirmation/email_body.html:24
+#: static/europe/accounts/email_confirmation/email_body.html:24
+#: static/larnaca/accounts/email_confirmation/email_body.html:24
+#: static/limassol/accounts/email_confirmation/email_body.html:24
+#: static/madrid/accounts/email_confirmation/email_body.html:24
 msgid "Уважаемый пользователь,"
 msgstr "Sehr geehrter Benutzer,"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:28
-#: static/accounts/email_confirmation/email_body.html:29
+#: static/athens/accounts/email_confirmation/email_body.html:28
+#: static/europe/accounts/email_confirmation/email_body.html:28
+#: static/larnaca/accounts/email_confirmation/email_body.html:28
+#: static/limassol/accounts/email_confirmation/email_body.html:28
+#: static/madrid/accounts/email_confirmation/email_body.html:28
 msgid "Пожалуйста, нажмите на ссылку ниже чтобы подтвердить Вашу почту."
 msgstr ""
 "Bitte klicken Sie auf den untenstehenden Link, um Ihre E-Mail zu "
 "bestätigen.  "
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:33
-#: static/accounts/email_confirmation/email_body.html:34
+#: static/athens/accounts/email_confirmation/email_body.html:33
+#: static/europe/accounts/email_confirmation/email_body.html:33
+#: static/larnaca/accounts/email_confirmation/email_body.html:33
+#: static/limassol/accounts/email_confirmation/email_body.html:33
+#: static/madrid/accounts/email_confirmation/email_body.html:33
 msgid "Подтвердить почту"
 msgstr "E-Mail bestätigen"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:40
 #: cart/templates/cart/order_confirmation.html:612
 #: core/staticfiles/templates/footer.html:13 mainpage/views/conditions.py:70
-#: static/accounts/email_confirmation/email_body.html:41
-#: static/cart/order_confirmation.html:612 static/templates/footer.html:13
+#: static/athens/accounts/email_confirmation/email_body.html:40
+#: static/athens/cart/order_confirmation.html:612
+#: static/athens/templates/footer.html:13
+#: static/europe/accounts/email_confirmation/email_body.html:40
+#: static/europe/cart/order_confirmation.html:612
+#: static/europe/templates/footer.html:13
+#: static/larnaca/accounts/email_confirmation/email_body.html:40
+#: static/larnaca/cart/order_confirmation.html:612
+#: static/larnaca/templates/footer.html:13
+#: static/limassol/accounts/email_confirmation/email_body.html:40
+#: static/limassol/cart/order_confirmation.html:612
+#: static/limassol/templates/footer.html:13
+#: static/madrid/accounts/email_confirmation/email_body.html:40
+#: static/madrid/cart/order_confirmation.html:612
+#: static/madrid/templates/footer.html:13
 msgid "Условия и положения"
 msgstr "AGB"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:43
 #: cart/templates/cart/order_confirmation.html:614
 #: core/staticfiles/templates/footer.html:16 mainpage/views/conditions.py:84
-#: static/accounts/email_confirmation/email_body.html:44
-#: static/cart/order_confirmation.html:614 static/templates/footer.html:16
+#: static/athens/accounts/email_confirmation/email_body.html:43
+#: static/athens/cart/order_confirmation.html:614
+#: static/athens/templates/footer.html:16
+#: static/europe/accounts/email_confirmation/email_body.html:43
+#: static/europe/cart/order_confirmation.html:614
+#: static/europe/templates/footer.html:16
+#: static/larnaca/accounts/email_confirmation/email_body.html:43
+#: static/larnaca/cart/order_confirmation.html:614
+#: static/larnaca/templates/footer.html:16
+#: static/limassol/accounts/email_confirmation/email_body.html:43
+#: static/limassol/cart/order_confirmation.html:614
+#: static/limassol/templates/footer.html:16
+#: static/madrid/accounts/email_confirmation/email_body.html:43
+#: static/madrid/cart/order_confirmation.html:614
+#: static/madrid/templates/footer.html:16
 msgid "Политика конфиденциальности"
 msgstr "Datenschutzerklärung"
 
 #: accounts/templates/accounts/email_confirmation/email_body.html:47
 #: core/staticfiles/templates/footer.html:81
-#: static/accounts/email_confirmation/email_body.html:48
-#: static/templates/footer.html:81
+#: static/athens/accounts/email_confirmation/email_body.html:47
+#: static/athens/templates/footer.html:81
+#: static/europe/accounts/email_confirmation/email_body.html:47
+#: static/europe/templates/footer.html:81
+#: static/larnaca/accounts/email_confirmation/email_body.html:47
+#: static/larnaca/templates/footer.html:81
+#: static/limassol/accounts/email_confirmation/email_body.html:47
+#: static/limassol/templates/footer.html:81
+#: static/madrid/accounts/email_confirmation/email_body.html:47
+#: static/madrid/templates/footer.html:81
 msgid "Все права защищены"
 msgstr "Alle Rechte vorbehalten"
 
-#: accounts/templates/accounts/index.html:90 static/accounts/index.html:90
+#: accounts/templates/accounts/index.html:90
+#: static/athens/accounts/index.html:90 static/europe/accounts/index.html:90
+#: static/larnaca/accounts/index.html:90 static/limassol/accounts/index.html:90
+#: static/madrid/accounts/index.html:90
 msgid "Выйти"
 msgstr "Ausloggen"
 
-#: accounts/templates/accounts/index.html:93 static/accounts/index.html:93
+#: accounts/templates/accounts/index.html:93
+#: static/athens/accounts/index.html:93 static/europe/accounts/index.html:93
+#: static/larnaca/accounts/index.html:93 static/limassol/accounts/index.html:93
+#: static/madrid/accounts/index.html:93
 msgid "Редактировать"
 msgstr "Bearbeiten"
 
@@ -282,29 +418,43 @@ msgid "Доставлен"
 msgstr "Geliefert"
 
 #: cart/models.py:193 cart/templates/cart/index.html:432
-#: cart/templates/cart/index.html:565 static/cart/index.html:432
-#: static/cart/index.html:565
+#: cart/templates/cart/index.html:565 static/athens/cart/index.html:432
+#: static/athens/cart/index.html:565 static/europe/cart/index.html:432
+#: static/europe/cart/index.html:565 static/larnaca/cart/index.html:432
+#: static/larnaca/cart/index.html:565 static/limassol/cart/index.html:432
+#: static/limassol/cart/index.html:565 static/madrid/cart/index.html:432
+#: static/madrid/cart/index.html:565
 msgid "Уважаемый"
 msgstr "Herr"
 
 #: cart/models.py:194 cart/templates/cart/index.html:433
-#: cart/templates/cart/index.html:566 static/cart/index.html:433
-#: static/cart/index.html:566
+#: cart/templates/cart/index.html:566 static/athens/cart/index.html:433
+#: static/athens/cart/index.html:566 static/europe/cart/index.html:433
+#: static/europe/cart/index.html:566 static/larnaca/cart/index.html:433
+#: static/larnaca/cart/index.html:566 static/limassol/cart/index.html:433
+#: static/limassol/cart/index.html:566 static/madrid/cart/index.html:433
+#: static/madrid/cart/index.html:566
 msgid "Уважаемая"
 msgstr "Frau"
 
 #: cart/models.py:330 cart/templates/cart/index.html:347
-#: static/cart/index.html:347
+#: static/athens/cart/index.html:347 static/europe/cart/index.html:347
+#: static/larnaca/cart/index.html:347 static/limassol/cart/index.html:347
+#: static/madrid/cart/index.html:347
 msgid "Чистая стоимость"
 msgstr "Nettowert"
 
 #: cart/models.py:336 cart/templates/cart/index.html:357
-#: static/cart/index.html:357
+#: static/athens/cart/index.html:357 static/europe/cart/index.html:357
+#: static/larnaca/cart/index.html:357 static/limassol/cart/index.html:357
+#: static/madrid/cart/index.html:357
 msgid "Налоговая стоимость"
 msgstr "MwSt-betrag"
 
 #: cart/models.py:350 cart/templates/cart/index.html:372
-#: static/cart/index.html:372
+#: static/athens/cart/index.html:372 static/europe/cart/index.html:372
+#: static/larnaca/cart/index.html:372 static/limassol/cart/index.html:372
+#: static/madrid/cart/index.html:372
 msgid "Итоговая стоимость"
 msgstr "Gesamtbetrag"
 
@@ -321,23 +471,42 @@ msgstr ""
 msgid "Метод не разрешен. Используйте POST."
 msgstr "Methode nicht erlaubt. Bitte verwenden Sie POST."
 
-#: cart/templates/cart/cartClearForm.html:8 static/cart/cartClearForm.html:8
+#: cart/templates/cart/cartClearForm.html:8
+#: static/athens/cart/cartClearForm.html:8
+#: static/europe/cart/cartClearForm.html:8
+#: static/larnaca/cart/cartClearForm.html:8
+#: static/limassol/cart/cartClearForm.html:8
+#: static/madrid/cart/cartClearForm.html:8
 msgid "Очистить корзину"
 msgstr "Warenkorb leeren"
 
 #: cart/templates/cart/decreaseItemInCart.html:15
 #: cart/templates/cart/increaseItemInCart.html:15
-#: static/cart/decreaseItemInCart.html:15
-#: static/cart/increaseItemInCart.html:15
+#: static/athens/cart/decreaseItemInCart.html:15
+#: static/athens/cart/increaseItemInCart.html:15
+#: static/europe/cart/decreaseItemInCart.html:15
+#: static/europe/cart/increaseItemInCart.html:15
+#: static/larnaca/cart/decreaseItemInCart.html:15
+#: static/larnaca/cart/increaseItemInCart.html:15
+#: static/limassol/cart/decreaseItemInCart.html:15
+#: static/limassol/cart/increaseItemInCart.html:15
+#: static/madrid/cart/decreaseItemInCart.html:15
+#: static/madrid/cart/increaseItemInCart.html:15
 msgid "Уменьшить количество продукта в корзине"
 msgstr "Menge des Produkts im Warenkorb verringern"
 
 #: cart/templates/cart/index.html:11 cart/templates/cart/index.html:24
-#: static/cart/index.html:11 static/cart/index.html:24
+#: static/athens/cart/index.html:11 static/athens/cart/index.html:24
+#: static/europe/cart/index.html:11 static/europe/cart/index.html:24
+#: static/larnaca/cart/index.html:11 static/larnaca/cart/index.html:24
+#: static/limassol/cart/index.html:11 static/limassol/cart/index.html:24
+#: static/madrid/cart/index.html:11 static/madrid/cart/index.html:24
 msgid "Корзина"
 msgstr "Warenkorb"
 
-#: cart/templates/cart/index.html:12 static/cart/index.html:12
+#: cart/templates/cart/index.html:12 static/athens/cart/index.html:12
+#: static/europe/cart/index.html:12 static/larnaca/cart/index.html:12
+#: static/limassol/cart/index.html:12 static/madrid/cart/index.html:12
 #, python-format
 msgid ""
 "Оформите заказ на букеты в интернет-магазине %(site_name)s. Ваша корзина "
@@ -346,14 +515,18 @@ msgstr ""
 "Bestellen Sie Ihre Blumensträuße im Online-Shop %(site_name)s. Ihr Warenkorb "
 "ist bereit zur Bestellung. Schnelle Lieferung."
 
-#: cart/templates/cart/index.html:13 static/cart/index.html:13
+#: cart/templates/cart/index.html:13 static/athens/cart/index.html:13
+#: static/europe/cart/index.html:13 static/larnaca/cart/index.html:13
+#: static/limassol/cart/index.html:13 static/madrid/cart/index.html:13
 msgid ""
 "корзина букетов, интернет-магазин букетов, доставка цветов, оформить заказ"
 msgstr ""
 "Blumenstrauß-Warenkorb, Online-Blumenladen, Blumenlieferung, Bestellung "
 "aufgeben"
 
-#: cart/templates/cart/index.html:26 static/cart/index.html:26
+#: cart/templates/cart/index.html:26 static/athens/cart/index.html:26
+#: static/europe/cart/index.html:26 static/larnaca/cart/index.html:26
+#: static/limassol/cart/index.html:26 static/madrid/cart/index.html:26
 #, python-format
 msgid ""
 "\n"
@@ -365,29 +538,57 @@ msgstr ""
 
 #: cart/templates/cart/index.html:61 cart/templates/cart/index.html:106
 #: cart/templates/cart/order_confirmation.html:309
-#: cart/templates/cart/order_confirmation.html:413 static/cart/index.html:61
-#: static/cart/index.html:106 static/cart/order_confirmation.html:309
-#: static/cart/order_confirmation.html:413
+#: cart/templates/cart/order_confirmation.html:413
+#: static/athens/cart/index.html:61 static/athens/cart/index.html:106
+#: static/athens/cart/order_confirmation.html:309
+#: static/athens/cart/order_confirmation.html:413
+#: static/europe/cart/index.html:61 static/europe/cart/index.html:106
+#: static/europe/cart/order_confirmation.html:309
+#: static/europe/cart/order_confirmation.html:413
+#: static/larnaca/cart/index.html:61 static/larnaca/cart/index.html:106
+#: static/larnaca/cart/order_confirmation.html:309
+#: static/larnaca/cart/order_confirmation.html:413
+#: static/limassol/cart/index.html:61 static/limassol/cart/index.html:106
+#: static/limassol/cart/order_confirmation.html:309
+#: static/limassol/cart/order_confirmation.html:413
+#: static/madrid/cart/index.html:61 static/madrid/cart/index.html:106
+#: static/madrid/cart/order_confirmation.html:309
+#: static/madrid/cart/order_confirmation.html:413
 msgid "Количество"
 msgstr "Menge"
 
 #: cart/templates/cart/index.html:127
-#: catalogue/templates/catalog/base_list.html:157 static/cart/index.html:127
-#: static/catalog/base_list.html:157 static/products/base_list.html:197
+#: catalogue/templates/catalog/base_list.html:157
+#: static/athens/cart/index.html:127 static/athens/catalog/base_list.html:157
+#: static/europe/cart/index.html:127 static/europe/catalog/base_list.html:157
+#: static/larnaca/cart/index.html:127 static/larnaca/catalog/base_list.html:157
+#: static/limassol/cart/index.html:127
+#: static/limassol/catalog/base_list.html:157 static/madrid/cart/index.html:127
+#: static/madrid/catalog/base_list.html:157
 msgid "Отсутствие продуктов"
 msgstr "Produkt nicht verfügbar"
 
-#: cart/templates/cart/index.html:187 static/cart/index.html:187
+#: cart/templates/cart/index.html:187 static/athens/cart/index.html:187
+#: static/europe/cart/index.html:187 static/larnaca/cart/index.html:187
+#: static/limassol/cart/index.html:187 static/madrid/cart/index.html:187
 msgid "К сожалению, корзина пуста."
 msgstr "Leider ist der Warenkorb leer."
 
-#: cart/templates/cart/index.html:193 static/cart/index.html:193
+#: cart/templates/cart/index.html:193 static/athens/cart/index.html:193
+#: static/europe/cart/index.html:193 static/larnaca/cart/index.html:193
+#: static/limassol/cart/index.html:193 static/madrid/cart/index.html:193
 msgid "Предупреждение:"
 msgstr "Warnung:"
 
 #: cart/templates/cart/index.html:197
-#: catalogue/templates/catalog/base_detail.html:153 static/cart/index.html:197
-#: static/catalog/base_detail.html:153
+#: catalogue/templates/catalog/base_detail.html:153
+#: static/athens/cart/index.html:197 static/athens/catalog/base_detail.html:153
+#: static/europe/cart/index.html:197 static/europe/catalog/base_detail.html:153
+#: static/larnaca/cart/index.html:197
+#: static/larnaca/catalog/base_detail.html:153
+#: static/limassol/cart/index.html:197
+#: static/limassol/catalog/base_detail.html:153
+#: static/madrid/cart/index.html:197 static/madrid/catalog/base_detail.html:153
 msgid ""
 "\n"
 "                            <strong>Обратите внимание:</strong> Внешний вид "
@@ -405,152 +606,287 @@ msgstr ""
 "umfassen. Wenn Ihnen der angebotene Vorschlag nicht gefällt, besprechen wir "
 "eine andere Lösung oder erstatten Ihnen das Geld."
 
-#: cart/templates/cart/index.html:206 static/cart/index.html:206
+#: cart/templates/cart/index.html:206 static/athens/cart/index.html:206
+#: static/europe/cart/index.html:206 static/larnaca/cart/index.html:206
+#: static/limassol/cart/index.html:206 static/madrid/cart/index.html:206
 msgid "Способы оплаты:"
 msgstr "Zahlungsmethoden:"
 
-#: cart/templates/cart/index.html:209 static/cart/index.html:209
+#: cart/templates/cart/index.html:209 static/athens/cart/index.html:209
+#: static/europe/cart/index.html:209 static/larnaca/cart/index.html:209
+#: static/limassol/cart/index.html:209 static/madrid/cart/index.html:209
 msgid "способ оплаты по IBAN"
 msgstr "Zahlungsmethode per IBAN"
 
-#: cart/templates/cart/index.html:210 static/cart/index.html:210
+#: cart/templates/cart/index.html:210 static/athens/cart/index.html:210
+#: static/europe/cart/index.html:210 static/larnaca/cart/index.html:210
+#: static/limassol/cart/index.html:210 static/madrid/cart/index.html:210
 msgid "visa логотип"
 msgstr "visa logo"
 
-#: cart/templates/cart/index.html:211 static/cart/index.html:211
+#: cart/templates/cart/index.html:211 static/athens/cart/index.html:211
+#: static/europe/cart/index.html:211 static/larnaca/cart/index.html:211
+#: static/limassol/cart/index.html:211 static/madrid/cart/index.html:211
 msgid "mastercard логотип"
 msgstr "mastercard logo"
 
-#: cart/templates/cart/index.html:212 static/cart/index.html:212
+#: cart/templates/cart/index.html:212 static/athens/cart/index.html:212
+#: static/europe/cart/index.html:212 static/larnaca/cart/index.html:212
+#: static/limassol/cart/index.html:212 static/madrid/cart/index.html:212
 msgid "american express логотип"
 msgstr "american express logo"
 
-#: cart/templates/cart/index.html:213 static/cart/index.html:213
+#: cart/templates/cart/index.html:213 static/athens/cart/index.html:213
+#: static/europe/cart/index.html:213 static/larnaca/cart/index.html:213
+#: static/limassol/cart/index.html:213 static/madrid/cart/index.html:213
 msgid "jcb логотип"
 msgstr "jcb logo"
 
-#: cart/templates/cart/index.html:214 static/cart/index.html:214
+#: cart/templates/cart/index.html:214 static/athens/cart/index.html:214
+#: static/europe/cart/index.html:214 static/larnaca/cart/index.html:214
+#: static/limassol/cart/index.html:214 static/madrid/cart/index.html:214
 msgid "paypal логотип"
 msgstr "paypal logo"
 
-#: cart/templates/cart/index.html:215 static/cart/index.html:215
+#: cart/templates/cart/index.html:215 static/athens/cart/index.html:215
+#: static/europe/cart/index.html:215 static/larnaca/cart/index.html:215
+#: static/limassol/cart/index.html:215 static/madrid/cart/index.html:215
 msgid "klarna логотип"
 msgstr "klarna logo"
 
-#: cart/templates/cart/index.html:217 static/cart/index.html:217
+#: cart/templates/cart/index.html:217 static/athens/cart/index.html:217
+#: static/europe/cart/index.html:217 static/larnaca/cart/index.html:217
+#: static/limassol/cart/index.html:217 static/madrid/cart/index.html:217
 msgid "revolut логотип"
 msgstr "revolut logo"
 
-#: cart/templates/cart/index.html:218 static/cart/index.html:218
+#: cart/templates/cart/index.html:218 static/athens/cart/index.html:218
+#: static/europe/cart/index.html:218 static/larnaca/cart/index.html:218
+#: static/limassol/cart/index.html:218 static/madrid/cart/index.html:218
 msgid "stripe логотип"
 msgstr "stripe logo"
 
 #: cart/templates/cart/index.html:224 mainpage/templates/mainpage/index.html:41
-#: mainpage/templates/mainpage/index.html:179 static/cart/index.html:224
-#: static/mainpage/index.html:41 static/mainpage/index.html:179
+#: mainpage/templates/mainpage/index.html:179 static/athens/cart/index.html:224
+#: static/athens/mainpage/index.html:41 static/athens/mainpage/index.html:179
+#: static/europe/cart/index.html:224 static/europe/mainpage/index.html:41
+#: static/europe/mainpage/index.html:179 static/larnaca/cart/index.html:224
+#: static/larnaca/mainpage/index.html:41 static/larnaca/mainpage/index.html:179
+#: static/limassol/cart/index.html:224 static/limassol/mainpage/index.html:41
+#: static/limassol/mainpage/index.html:179 static/madrid/cart/index.html:224
+#: static/madrid/mainpage/index.html:41 static/madrid/mainpage/index.html:179
 msgid "Рекомендуемые букеты к покупке"
 msgstr "Empfohlene Blumensträuße zum Kauf"
 
 #: cart/templates/cart/index.html:282
-#: mainpage/templates/mainpage/index.html:209 static/cart/index.html:282
-#: static/mainpage/index.html:209
+#: mainpage/templates/mainpage/index.html:209 static/athens/cart/index.html:282
+#: static/athens/mainpage/index.html:209 static/europe/cart/index.html:282
+#: static/europe/mainpage/index.html:209 static/larnaca/cart/index.html:282
+#: static/larnaca/mainpage/index.html:209 static/limassol/cart/index.html:282
+#: static/limassol/mainpage/index.html:209 static/madrid/cart/index.html:282
+#: static/madrid/mainpage/index.html:209
 msgid "Рекомендуемые подарки к букетам"
 msgstr "Empfohlene Geschenke zu den Blumensträußen"
 
-#: cart/templates/cart/index.html:341 static/cart/index.html:341
+#: cart/templates/cart/index.html:341 static/athens/cart/index.html:341
+#: static/europe/cart/index.html:341 static/larnaca/cart/index.html:341
+#: static/limassol/cart/index.html:341 static/madrid/cart/index.html:341
 msgid "Резюме заказа"
 msgstr "Bestellübersicht"
 
 #: cart/templates/cart/index.html:366 core/staticfiles/templates/footer.html:36
-#: core/staticfiles/templates/header.html:30 static/cart/index.html:366
-#: static/templates/footer.html:36 static/templates/header.html:30
+#: core/staticfiles/templates/header.html:30 static/athens/cart/index.html:366
+#: static/athens/templates/footer.html:36
+#: static/athens/templates/header.html:30 static/europe/cart/index.html:366
+#: static/europe/templates/footer.html:36
+#: static/europe/templates/header.html:30 static/larnaca/cart/index.html:366
+#: static/larnaca/templates/footer.html:36
+#: static/larnaca/templates/header.html:30 static/limassol/cart/index.html:366
+#: static/limassol/templates/footer.html:36
+#: static/limassol/templates/header.html:30 static/madrid/cart/index.html:366
+#: static/madrid/templates/footer.html:36
+#: static/madrid/templates/header.html:30
 msgid "Доставка"
 msgstr "Lieferung"
 
-#: cart/templates/cart/index.html:367 static/cart/index.html:367
+#: cart/templates/cart/index.html:367 static/athens/cart/index.html:367
+#: static/europe/cart/index.html:367 static/larnaca/cart/index.html:367
+#: static/limassol/cart/index.html:367 static/madrid/cart/index.html:367
 msgid "Бесплатно"
 msgstr "Kostenlos"
 
-#: cart/templates/cart/index.html:374 static/cart/index.html:374
+#: cart/templates/cart/index.html:374 static/athens/cart/index.html:374
+#: static/europe/cart/index.html:374 static/larnaca/cart/index.html:374
+#: static/limassol/cart/index.html:374 static/madrid/cart/index.html:374
 msgid "Включая НДС"
 msgstr "Inklusive MwSt"
 
-#: cart/templates/cart/index.html:389 static/cart/index.html:389
+#: cart/templates/cart/index.html:389 static/athens/cart/index.html:389
+#: static/europe/cart/index.html:389 static/larnaca/cart/index.html:389
+#: static/limassol/cart/index.html:389 static/madrid/cart/index.html:389
 msgid "Адрес доставки"
 msgstr "Lieferadresse"
 
-#: cart/templates/cart/index.html:397 static/cart/index.html:397
+#: cart/templates/cart/index.html:397 static/athens/cart/index.html:397
+#: static/europe/cart/index.html:397 static/larnaca/cart/index.html:397
+#: static/limassol/cart/index.html:397 static/madrid/cart/index.html:397
 msgid "Уточнить адрес у получателя?"
 msgstr "Den Empfänger nach der Adresse fragen?"
 
-#: cart/templates/cart/index.html:408 static/cart/index.html:408
+#: cart/templates/cart/index.html:408 static/athens/cart/index.html:408
+#: static/europe/cart/index.html:408 static/larnaca/cart/index.html:408
+#: static/limassol/cart/index.html:408 static/madrid/cart/index.html:408
 msgid "Email"
 msgstr "E-Mail"
 
-#: cart/templates/cart/index.html:427 static/cart/index.html:427
+#: cart/templates/cart/index.html:427 static/athens/cart/index.html:427
+#: static/europe/cart/index.html:427 static/larnaca/cart/index.html:427
+#: static/limassol/cart/index.html:427 static/madrid/cart/index.html:427
 msgid "Форма обращения"
 msgstr "Anredeform"
 
 #: cart/templates/cart/index.html:431 cart/templates/cart/index.html:564
-#: static/cart/index.html:431 static/cart/index.html:564
+#: static/athens/cart/index.html:431 static/athens/cart/index.html:564
+#: static/europe/cart/index.html:431 static/europe/cart/index.html:564
+#: static/larnaca/cart/index.html:431 static/larnaca/cart/index.html:564
+#: static/limassol/cart/index.html:431 static/limassol/cart/index.html:564
+#: static/madrid/cart/index.html:431 static/madrid/cart/index.html:564
 msgid "Выберите форму обращения"
 msgstr "Wählen Sie die Anredeform"
 
-#: cart/templates/cart/index.html:444 static/cart/index.html:444
+#: cart/templates/cart/index.html:444 static/athens/cart/index.html:444
+#: static/europe/cart/index.html:444 static/larnaca/cart/index.html:444
+#: static/limassol/cart/index.html:444 static/madrid/cart/index.html:444
 msgid "Имя заказчика"
 msgstr "Name des Auftraggebers"
 
 #: cart/templates/cart/index.html:463
-#: cart/templates/cart/order_confirmation.html:529 static/cart/index.html:463
-#: static/cart/order_confirmation.html:529
+#: cart/templates/cart/order_confirmation.html:529
+#: static/athens/cart/index.html:463
+#: static/athens/cart/order_confirmation.html:529
+#: static/europe/cart/index.html:463
+#: static/europe/cart/order_confirmation.html:529
+#: static/larnaca/cart/index.html:463
+#: static/larnaca/cart/order_confirmation.html:529
+#: static/limassol/cart/index.html:463
+#: static/limassol/cart/order_confirmation.html:529
+#: static/madrid/cart/index.html:463
+#: static/madrid/cart/order_confirmation.html:529
 msgid "Страна"
 msgstr "Land"
 
 #: cart/templates/cart/index.html:477
-#: cart/templates/cart/order_confirmation.html:532 static/cart/index.html:477
-#: static/cart/order_confirmation.html:532
+#: cart/templates/cart/order_confirmation.html:532
+#: static/athens/cart/index.html:477
+#: static/athens/cart/order_confirmation.html:532
+#: static/europe/cart/index.html:477
+#: static/europe/cart/order_confirmation.html:532
+#: static/larnaca/cart/index.html:477
+#: static/larnaca/cart/order_confirmation.html:532
+#: static/limassol/cart/index.html:477
+#: static/limassol/cart/order_confirmation.html:532
+#: static/madrid/cart/index.html:477
+#: static/madrid/cart/order_confirmation.html:532
 msgid "Город"
 msgstr "Stadt"
 
 #: cart/templates/cart/index.html:491
-#: cart/templates/cart/order_confirmation.html:535 static/cart/index.html:491
-#: static/cart/order_confirmation.html:535
+#: cart/templates/cart/order_confirmation.html:535
+#: static/athens/cart/index.html:491
+#: static/athens/cart/order_confirmation.html:535
+#: static/europe/cart/index.html:491
+#: static/europe/cart/order_confirmation.html:535
+#: static/larnaca/cart/index.html:491
+#: static/larnaca/cart/order_confirmation.html:535
+#: static/limassol/cart/index.html:491
+#: static/limassol/cart/order_confirmation.html:535
+#: static/madrid/cart/index.html:491
+#: static/madrid/cart/order_confirmation.html:535
 msgid "Почтовый индекс"
 msgstr "PLZ"
 
 #: cart/templates/cart/index.html:502
-#: cart/templates/cart/order_confirmation.html:542 static/cart/index.html:502
-#: static/cart/order_confirmation.html:542
+#: cart/templates/cart/order_confirmation.html:542
+#: static/athens/cart/index.html:502
+#: static/athens/cart/order_confirmation.html:542
+#: static/europe/cart/index.html:502
+#: static/europe/cart/order_confirmation.html:542
+#: static/larnaca/cart/index.html:502
+#: static/larnaca/cart/order_confirmation.html:542
+#: static/limassol/cart/index.html:502
+#: static/limassol/cart/order_confirmation.html:542
+#: static/madrid/cart/index.html:502
+#: static/madrid/cart/order_confirmation.html:542
 msgid "Улица"
 msgstr "Straße"
 
 #: cart/templates/cart/index.html:513
-#: cart/templates/cart/order_confirmation.html:549 static/cart/index.html:513
-#: static/cart/order_confirmation.html:549
+#: cart/templates/cart/order_confirmation.html:549
+#: static/athens/cart/index.html:513
+#: static/athens/cart/order_confirmation.html:549
+#: static/europe/cart/index.html:513
+#: static/europe/cart/order_confirmation.html:549
+#: static/larnaca/cart/index.html:513
+#: static/larnaca/cart/order_confirmation.html:549
+#: static/limassol/cart/index.html:513
+#: static/limassol/cart/order_confirmation.html:549
+#: static/madrid/cart/index.html:513
+#: static/madrid/cart/order_confirmation.html:549
 msgid "Номер здания"
 msgstr "Hausnummer"
 
 #: cart/templates/cart/index.html:524
-#: cart/templates/cart/order_confirmation.html:556 static/cart/index.html:524
-#: static/cart/order_confirmation.html:556
+#: cart/templates/cart/order_confirmation.html:556
+#: static/athens/cart/index.html:524
+#: static/athens/cart/order_confirmation.html:556
+#: static/europe/cart/index.html:524
+#: static/europe/cart/order_confirmation.html:556
+#: static/larnaca/cart/index.html:524
+#: static/larnaca/cart/order_confirmation.html:556
+#: static/limassol/cart/index.html:524
+#: static/limassol/cart/order_confirmation.html:556
+#: static/madrid/cart/index.html:524
+#: static/madrid/cart/order_confirmation.html:556
 msgid "Номер квартиры/офиса"
 msgstr "Wohnungsnummer / Bürozimmernummer"
 
 #: cart/templates/cart/index.html:535
 #: cart/templates/cart/order_confirmation.html:563
-#: cart/templates/cart/success_order.html:34 static/cart/index.html:535
-#: static/cart/order_confirmation.html:563 static/cart/success_order.html:34
+#: cart/templates/cart/success_order.html:34 static/athens/cart/index.html:535
+#: static/athens/cart/order_confirmation.html:563
+#: static/athens/cart/success_order.html:34 static/europe/cart/index.html:535
+#: static/europe/cart/order_confirmation.html:563
+#: static/europe/cart/success_order.html:34 static/larnaca/cart/index.html:535
+#: static/larnaca/cart/order_confirmation.html:563
+#: static/larnaca/cart/success_order.html:34
+#: static/limassol/cart/index.html:535
+#: static/limassol/cart/order_confirmation.html:563
+#: static/limassol/cart/success_order.html:34 static/madrid/cart/index.html:535
+#: static/madrid/cart/order_confirmation.html:563
+#: static/madrid/cart/success_order.html:34
 msgid "Дата доставки"
 msgstr "Liefertermin"
 
 #: cart/templates/cart/index.html:546
 #: cart/templates/cart/order_confirmation.html:566
-#: cart/templates/cart/success_order.html:37 static/cart/index.html:546
-#: static/cart/order_confirmation.html:566 static/cart/success_order.html:37
+#: cart/templates/cart/success_order.html:37 static/athens/cart/index.html:546
+#: static/athens/cart/order_confirmation.html:566
+#: static/athens/cart/success_order.html:37 static/europe/cart/index.html:546
+#: static/europe/cart/order_confirmation.html:566
+#: static/europe/cart/success_order.html:37 static/larnaca/cart/index.html:546
+#: static/larnaca/cart/order_confirmation.html:566
+#: static/larnaca/cart/success_order.html:37
+#: static/limassol/cart/index.html:546
+#: static/limassol/cart/order_confirmation.html:566
+#: static/limassol/cart/success_order.html:37 static/madrid/cart/index.html:546
+#: static/madrid/cart/order_confirmation.html:566
+#: static/madrid/cart/success_order.html:37
 msgid "Время доставки"
 msgstr "Lieferzeit"
 
-#: cart/templates/cart/index.html:556 static/cart/index.html:556
+#: cart/templates/cart/index.html:556 static/athens/cart/index.html:556
+#: static/europe/cart/index.html:556 static/larnaca/cart/index.html:556
+#: static/limassol/cart/index.html:556 static/madrid/cart/index.html:556
 msgid ""
 "Минимум 3 часа после оформления заказа. Мы сообщим Вам о возможности "
 "доставки."
@@ -558,31 +894,57 @@ msgstr ""
 "Mindestens 3 Stunden nach der Bestellung. Über die Möglichkeit der Lieferung "
 "informieren wir Sie gerne."
 
-#: cart/templates/cart/index.html:560 static/cart/index.html:560
+#: cart/templates/cart/index.html:560 static/athens/cart/index.html:560
+#: static/europe/cart/index.html:560 static/larnaca/cart/index.html:560
+#: static/limassol/cart/index.html:560 static/madrid/cart/index.html:560
 msgid "Форма обращения к получателю"
 msgstr "Anredeform des Empfängers"
 
 #: cart/templates/cart/index.html:577
-#: cart/templates/cart/order_confirmation.html:570 static/cart/index.html:577
-#: static/cart/order_confirmation.html:570
+#: cart/templates/cart/order_confirmation.html:570
+#: static/athens/cart/index.html:577
+#: static/athens/cart/order_confirmation.html:570
+#: static/europe/cart/index.html:577
+#: static/europe/cart/order_confirmation.html:570
+#: static/larnaca/cart/index.html:577
+#: static/larnaca/cart/order_confirmation.html:570
+#: static/limassol/cart/index.html:577
+#: static/limassol/cart/order_confirmation.html:570
+#: static/madrid/cart/index.html:577
+#: static/madrid/cart/order_confirmation.html:570
 msgid "Имя получателя"
 msgstr "Empfängername"
 
 #: cart/templates/cart/index.html:589
-#: cart/templates/cart/order_confirmation.html:574 static/cart/index.html:589
-#: static/cart/order_confirmation.html:574
+#: cart/templates/cart/order_confirmation.html:574
+#: static/athens/cart/index.html:589
+#: static/athens/cart/order_confirmation.html:574
+#: static/europe/cart/index.html:589
+#: static/europe/cart/order_confirmation.html:574
+#: static/larnaca/cart/index.html:589
+#: static/larnaca/cart/order_confirmation.html:574
+#: static/limassol/cart/index.html:589
+#: static/limassol/cart/order_confirmation.html:574
+#: static/madrid/cart/index.html:589
+#: static/madrid/cart/order_confirmation.html:574
 msgid "Номер телефона получателя"
 msgstr "Empfängernummer"
 
-#: cart/templates/cart/index.html:603 static/cart/index.html:603
+#: cart/templates/cart/index.html:603 static/athens/cart/index.html:603
+#: static/europe/cart/index.html:603 static/larnaca/cart/index.html:603
+#: static/limassol/cart/index.html:603 static/madrid/cart/index.html:603
 msgid "Получатель - заказчик?"
 msgstr "Empfänger - Auftraggeber?"
 
-#: cart/templates/cart/index.html:616 static/cart/index.html:616
+#: cart/templates/cart/index.html:616 static/athens/cart/index.html:616
+#: static/europe/cart/index.html:616 static/larnaca/cart/index.html:616
+#: static/limassol/cart/index.html:616 static/madrid/cart/index.html:616
 msgid "Сюрприз до последнего!"
 msgstr "Überraschung bis zum letzten Moment!"
 
-#: cart/templates/cart/index.html:617 static/cart/index.html:617
+#: cart/templates/cart/index.html:617 static/athens/cart/index.html:617
+#: static/europe/cart/index.html:617 static/larnaca/cart/index.html:617
+#: static/limassol/cart/index.html:617 static/madrid/cart/index.html:617
 msgid ""
 "Мы не раскроем тайну вашего подарка, чтобы сделать момент ещё более "
 "волшебным."
@@ -591,18 +953,38 @@ msgstr ""
 "magischer zu machen."
 
 #: cart/templates/cart/index.html:629
-#: cart/templates/cart/order_confirmation.html:578 static/cart/index.html:629
-#: static/cart/order_confirmation.html:578
+#: cart/templates/cart/order_confirmation.html:578
+#: static/athens/cart/index.html:629
+#: static/athens/cart/order_confirmation.html:578
+#: static/europe/cart/index.html:629
+#: static/europe/cart/order_confirmation.html:578
+#: static/larnaca/cart/index.html:629
+#: static/larnaca/cart/order_confirmation.html:578
+#: static/limassol/cart/index.html:629
+#: static/limassol/cart/order_confirmation.html:578
+#: static/madrid/cart/index.html:629
+#: static/madrid/cart/order_confirmation.html:578
 msgid "Записка получателю"
 msgstr "Nachrichtenkarte an den Empfänger"
 
 #: cart/templates/cart/index.html:633
-#: cart/templates/cart/order_confirmation.html:582 static/cart/index.html:633
-#: static/cart/order_confirmation.html:582
+#: cart/templates/cart/order_confirmation.html:582
+#: static/athens/cart/index.html:633
+#: static/athens/cart/order_confirmation.html:582
+#: static/europe/cart/index.html:633
+#: static/europe/cart/order_confirmation.html:582
+#: static/larnaca/cart/index.html:633
+#: static/larnaca/cart/order_confirmation.html:582
+#: static/limassol/cart/index.html:633
+#: static/limassol/cart/order_confirmation.html:582
+#: static/madrid/cart/index.html:633
+#: static/madrid/cart/order_confirmation.html:582
 msgid "Что нам стоит учесть?"
 msgstr "Was sollten wir beachten?"
 
-#: cart/templates/cart/index.html:638 static/cart/index.html:638
+#: cart/templates/cart/index.html:638 static/athens/cart/index.html:638
+#: static/europe/cart/index.html:638 static/larnaca/cart/index.html:638
+#: static/limassol/cart/index.html:638 static/madrid/cart/index.html:638
 #, python-format
 msgid ""
 "\n"
@@ -620,17 +1002,27 @@ msgstr ""
 "class=\"link-opacity-75\">Datenschutz- und Sicherheitsrichtlinie</a> von "
 "%(site_name)s zu."
 
-#: cart/templates/cart/index.html:653 static/cart/index.html:653
+#: cart/templates/cart/index.html:653 static/athens/cart/index.html:653
+#: static/europe/cart/index.html:653 static/larnaca/cart/index.html:653
+#: static/limassol/cart/index.html:653 static/madrid/cart/index.html:653
 msgid "Оформить заказ"
 msgstr "Bestellung aufgeben"
 
 #: cart/templates/cart/order_confirmation.html:183
-#: static/cart/order_confirmation.html:183
+#: static/athens/cart/order_confirmation.html:183
+#: static/europe/cart/order_confirmation.html:183
+#: static/larnaca/cart/order_confirmation.html:183
+#: static/limassol/cart/order_confirmation.html:183
+#: static/madrid/cart/order_confirmation.html:183
 msgid "ПОДТВЕРЖДЕНИЕ ЗАКАЗА"
 msgstr "BESTELLBESTÄTIGUNG"
 
 #: cart/templates/cart/order_confirmation.html:197
-#: static/cart/order_confirmation.html:197
+#: static/athens/cart/order_confirmation.html:197
+#: static/europe/cart/order_confirmation.html:197
+#: static/larnaca/cart/order_confirmation.html:197
+#: static/limassol/cart/order_confirmation.html:197
+#: static/madrid/cart/order_confirmation.html:197
 #, python-format
 msgid ""
 "\n"
@@ -641,18 +1033,35 @@ msgstr ""
 "Vielen Dank für Ihre Bestellung bei %(domain)s"
 
 #: cart/templates/cart/order_confirmation.html:202
-#: static/cart/order_confirmation.html:202
+#: static/athens/cart/order_confirmation.html:202
+#: static/europe/cart/order_confirmation.html:202
+#: static/larnaca/cart/order_confirmation.html:202
+#: static/limassol/cart/order_confirmation.html:202
+#: static/madrid/cart/order_confirmation.html:202
 msgid "Номер заказа"
 msgstr "Bestellnummer"
 
 #: cart/templates/cart/order_confirmation.html:205
 #: cart/templates/cart/success_order.html:31
-#: static/cart/order_confirmation.html:205 static/cart/success_order.html:31
+#: static/athens/cart/order_confirmation.html:205
+#: static/athens/cart/success_order.html:31
+#: static/europe/cart/order_confirmation.html:205
+#: static/europe/cart/success_order.html:31
+#: static/larnaca/cart/order_confirmation.html:205
+#: static/larnaca/cart/success_order.html:31
+#: static/limassol/cart/order_confirmation.html:205
+#: static/limassol/cart/success_order.html:31
+#: static/madrid/cart/order_confirmation.html:205
+#: static/madrid/cart/success_order.html:31
 msgid "Дата оформления заказа"
 msgstr "Bestelldatum"
 
 #: cart/templates/cart/order_confirmation.html:210
-#: static/cart/order_confirmation.html:210
+#: static/athens/cart/order_confirmation.html:210
+#: static/europe/cart/order_confirmation.html:210
+#: static/larnaca/cart/order_confirmation.html:210
+#: static/limassol/cart/order_confirmation.html:210
+#: static/madrid/cart/order_confirmation.html:210
 msgid ""
 "Мы обязательно свяжемся с Вами как можно раньше, чтобы сделать настолько "
 "индивидуальным подход к Вам, насколько это возможно."
@@ -661,54 +1070,101 @@ msgstr ""
 "einen so individuellen Ansatz wie möglich zu gewährleisten."
 
 #: cart/templates/cart/order_confirmation.html:213
-#: static/cart/order_confirmation.html:213
+#: static/athens/cart/order_confirmation.html:213
+#: static/europe/cart/order_confirmation.html:213
+#: static/larnaca/cart/order_confirmation.html:213
+#: static/limassol/cart/order_confirmation.html:213
+#: static/madrid/cart/order_confirmation.html:213
 msgid "Ссылка для проверки статуса заказа"
 msgstr "Link zur Überprüfung des Bestellstatus"
 
 #: cart/templates/cart/order_confirmation.html:224
-#: static/cart/order_confirmation.html:224
+#: static/athens/cart/order_confirmation.html:224
+#: static/europe/cart/order_confirmation.html:224
+#: static/larnaca/cart/order_confirmation.html:224
+#: static/limassol/cart/order_confirmation.html:224
+#: static/madrid/cart/order_confirmation.html:224
 msgid "РЕЗЮМЕ ЗАКАЗА"
 msgstr "Bestellübersicht"
 
 #: cart/templates/cart/order_confirmation.html:306
 #: cart/templates/cart/order_confirmation.html:410
 #: catalogue/templates/catalog/base_list.html:73
-#: static/cart/order_confirmation.html:306
-#: static/cart/order_confirmation.html:410 static/catalog/base_list.html:73
-#: static/products/base_list.html:114
+#: static/athens/cart/order_confirmation.html:306
+#: static/athens/cart/order_confirmation.html:410
+#: static/athens/catalog/base_list.html:73
+#: static/europe/cart/order_confirmation.html:306
+#: static/europe/cart/order_confirmation.html:410
+#: static/europe/catalog/base_list.html:73
+#: static/larnaca/cart/order_confirmation.html:306
+#: static/larnaca/cart/order_confirmation.html:410
+#: static/larnaca/catalog/base_list.html:73
+#: static/limassol/cart/order_confirmation.html:306
+#: static/limassol/cart/order_confirmation.html:410
+#: static/limassol/catalog/base_list.html:73
+#: static/madrid/cart/order_confirmation.html:306
+#: static/madrid/cart/order_confirmation.html:410
+#: static/madrid/catalog/base_list.html:73
 msgid "Цена"
 msgstr "Preis"
 
 #: cart/templates/cart/order_confirmation.html:312
 #: catalogue/templates/catalog/bouquets/bouquet_list.html:37
-#: static/cart/order_confirmation.html:312
-#: static/catalog/bouquets/bouquet_list.html:37
-#: static/products/bouquets/bouquet_list.html:38
+#: static/athens/cart/order_confirmation.html:312
+#: static/athens/catalog/bouquets/bouquet_list.html:37
+#: static/europe/cart/order_confirmation.html:312
+#: static/europe/catalog/bouquets/bouquet_list.html:37
+#: static/larnaca/cart/order_confirmation.html:312
+#: static/larnaca/catalog/bouquets/bouquet_list.html:37
+#: static/limassol/cart/order_confirmation.html:312
+#: static/limassol/catalog/bouquets/bouquet_list.html:37
+#: static/madrid/cart/order_confirmation.html:312
+#: static/madrid/catalog/bouquets/bouquet_list.html:37
 msgid "Цветовая гамма"
 msgstr "Farbpalette"
 
 #: cart/templates/cart/order_confirmation.html:473
-#: static/cart/order_confirmation.html:473
+#: static/athens/cart/order_confirmation.html:473
+#: static/europe/cart/order_confirmation.html:473
+#: static/larnaca/cart/order_confirmation.html:473
+#: static/limassol/cart/order_confirmation.html:473
+#: static/madrid/cart/order_confirmation.html:473
 msgid "ДОСТАВКА"
 msgstr "LIEFERUNG"
 
 #: cart/templates/cart/order_confirmation.html:474
-#: static/cart/order_confirmation.html:474
+#: static/athens/cart/order_confirmation.html:474
+#: static/europe/cart/order_confirmation.html:474
+#: static/larnaca/cart/order_confirmation.html:474
+#: static/limassol/cart/order_confirmation.html:474
+#: static/madrid/cart/order_confirmation.html:474
 msgid "ЧИСТАЯ СТОИМОСТЬ"
 msgstr "NETTOPREIS"
 
 #: cart/templates/cart/order_confirmation.html:475
-#: static/cart/order_confirmation.html:475
+#: static/athens/cart/order_confirmation.html:475
+#: static/europe/cart/order_confirmation.html:475
+#: static/larnaca/cart/order_confirmation.html:475
+#: static/limassol/cart/order_confirmation.html:475
+#: static/madrid/cart/order_confirmation.html:475
 msgid "НАЛОГОВАЯ СТОИМОСТЬ"
 msgstr "MwSt-BETRAG"
 
 #: cart/templates/cart/order_confirmation.html:476
-#: static/cart/order_confirmation.html:476
+#: static/athens/cart/order_confirmation.html:476
+#: static/europe/cart/order_confirmation.html:476
+#: static/larnaca/cart/order_confirmation.html:476
+#: static/limassol/cart/order_confirmation.html:476
+#: static/madrid/cart/order_confirmation.html:476
 msgid "ИТОГОВАЯ СТОИМОСТЬ"
 msgstr "GESAMTPREIS"
 
 #: cart/templates/cart/order_confirmation.html:519
-#: static/cart/order_confirmation.html:519
+#: static/athens/cart/order_confirmation.html:519
+#: static/europe/cart/order_confirmation.html:519
+#: static/larnaca/cart/order_confirmation.html:519
+#: static/limassol/cart/order_confirmation.html:519
+#: static/madrid/cart/order_confirmation.html:519
 msgid "АДРЕС ДОСТАВКИ"
 msgstr "LIEFERADRESSE"
 
@@ -716,35 +1172,83 @@ msgstr "LIEFERADRESSE"
 #: cart/templates/cart/order_confirmation.html:546
 #: cart/templates/cart/order_confirmation.html:553
 #: cart/templates/cart/order_confirmation.html:560
-#: static/cart/order_confirmation.html:539
-#: static/cart/order_confirmation.html:546
-#: static/cart/order_confirmation.html:553
-#: static/cart/order_confirmation.html:560
+#: static/athens/cart/order_confirmation.html:539
+#: static/athens/cart/order_confirmation.html:546
+#: static/athens/cart/order_confirmation.html:553
+#: static/athens/cart/order_confirmation.html:560
+#: static/europe/cart/order_confirmation.html:539
+#: static/europe/cart/order_confirmation.html:546
+#: static/europe/cart/order_confirmation.html:553
+#: static/europe/cart/order_confirmation.html:560
+#: static/larnaca/cart/order_confirmation.html:539
+#: static/larnaca/cart/order_confirmation.html:546
+#: static/larnaca/cart/order_confirmation.html:553
+#: static/larnaca/cart/order_confirmation.html:560
+#: static/limassol/cart/order_confirmation.html:539
+#: static/limassol/cart/order_confirmation.html:546
+#: static/limassol/cart/order_confirmation.html:553
+#: static/limassol/cart/order_confirmation.html:560
+#: static/madrid/cart/order_confirmation.html:539
+#: static/madrid/cart/order_confirmation.html:546
+#: static/madrid/cart/order_confirmation.html:553
+#: static/madrid/cart/order_confirmation.html:560
 msgid "Уточнить у получателя."
 msgstr "Beim Empfänger nachfragen."
 
 #: cart/templates/cart/order_confirmation.html:618
 #: core/staticfiles/templates/footer.html:22 mainpage/views/conditions.py:112
-#: static/cart/order_confirmation.html:618 static/templates/footer.html:22
+#: static/athens/cart/order_confirmation.html:618
+#: static/athens/templates/footer.html:22
+#: static/europe/cart/order_confirmation.html:618
+#: static/europe/templates/footer.html:22
+#: static/larnaca/cart/order_confirmation.html:618
+#: static/larnaca/templates/footer.html:22
+#: static/limassol/cart/order_confirmation.html:618
+#: static/limassol/templates/footer.html:22
+#: static/madrid/cart/order_confirmation.html:618
+#: static/madrid/templates/footer.html:22
 msgid "Условия возврата"
 msgstr "Widerrufsbelehrung"
 
 #: cart/templates/cart/order_confirmation.html:618
 #: core/staticfiles/templates/footer.html:19 mainpage/views/conditions.py:98
-#: static/cart/order_confirmation.html:618 static/templates/footer.html:19
+#: static/athens/cart/order_confirmation.html:618
+#: static/athens/templates/footer.html:19
+#: static/europe/cart/order_confirmation.html:618
+#: static/europe/templates/footer.html:19
+#: static/larnaca/cart/order_confirmation.html:618
+#: static/larnaca/templates/footer.html:19
+#: static/limassol/cart/order_confirmation.html:618
+#: static/limassol/templates/footer.html:19
+#: static/madrid/cart/order_confirmation.html:618
+#: static/madrid/templates/footer.html:19
 msgid "Контактная информация"
 msgstr "Impressum"
 
 #: cart/templates/cart/removeItemFromCart.html:14
-#: static/cart/removeItemFromCart.html:14
+#: static/athens/cart/removeItemFromCart.html:14
+#: static/europe/cart/removeItemFromCart.html:14
+#: static/larnaca/cart/removeItemFromCart.html:14
+#: static/limassol/cart/removeItemFromCart.html:14
+#: static/madrid/cart/removeItemFromCart.html:14
 msgid "Удалить продукт из корзины"
 msgstr "Produkt aus dem Warenkorb entfernen"
 
-#: cart/templates/cart/success_order.html:9 static/cart/success_order.html:9
+#: cart/templates/cart/success_order.html:9
+#: static/athens/cart/success_order.html:9
+#: static/europe/cart/success_order.html:9
+#: static/larnaca/cart/success_order.html:9
+#: static/limassol/cart/success_order.html:9
+#: static/madrid/cart/success_order.html:9
 msgid "Заказ оформлен"
 msgstr "Bestellung aufgegeben"
 
-#: cart/templates/cart/success_order.html:23 static/cart/success_order.html:23
+#: cart/templates/cart/success_order.html:23
+#: static/athens/cart/success_order.html:23
+#: static/europe/cart/success_order.html:23
+#: static/larnaca/cart/success_order.html:23
+#: static/limassol/cart/success_order.html:23
+#: static/madrid/cart/success_order.html:23
 #, python-format
 msgid ""
 "\n"
@@ -754,11 +1258,21 @@ msgstr ""
 "\n"
 "Vielen Dank für Ihre Bestellung <br>%(order_code)s"
 
-#: cart/templates/cart/success_order.html:40 static/cart/success_order.html:40
+#: cart/templates/cart/success_order.html:40
+#: static/athens/cart/success_order.html:40
+#: static/europe/cart/success_order.html:40
+#: static/larnaca/cart/success_order.html:40
+#: static/limassol/cart/success_order.html:40
+#: static/madrid/cart/success_order.html:40
 msgid "Статус"
 msgstr "Status"
 
-#: cart/templates/cart/success_order.html:45 static/cart/success_order.html:45
+#: cart/templates/cart/success_order.html:45
+#: static/athens/cart/success_order.html:45
+#: static/europe/cart/success_order.html:45
+#: static/larnaca/cart/success_order.html:45
+#: static/limassol/cart/success_order.html:45
+#: static/madrid/cart/success_order.html:45
 #, python-format
 msgid ""
 "\n"
@@ -777,7 +1291,12 @@ msgstr ""
 "Es besteht auch die Möglichkeit, uns wegen Ihrer Bestellung über Messenger "
 "zu kontaktieren. Wir antworten sehr schnell! 🙏"
 
-#: cart/templates/cart/success_order.html:53 static/cart/success_order.html:53
+#: cart/templates/cart/success_order.html:53
+#: static/athens/cart/success_order.html:53
+#: static/europe/cart/success_order.html:53
+#: static/larnaca/cart/success_order.html:53
+#: static/limassol/cart/success_order.html:53
+#: static/madrid/cart/success_order.html:53
 msgid "Задать вопрос"
 msgstr "Frage stellen"
 
@@ -861,10 +1380,16 @@ msgstr "Farbenpalette des Blumenstraußes"
 #: catalogue/filters/bouquets.py:17
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:18
 #: catalogue/templates/catalog/bouquets/bouquet_list.html:62
-#: static/catalog/bouquets/bouquet_detail.html:18
-#: static/catalog/bouquets/bouquet_list.html:62
-#: static/products/bouquets/bouquet_detail.html:18
-#: static/products/bouquets/bouquet_list.html:63
+#: static/athens/catalog/bouquets/bouquet_detail.html:18
+#: static/athens/catalog/bouquets/bouquet_list.html:62
+#: static/europe/catalog/bouquets/bouquet_detail.html:18
+#: static/europe/catalog/bouquets/bouquet_list.html:62
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:18
+#: static/larnaca/catalog/bouquets/bouquet_list.html:62
+#: static/limassol/catalog/bouquets/bouquet_detail.html:18
+#: static/limassol/catalog/bouquets/bouquet_list.html:62
+#: static/madrid/catalog/bouquets/bouquet_detail.html:18
+#: static/madrid/catalog/bouquets/bouquet_list.html:62
 msgid "Состав"
 msgstr "Zusammensetzung"
 
@@ -889,7 +1414,10 @@ msgid "Данный продукт был удалён или стал неак�
 msgstr "Dieses Produkt wurde entfernt oder ist nicht mehr verfügbar."
 
 #: catalogue/models/services/abstract_models.py:233
-#: catalogue/templates/catalog/review.html:66 static/catalog/review.html:66
+#: catalogue/templates/catalog/review.html:66
+#: static/athens/catalog/review.html:66 static/europe/catalog/review.html:66
+#: static/larnaca/catalog/review.html:66 static/limassol/catalog/review.html:66
+#: static/madrid/catalog/review.html:66
 msgid "Аноним"
 msgstr "Anonym"
 
@@ -924,105 +1452,195 @@ msgstr ""
 
 #: catalogue/templates/catalog/base_detail.html:98
 #: catalogue/templates/catalog/base_list.html:29
-#: static/catalog/base_detail.html:98 static/catalog/base_list.html:29
-#: static/products/base_detail.html:111 static/products/base_list.html:70
+#: static/athens/catalog/base_detail.html:98
+#: static/athens/catalog/base_list.html:29
+#: static/europe/catalog/base_detail.html:98
+#: static/europe/catalog/base_list.html:29
+#: static/larnaca/catalog/base_detail.html:98
+#: static/larnaca/catalog/base_list.html:29
+#: static/limassol/catalog/base_detail.html:98
+#: static/limassol/catalog/base_list.html:29
+#: static/madrid/catalog/base_detail.html:98
+#: static/madrid/catalog/base_list.html:29
 msgid "Главная страница"
 msgstr "Startseite"
 
 #: catalogue/templates/catalog/base_detail.html:128
-#: static/catalog/base_detail.html:128 static/products/base_detail.html:141
-#: static/products/base_detail.html:317 static/products/base_detail.html:321
-#: static/products/base_list.html:159
+#: static/athens/catalog/base_detail.html:128
+#: static/europe/catalog/base_detail.html:128
+#: static/larnaca/catalog/base_detail.html:128
+#: static/limassol/catalog/base_detail.html:128
+#: static/madrid/catalog/base_detail.html:128
 msgid "Изображение продукта временно отсутствует."
 msgstr "Produktbild vorübergehend nicht verfügbar."
 
 #: catalogue/templates/catalog/base_detail.html:141
-#: static/catalog/base_detail.html:141 static/products/base_detail.html:154
+#: static/athens/catalog/base_detail.html:141
+#: static/europe/catalog/base_detail.html:141
+#: static/larnaca/catalog/base_detail.html:141
+#: static/limassol/catalog/base_detail.html:141
+#: static/madrid/catalog/base_detail.html:141
 msgid "Предыдущее фото букета"
 msgstr "Vorheriges Foto des Blumenstraußes"
 
 #: catalogue/templates/catalog/base_detail.html:145
-#: static/catalog/base_detail.html:145 static/products/base_detail.html:158
+#: static/athens/catalog/base_detail.html:145
+#: static/europe/catalog/base_detail.html:145
+#: static/larnaca/catalog/base_detail.html:145
+#: static/limassol/catalog/base_detail.html:145
+#: static/madrid/catalog/base_detail.html:145
 msgid "Следующее фото букета"
 msgstr "Nächstes Foto des Blumenstraußes"
 
 #: catalogue/templates/catalog/base_detail.html:179
 #: mainpage/templates/mainpage/index.html:163
-#: static/catalog/base_detail.html:179 static/mainpage/index.html:163
-#: static/products/base_detail.html:180
+#: static/athens/catalog/base_detail.html:179
+#: static/athens/mainpage/index.html:163
+#: static/europe/catalog/base_detail.html:179
+#: static/europe/mainpage/index.html:163
+#: static/larnaca/catalog/base_detail.html:179
+#: static/larnaca/mainpage/index.html:163
+#: static/limassol/catalog/base_detail.html:179
+#: static/limassol/mainpage/index.html:163
+#: static/madrid/catalog/base_detail.html:179
+#: static/madrid/mainpage/index.html:163
 msgid "Состав букета можно менять"
 msgstr "Der Inhalt des Buketts kann geändert werden"
 
 #: catalogue/templates/catalog/base_detail.html:184
-#: static/catalog/base_detail.html:184 static/products/base_detail.html:185
+#: static/athens/catalog/base_detail.html:184
+#: static/europe/catalog/base_detail.html:184
+#: static/larnaca/catalog/base_detail.html:184
+#: static/limassol/catalog/base_detail.html:184
+#: static/madrid/catalog/base_detail.html:184
 msgid "Связь на каждом этапе"
 msgstr "Kontakt in jedem Schritt"
 
 #: catalogue/templates/catalog/base_detail.html:188
 #: mainpage/templates/mainpage/index.html:173
-#: static/catalog/base_detail.html:188 static/mainpage/index.html:173
-#: static/products/base_detail.html:189
+#: static/athens/catalog/base_detail.html:188
+#: static/athens/mainpage/index.html:173
+#: static/europe/catalog/base_detail.html:188
+#: static/europe/mainpage/index.html:173
+#: static/larnaca/catalog/base_detail.html:188
+#: static/larnaca/mainpage/index.html:173
+#: static/limassol/catalog/base_detail.html:188
+#: static/limassol/mainpage/index.html:173
+#: static/madrid/catalog/base_detail.html:188
+#: static/madrid/mainpage/index.html:173
 msgid "Анонимная доставка"
 msgstr "Anonyme Lieferung"
 
 #: catalogue/templates/catalog/base_detail.html:199
-#: static/catalog/base_detail.html:199 static/products/base_detail.html:200
+#: static/athens/catalog/base_detail.html:199
+#: static/europe/catalog/base_detail.html:199
+#: static/larnaca/catalog/base_detail.html:199
+#: static/limassol/catalog/base_detail.html:199
+#: static/madrid/catalog/base_detail.html:199
 msgid "Необходимо индивидуальное решение?"
 msgstr "Benötigen Sie eine individuelle Lösung?"
 
 #: catalogue/templates/catalog/base_detail.html:204
-#: static/catalog/base_detail.html:204 static/products/base_detail.html:205
+#: static/athens/catalog/base_detail.html:204
+#: static/europe/catalog/base_detail.html:204
+#: static/larnaca/catalog/base_detail.html:204
+#: static/limassol/catalog/base_detail.html:204
+#: static/madrid/catalog/base_detail.html:204
 msgid "Тел. номер в соц.сети или ссылка профиля"
 msgstr "Telefonnummer in sozialen Netzwerken oder Profil-Link"
 
 #: catalogue/templates/catalog/base_detail.html:210
-#: static/catalog/base_detail.html:210 static/products/base_detail.html:211
+#: static/athens/catalog/base_detail.html:210
+#: static/europe/catalog/base_detail.html:210
+#: static/larnaca/catalog/base_detail.html:210
+#: static/limassol/catalog/base_detail.html:210
+#: static/madrid/catalog/base_detail.html:210
 msgid "Предложим решение в течении 10 минут"
 msgstr "Wir werden eine Lösung innerhalb von 10 Minuten vorschlagen"
 
 #: catalogue/templates/catalog/base_detail.html:217
 #: mainpage/templates/mainpage/index.html:271
-#: static/catalog/base_detail.html:217 static/mainpage/index.html:271
-#: static/products/base_detail.html:218
+#: static/athens/catalog/base_detail.html:217
+#: static/athens/mainpage/index.html:271
+#: static/europe/catalog/base_detail.html:217
+#: static/europe/mainpage/index.html:271
+#: static/larnaca/catalog/base_detail.html:217
+#: static/larnaca/mainpage/index.html:271
+#: static/limassol/catalog/base_detail.html:217
+#: static/limassol/mainpage/index.html:271
+#: static/madrid/catalog/base_detail.html:217
+#: static/madrid/mainpage/index.html:271
 msgid "Разрешаю мне перезвонить"
 msgstr "Ich erlaube Ihnen, mich zurückzurufen"
 
 #: catalogue/templates/catalog/base_detail.html:221
 #: mainpage/templates/mainpage/index.html:277
-#: static/catalog/base_detail.html:221 static/mainpage/index.html:277
-#: static/products/base_detail.html:222
+#: static/athens/catalog/base_detail.html:221
+#: static/athens/mainpage/index.html:277
+#: static/europe/catalog/base_detail.html:221
+#: static/europe/mainpage/index.html:277
+#: static/larnaca/catalog/base_detail.html:221
+#: static/larnaca/mainpage/index.html:277
+#: static/limassol/catalog/base_detail.html:221
+#: static/limassol/mainpage/index.html:277
+#: static/madrid/catalog/base_detail.html:221
+#: static/madrid/mainpage/index.html:277
 msgid "Связаться"
 msgstr "Kontaktieren"
 
 #: catalogue/templates/catalog/base_detail.html:227
-#: static/catalog/base_detail.html:227
+#: static/athens/catalog/base_detail.html:227
+#: static/europe/catalog/base_detail.html:227
+#: static/larnaca/catalog/base_detail.html:227
+#: static/limassol/catalog/base_detail.html:227
+#: static/madrid/catalog/base_detail.html:227
 msgid "Так-же можно задать вопрос о продукте готовым текстом:"
 msgstr ""
 "Man kann auch eine Frage zum Produkt mit einem vorgefertigten Text stellen:"
 
 #: catalogue/templates/catalog/base_detail.html:232
-#: static/catalog/base_detail.html:232
+#: static/athens/catalog/base_detail.html:232
+#: static/europe/catalog/base_detail.html:232
+#: static/larnaca/catalog/base_detail.html:232
+#: static/limassol/catalog/base_detail.html:232
+#: static/madrid/catalog/base_detail.html:232
 #, python-format
 msgid "Здравствуйте! У меня есть вопрос по поводу “%(product_name)s” "
 msgstr "Guten Tag! Ich habe eine Frage bezüglich „%(product_name)s“."
 
 #: catalogue/templates/catalog/base_detail.html:244
-#: static/catalog/base_detail.html:244 static/products/base_detail.html:230
+#: static/athens/catalog/base_detail.html:244
+#: static/europe/catalog/base_detail.html:244
+#: static/larnaca/catalog/base_detail.html:244
+#: static/limassol/catalog/base_detail.html:244
+#: static/madrid/catalog/base_detail.html:244
 msgid "Артикул"
 msgstr "Artikel"
 
 #: catalogue/templates/catalog/base_detail.html:248
-#: static/catalog/base_detail.html:248 static/products/base_detail.html:234
+#: static/athens/catalog/base_detail.html:248
+#: static/europe/catalog/base_detail.html:248
+#: static/larnaca/catalog/base_detail.html:248
+#: static/limassol/catalog/base_detail.html:248
+#: static/madrid/catalog/base_detail.html:248
 msgid "Есть в наличии"
 msgstr "Ist verfügbar"
 
 #: catalogue/templates/catalog/base_detail.html:264
-#: static/catalog/base_detail.html:264 static/products/base_detail.html:250
+#: static/athens/catalog/base_detail.html:264
+#: static/europe/catalog/base_detail.html:264
+#: static/larnaca/catalog/base_detail.html:264
+#: static/limassol/catalog/base_detail.html:264
+#: static/madrid/catalog/base_detail.html:264
 msgid "Включая НДС и доставку"
 msgstr "Inklusive Mehrwertsteuer und Versand"
 
 #: catalogue/templates/catalog/base_detail.html:286
-#: static/catalog/base_detail.html:286 static/products/base_detail.html:275
+#: static/athens/catalog/base_detail.html:286
+#: static/europe/catalog/base_detail.html:286
+#: static/larnaca/catalog/base_detail.html:286
+#: static/limassol/catalog/base_detail.html:286
+#: static/madrid/catalog/base_detail.html:286
 msgid "Купить"
 msgstr "Kaufen"
 
@@ -1030,50 +1648,103 @@ msgstr "Kaufen"
 #: catalogue/templates/catalog/review.html:86 mainpage/models.py:27
 #: mainpage/models.py:125 mainpage/models.py:150 mainpage/models.py:175
 #: mainpage/models.py:200 mainpage/models.py:218
-#: static/catalog/base_detail.html:297 static/catalog/review.html:86
-#: static/products/base_detail.html:286
+#: static/athens/catalog/base_detail.html:297
+#: static/athens/catalog/review.html:86
+#: static/europe/catalog/base_detail.html:297
+#: static/europe/catalog/review.html:86
+#: static/larnaca/catalog/base_detail.html:297
+#: static/larnaca/catalog/review.html:86
+#: static/limassol/catalog/base_detail.html:297
+#: static/limassol/catalog/review.html:86
+#: static/madrid/catalog/base_detail.html:297
+#: static/madrid/catalog/review.html:86
 msgid "Описание"
 msgstr "Beschreibung"
 
 #: catalogue/templates/catalog/base_detail.html:306
-#: static/catalog/base_detail.html:306 static/products/base_detail.html:295
+#: static/athens/catalog/base_detail.html:306
+#: static/europe/catalog/base_detail.html:306
+#: static/larnaca/catalog/base_detail.html:306
+#: static/limassol/catalog/base_detail.html:306
+#: static/madrid/catalog/base_detail.html:306
 msgid "Характеристики"
 msgstr "Eigenschaften"
 
 #: catalogue/templates/catalog/base_detail.html:313
-#: static/catalog/base_detail.html:313 static/products/base_detail.html:301
+#: static/athens/catalog/base_detail.html:313
+#: static/europe/catalog/base_detail.html:313
+#: static/larnaca/catalog/base_detail.html:313
+#: static/limassol/catalog/base_detail.html:313
+#: static/madrid/catalog/base_detail.html:313
 msgid "Рекомендуемые продукты к покупке"
 msgstr "Empfohlene Produkte zum Kauf"
 
 #: catalogue/templates/catalog/base_detail.html:376
 #: mainpage/templates/mainpage/index.html:197
-#: static/catalog/base_detail.html:376 static/mainpage/index.html:197
-#: static/products/base_detail.html:357
+#: static/athens/catalog/base_detail.html:376
+#: static/athens/mainpage/index.html:197
+#: static/europe/catalog/base_detail.html:376
+#: static/europe/mainpage/index.html:197
+#: static/larnaca/catalog/base_detail.html:376
+#: static/larnaca/mainpage/index.html:197
+#: static/limassol/catalog/base_detail.html:376
+#: static/limassol/mainpage/index.html:197
+#: static/madrid/catalog/base_detail.html:376
+#: static/madrid/mainpage/index.html:197
 msgid "Предыдущий слайд букетов"
 msgstr "Vorheriger Blumenstrauß-Slide"
 
 #: catalogue/templates/catalog/base_detail.html:381
 #: mainpage/templates/mainpage/index.html:202
-#: static/catalog/base_detail.html:381 static/mainpage/index.html:202
-#: static/products/base_detail.html:362
+#: static/athens/catalog/base_detail.html:381
+#: static/athens/mainpage/index.html:202
+#: static/europe/catalog/base_detail.html:381
+#: static/europe/mainpage/index.html:202
+#: static/larnaca/catalog/base_detail.html:381
+#: static/larnaca/mainpage/index.html:202
+#: static/limassol/catalog/base_detail.html:381
+#: static/limassol/mainpage/index.html:202
+#: static/madrid/catalog/base_detail.html:381
+#: static/madrid/mainpage/index.html:202
 msgid "Следующий слайд букетов"
 msgstr "Nächster Blumenstrauß-Slide"
 
 #: catalogue/templates/catalog/base_detail.html:391
-#: static/catalog/base_detail.html:391
+#: static/athens/catalog/base_detail.html:391
+#: static/europe/catalog/base_detail.html:391
+#: static/larnaca/catalog/base_detail.html:391
+#: static/limassol/catalog/base_detail.html:391
+#: static/madrid/catalog/base_detail.html:391
 msgid "Отзывы"
 msgstr "Bewertungen"
 
 #: catalogue/templates/catalog/base_detail.html:396
 #: catalogue/templates/catalog/base_detail.html:416
 #: catalogue/templates/catalog/review.html:6
-#: static/catalog/base_detail.html:396 static/catalog/base_detail.html:416
-#: static/catalog/review.html:6
+#: static/athens/catalog/base_detail.html:396
+#: static/athens/catalog/base_detail.html:416
+#: static/athens/catalog/review.html:6
+#: static/europe/catalog/base_detail.html:396
+#: static/europe/catalog/base_detail.html:416
+#: static/europe/catalog/review.html:6
+#: static/larnaca/catalog/base_detail.html:396
+#: static/larnaca/catalog/base_detail.html:416
+#: static/larnaca/catalog/review.html:6
+#: static/limassol/catalog/base_detail.html:396
+#: static/limassol/catalog/base_detail.html:416
+#: static/limassol/catalog/review.html:6
+#: static/madrid/catalog/base_detail.html:396
+#: static/madrid/catalog/base_detail.html:416
+#: static/madrid/catalog/review.html:6
 msgid "Добавить отзыв"
 msgstr "Bewertung hinzufügen"
 
 #: catalogue/templates/catalog/base_detail.html:448
-#: static/catalog/base_detail.html:448
+#: static/athens/catalog/base_detail.html:448
+#: static/europe/catalog/base_detail.html:448
+#: static/larnaca/catalog/base_detail.html:448
+#: static/limassol/catalog/base_detail.html:448
+#: static/madrid/catalog/base_detail.html:448
 #, python-format
 msgid ""
 "\n"
@@ -1085,7 +1756,11 @@ msgstr ""
 "“%(author_name)s” hat dieses Produkt bewertet"
 
 #: catalogue/templates/catalog/base_detail.html:478
-#: static/catalog/base_detail.html:478
+#: static/athens/catalog/base_detail.html:478
+#: static/europe/catalog/base_detail.html:478
+#: static/larnaca/catalog/base_detail.html:478
+#: static/limassol/catalog/base_detail.html:478
+#: static/madrid/catalog/base_detail.html:478
 msgid ""
 "\n"
 "                    К сожалению пока отзывы пусты, <br>\n"
@@ -1097,109 +1772,183 @@ msgstr ""
 "Bewertung verfassen!"
 
 #: catalogue/templates/catalog/base_list.html:49
-#: static/catalog/base_list.html:49 static/products/base_list.html:90
+#: static/athens/catalog/base_list.html:49
+#: static/europe/catalog/base_list.html:49
+#: static/larnaca/catalog/base_list.html:49
+#: static/limassol/catalog/base_list.html:49
+#: static/madrid/catalog/base_list.html:49
 msgid "Сортировка"
 msgstr "Sortierung"
 
 #: catalogue/templates/catalog/base_list.html:63
-#: static/catalog/base_list.html:63 static/products/base_list.html:104
+#: static/athens/catalog/base_list.html:63
+#: static/europe/catalog/base_list.html:63
+#: static/larnaca/catalog/base_list.html:63
+#: static/limassol/catalog/base_list.html:63
+#: static/madrid/catalog/base_list.html:63
 msgid "Фильтры"
 msgstr "Filter"
 
 #: catalogue/templates/catalog/base_list.html:89
-#: static/catalog/base_list.html:89
+#: static/athens/catalog/base_list.html:89
+#: static/europe/catalog/base_list.html:89
+#: static/larnaca/catalog/base_list.html:89
+#: static/limassol/catalog/base_list.html:89
+#: static/madrid/catalog/base_list.html:89
 msgid "Фильтровать"
 msgstr "Filter"
 
 #: catalogue/templates/catalog/base_list.html:217
-#: static/catalog/base_list.html:217 static/products/base_list.html:257
+#: static/athens/catalog/base_list.html:217
+#: static/europe/catalog/base_list.html:217
+#: static/larnaca/catalog/base_list.html:217
+#: static/limassol/catalog/base_list.html:217
+#: static/madrid/catalog/base_list.html:217
 msgid "К сожалению не нашлось продуктов по заданным фильтрам."
 msgstr "Leider wurden keine Produkte nach den angegebenen Filtern gefunden."
 
 #: catalogue/templates/catalog/base_list.html:226
-#: mainpage/templates/mainpage/index.html:147 static/catalog/base_list.html:226
-#: static/mainpage/index.html:147 static/products/base_list.html:266
+#: mainpage/templates/mainpage/index.html:147
+#: static/athens/catalog/base_list.html:226
+#: static/athens/mainpage/index.html:147
+#: static/europe/catalog/base_list.html:226
+#: static/europe/mainpage/index.html:147
+#: static/larnaca/catalog/base_list.html:226
+#: static/larnaca/mainpage/index.html:147
+#: static/limassol/catalog/base_list.html:226
+#: static/limassol/mainpage/index.html:147
+#: static/madrid/catalog/base_list.html:226
+#: static/madrid/mainpage/index.html:147
 msgid "Назад"
 msgstr "Zurück"
 
 #: catalogue/templates/catalog/base_list.html:253
-#: static/catalog/base_list.html:253 static/products/base_list.html:293
+#: static/athens/catalog/base_list.html:253
+#: static/europe/catalog/base_list.html:253
+#: static/larnaca/catalog/base_list.html:253
+#: static/limassol/catalog/base_list.html:253
+#: static/madrid/catalog/base_list.html:253
 msgid "Предыдущая страница букетов"
 msgstr "Vorherige Seite der Blumensträuße"
 
 #: catalogue/templates/catalog/base_list.html:259
-#: static/catalog/base_list.html:259 static/products/base_list.html:299
+#: static/athens/catalog/base_list.html:259
+#: static/europe/catalog/base_list.html:259
+#: static/larnaca/catalog/base_list.html:259
+#: static/limassol/catalog/base_list.html:259
+#: static/madrid/catalog/base_list.html:259
 msgid "Следующая страница букетов"
 msgstr "Nächste Seite der Blumensträuße"
 
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:10
-#: static/catalog/bouquets/bouquet_detail.html:10
-#: static/products/bouquets/bouquet_detail.html:10
+#: static/athens/catalog/bouquets/bouquet_detail.html:10
+#: static/europe/catalog/bouquets/bouquet_detail.html:10
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:10
+#: static/limassol/catalog/bouquets/bouquet_detail.html:10
+#: static/madrid/catalog/bouquets/bouquet_detail.html:10
 msgid "Количество цветов"
 msgstr "Anzahl der Blumen"
 
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:13
-#: static/catalog/bouquets/bouquet_detail.html:13
-#: static/products/bouquets/bouquet_detail.html:13
+#: static/athens/catalog/bouquets/bouquet_detail.html:13
+#: static/europe/catalog/bouquets/bouquet_detail.html:13
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:13
+#: static/limassol/catalog/bouquets/bouquet_detail.html:13
+#: static/madrid/catalog/bouquets/bouquet_detail.html:13
 msgid "Диаметр"
 msgstr "Durchmesser"
 
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:13
-#: static/catalog/bouquets/bouquet_detail.html:13
-#: static/products/bouquets/bouquet_detail.html:13
+#: static/athens/catalog/bouquets/bouquet_detail.html:13
+#: static/europe/catalog/bouquets/bouquet_detail.html:13
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:13
+#: static/limassol/catalog/bouquets/bouquet_detail.html:13
+#: static/madrid/catalog/bouquets/bouquet_detail.html:13
 msgid "см"
 msgstr "cm"
 
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:28
-#: static/catalog/bouquets/bouquet_detail.html:28
-#: static/products/bouquets/bouquet_detail.html:28
+#: static/athens/catalog/bouquets/bouquet_detail.html:28
+#: static/europe/catalog/bouquets/bouquet_detail.html:28
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:28
+#: static/limassol/catalog/bouquets/bouquet_detail.html:28
+#: static/madrid/catalog/bouquets/bouquet_detail.html:28
 msgid "Цвет"
 msgstr "Farbe"
 
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:44
-#: static/catalog/bouquets/bouquet_detail.html:44
-#: static/products/bouquets/bouquet_detail.html:44
+#: static/athens/catalog/bouquets/bouquet_detail.html:44
+#: static/europe/catalog/bouquets/bouquet_detail.html:44
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:44
+#: static/limassol/catalog/bouquets/bouquet_detail.html:44
+#: static/madrid/catalog/bouquets/bouquet_detail.html:44
 msgid "Размеры"
 msgstr "Größen"
 
 #: catalogue/templates/catalog/bouquets/bouquet_detail.html:50
-#: static/catalog/bouquets/bouquet_detail.html:50
-#: static/products/bouquets/bouquet_detail.html:50
+#: static/athens/catalog/bouquets/bouquet_detail.html:50
+#: static/europe/catalog/bouquets/bouquet_detail.html:50
+#: static/larnaca/catalog/bouquets/bouquet_detail.html:50
+#: static/limassol/catalog/bouquets/bouquet_detail.html:50
+#: static/madrid/catalog/bouquets/bouquet_detail.html:50
 msgid "шт."
 msgstr "Stk."
 
 #: catalogue/templates/catalog/bouquets/bouquet_list.html:5
-#: static/catalog/bouquets/bouquet_list.html:5
-#: static/products/bouquets/bouquet_list.html:6
+#: static/athens/catalog/bouquets/bouquet_list.html:5
+#: static/europe/catalog/bouquets/bouquet_list.html:5
+#: static/larnaca/catalog/bouquets/bouquet_list.html:5
+#: static/limassol/catalog/bouquets/bouquet_list.html:5
+#: static/madrid/catalog/bouquets/bouquet_list.html:5
 msgid "Диаметр букета"
 msgstr "Durchmesser des Buketts"
 
 #: catalogue/templates/catalog/bouquets/bouquet_list.html:19
-#: static/catalog/bouquets/bouquet_list.html:19
-#: static/products/bouquets/bouquet_list.html:20
+#: static/athens/catalog/bouquets/bouquet_list.html:19
+#: static/europe/catalog/bouquets/bouquet_list.html:19
+#: static/larnaca/catalog/bouquets/bouquet_list.html:19
+#: static/limassol/catalog/bouquets/bouquet_list.html:19
+#: static/madrid/catalog/bouquets/bouquet_list.html:19
 msgid "Количество цветов в букете"
 msgstr "Anzahl der Blumen im Bukett"
 
-#: catalogue/templates/catalog/catalog.html:23 static/catalog/catalog.html:23
-#: static/products/catalog.html:34
+#: catalogue/templates/catalog/catalog.html:23
+#: static/athens/catalog/catalog.html:23 static/europe/catalog/catalog.html:23
+#: static/larnaca/catalog/catalog.html:23
+#: static/limassol/catalog/catalog.html:23
+#: static/madrid/catalog/catalog.html:23
 msgid "Каталог букетов и подарков"
 msgstr "Katalog mit Blumensträußen und Geschenken"
 
-#: catalogue/templates/catalog/review.html:25 static/catalog/review.html:25
+#: catalogue/templates/catalog/review.html:25
+#: static/athens/catalog/review.html:25 static/europe/catalog/review.html:25
+#: static/larnaca/catalog/review.html:25 static/limassol/catalog/review.html:25
+#: static/madrid/catalog/review.html:25
 msgid "Чем Вы можете поделиться об этом продукте?"
 msgstr "Was können Sie über dieses Produkt teilen?"
 
-#: catalogue/templates/catalog/review.html:38 static/catalog/review.html:38
+#: catalogue/templates/catalog/review.html:38
+#: static/athens/catalog/review.html:38 static/europe/catalog/review.html:38
+#: static/larnaca/catalog/review.html:38 static/limassol/catalog/review.html:38
+#: static/madrid/catalog/review.html:38
 msgid "Завершить"
 msgstr "Abschließen"
 
 #: catalogue/templates/catalog/review.html:82
-#: catalogue/templates/catalog/review.html:89 static/catalog/review.html:82
-#: static/catalog/review.html:89
+#: catalogue/templates/catalog/review.html:89
+#: static/athens/catalog/review.html:82 static/athens/catalog/review.html:89
+#: static/europe/catalog/review.html:82 static/europe/catalog/review.html:89
+#: static/larnaca/catalog/review.html:82 static/larnaca/catalog/review.html:89
+#: static/limassol/catalog/review.html:82
+#: static/limassol/catalog/review.html:89 static/madrid/catalog/review.html:82
+#: static/madrid/catalog/review.html:89
 msgid "(необязательное поле)"
 msgstr "(optional)"
 
-#: catalogue/templates/catalog/review.html:99 static/catalog/review.html:99
+#: catalogue/templates/catalog/review.html:99
+#: static/athens/catalog/review.html:99 static/europe/catalog/review.html:99
+#: static/larnaca/catalog/review.html:99 static/limassol/catalog/review.html:99
+#: static/madrid/catalog/review.html:99
 msgid "Отправить на модерацию"
 msgstr "Zur Moderation senden"
 
@@ -1220,12 +1969,20 @@ msgid "Ошибка:"
 msgstr "Fehler:"
 
 #: core/base_models.py:8 mainpage/templates/mainpage/conditions.html:22
-#: static/mainpage/conditions.html:22
+#: static/athens/mainpage/conditions.html:22
+#: static/europe/mainpage/conditions.html:22
+#: static/larnaca/mainpage/conditions.html:22
+#: static/limassol/mainpage/conditions.html:22
+#: static/madrid/mainpage/conditions.html:22
 msgid "Дата создания"
 msgstr "Erstellungsdatum"
 
 #: core/base_models.py:13 mainpage/templates/mainpage/conditions.html:23
-#: static/mainpage/conditions.html:23
+#: static/athens/mainpage/conditions.html:23
+#: static/europe/mainpage/conditions.html:23
+#: static/larnaca/mainpage/conditions.html:23
+#: static/limassol/mainpage/conditions.html:23
+#: static/madrid/mainpage/conditions.html:23
 msgid "Дата обновления"
 msgstr "Aktualisierungsdatum"
 
@@ -1233,7 +1990,11 @@ msgstr "Aktualisierungsdatum"
 msgid "Изображение продукта временно недоступно."
 msgstr "Produktbild vorübergehend nicht verfügbar."
 
-#: core/staticfiles/templates/base.html:157 static/templates/base.html:157
+#: core/staticfiles/templates/base.html:157
+#: static/athens/templates/base.html:157 static/europe/templates/base.html:157
+#: static/larnaca/templates/base.html:157
+#: static/limassol/templates/base.html:157
+#: static/madrid/templates/base.html:157
 msgid ""
 "\n"
 "            Мы используем <span class=\"text-warning\">cookies</span> для "
@@ -1257,57 +2018,126 @@ msgstr ""
 "Wenn Sie die Website weiterhin nutzen, stimmen Sie der Verwendung "
 "zusätzlicher Cookies zu."
 
-#: core/staticfiles/templates/base.html:165 static/templates/base.html:165
+#: core/staticfiles/templates/base.html:165
+#: static/athens/templates/base.html:165 static/europe/templates/base.html:165
+#: static/larnaca/templates/base.html:165
+#: static/limassol/templates/base.html:165
+#: static/madrid/templates/base.html:165
 msgid "Принять"
 msgstr "Akzeptieren"
 
-#: core/staticfiles/templates/base.html:166 static/templates/base.html:166
+#: core/staticfiles/templates/base.html:166
+#: static/athens/templates/base.html:166 static/europe/templates/base.html:166
+#: static/larnaca/templates/base.html:166
+#: static/limassol/templates/base.html:166
+#: static/madrid/templates/base.html:166
 msgid "Отклонить"
 msgstr "Ablehnen"
 
-#: core/staticfiles/templates/footer.html:10 static/templates/footer.html:10
+#: core/staticfiles/templates/footer.html:10
+#: static/athens/templates/footer.html:10
+#: static/europe/templates/footer.html:10
+#: static/larnaca/templates/footer.html:10
+#: static/limassol/templates/footer.html:10
+#: static/madrid/templates/footer.html:10
 msgid "Клиентам"
 msgstr "Kunden"
 
-#: core/staticfiles/templates/footer.html:27 static/templates/footer.html:27
+#: core/staticfiles/templates/footer.html:27
+#: static/athens/templates/footer.html:27
+#: static/europe/templates/footer.html:27
+#: static/larnaca/templates/footer.html:27
+#: static/limassol/templates/footer.html:27
+#: static/madrid/templates/footer.html:27
 msgid "Компания"
 msgstr "Unternehmen"
 
 #: core/staticfiles/templates/footer.html:31
-#: core/staticfiles/templates/header.html:25 static/templates/footer.html:31
-#: static/templates/header.html:25
+#: core/staticfiles/templates/header.html:25
+#: static/athens/templates/footer.html:31
+#: static/athens/templates/header.html:25
+#: static/europe/templates/footer.html:31
+#: static/europe/templates/header.html:25
+#: static/larnaca/templates/footer.html:31
+#: static/larnaca/templates/header.html:25
+#: static/limassol/templates/footer.html:31
+#: static/limassol/templates/header.html:25
+#: static/madrid/templates/footer.html:31
+#: static/madrid/templates/header.html:25
 msgid "О нас"
 msgstr "Über uns"
 
 #: core/staticfiles/templates/footer.html:41
-#: core/staticfiles/templates/header.html:33 static/templates/footer.html:41
-#: static/templates/header.html:33
+#: core/staticfiles/templates/header.html:33
+#: static/athens/templates/footer.html:41
+#: static/athens/templates/header.html:33
+#: static/europe/templates/footer.html:41
+#: static/europe/templates/header.html:33
+#: static/larnaca/templates/footer.html:41
+#: static/larnaca/templates/header.html:33
+#: static/limassol/templates/footer.html:41
+#: static/limassol/templates/header.html:33
+#: static/madrid/templates/footer.html:41
+#: static/madrid/templates/header.html:33
 msgid "Контакты"
 msgstr "Kontakte"
 
-#: core/staticfiles/templates/footer.html:46 static/templates/footer.html:46
+#: core/staticfiles/templates/footer.html:46
+#: static/athens/templates/footer.html:46
+#: static/europe/templates/footer.html:46
+#: static/larnaca/templates/footer.html:46
+#: static/limassol/templates/footer.html:46
+#: static/madrid/templates/footer.html:46
 msgid "Часто задаваемые вопросы"
 msgstr "FAQs"
 
-#: core/staticfiles/templates/footer.html:70 static/templates/footer.html:70
+#: core/staticfiles/templates/footer.html:70
+#: static/athens/templates/footer.html:70
+#: static/europe/templates/footer.html:70
+#: static/larnaca/templates/footer.html:70
+#: static/limassol/templates/footer.html:70
+#: static/madrid/templates/footer.html:70
 msgid "Другие филиалы"
 msgstr "Weitere Filialen"
 
-#: core/staticfiles/templates/header.html:19 static/templates/header.html:19
+#: core/staticfiles/templates/header.html:19
+#: static/athens/templates/header.html:19
+#: static/europe/templates/header.html:19
+#: static/larnaca/templates/header.html:19
+#: static/limassol/templates/header.html:19
+#: static/madrid/templates/header.html:19
 msgid "Главная"
 msgstr "Startseite"
 
-#: core/staticfiles/templates/header.html:22 static/templates/header.html:22
+#: core/staticfiles/templates/header.html:22
+#: static/athens/templates/header.html:22
+#: static/europe/templates/header.html:22
+#: static/larnaca/templates/header.html:22
+#: static/limassol/templates/header.html:22
+#: static/madrid/templates/header.html:22
 msgid "Каталог"
 msgstr "Katalog"
 
 #: core/staticfiles/templates/header.html:69
-#: core/staticfiles/templates/header.html:70 static/templates/header.html:69
-#: static/templates/header.html:70
+#: core/staticfiles/templates/header.html:70
+#: static/athens/templates/header.html:69
+#: static/athens/templates/header.html:70
+#: static/europe/templates/header.html:69
+#: static/europe/templates/header.html:70
+#: static/larnaca/templates/header.html:69
+#: static/larnaca/templates/header.html:70
+#: static/limassol/templates/header.html:69
+#: static/limassol/templates/header.html:70
+#: static/madrid/templates/header.html:69
+#: static/madrid/templates/header.html:70
 msgid "Поиск"
 msgstr "Suche"
 
-#: mainpage/templates/mainpage/index.html:103 static/mainpage/index.html:103
+#: mainpage/templates/mainpage/index.html:103
+#: static/athens/mainpage/index.html:103 static/europe/mainpage/index.html:103
+#: static/larnaca/mainpage/index.html:103
+#: static/limassol/mainpage/index.html:103
+#: static/madrid/mainpage/index.html:103
 #, python-format
 msgid ""
 "\n"
@@ -1317,37 +2147,69 @@ msgstr ""
 "\n"
 "Blumenladen %(site_name)s in Berlin"
 
-#: mainpage/templates/mainpage/index.html:151 static/mainpage/index.html:151
+#: mainpage/templates/mainpage/index.html:151
+#: static/athens/mainpage/index.html:151 static/europe/mainpage/index.html:151
+#: static/larnaca/mainpage/index.html:151
+#: static/limassol/mainpage/index.html:151
+#: static/madrid/mainpage/index.html:151
 msgid "Вперёд"
 msgstr "Vorwärts"
 
-#: mainpage/templates/mainpage/index.html:158 static/mainpage/index.html:158
+#: mainpage/templates/mainpage/index.html:158
+#: static/athens/mainpage/index.html:158 static/europe/mainpage/index.html:158
+#: static/larnaca/mainpage/index.html:158
+#: static/limassol/mainpage/index.html:158
+#: static/madrid/mainpage/index.html:158
 msgid "Наши преимущества"
 msgstr "Unsere Vorteile"
 
-#: mainpage/templates/mainpage/index.html:168 static/mainpage/index.html:168
+#: mainpage/templates/mainpage/index.html:168
+#: static/athens/mainpage/index.html:168 static/europe/mainpage/index.html:168
+#: static/larnaca/mainpage/index.html:168
+#: static/limassol/mainpage/index.html:168
+#: static/madrid/mainpage/index.html:168
 msgid "Связь с клиентом на каждом этапе заказа"
 msgstr "Kontakt mit dem Kunden in jedem Schritt der Bestellung"
 
-#: mainpage/templates/mainpage/index.html:226 static/mainpage/index.html:226
+#: mainpage/templates/mainpage/index.html:226
+#: static/athens/mainpage/index.html:226 static/europe/mainpage/index.html:226
+#: static/larnaca/mainpage/index.html:226
+#: static/limassol/mainpage/index.html:226
+#: static/madrid/mainpage/index.html:226
 msgid "Предыдущий слайд подарков"
 msgstr "Vorheriger Geschenke-Slide"
 
-#: mainpage/templates/mainpage/index.html:231 static/mainpage/index.html:231
+#: mainpage/templates/mainpage/index.html:231
+#: static/athens/mainpage/index.html:231 static/europe/mainpage/index.html:231
+#: static/larnaca/mainpage/index.html:231
+#: static/limassol/mainpage/index.html:231
+#: static/madrid/mainpage/index.html:231
 msgid "Следующий слайд подарков"
 msgstr "Nächster Geschenke-Slide"
 
-#: mainpage/templates/mainpage/index.html:246 static/mainpage/index.html:246
+#: mainpage/templates/mainpage/index.html:246
+#: static/athens/mainpage/index.html:246 static/europe/mainpage/index.html:246
+#: static/larnaca/mainpage/index.html:246
+#: static/limassol/mainpage/index.html:246
+#: static/madrid/mainpage/index.html:246
 msgid "Свяжитесь с нами"
 msgstr "Kontaktieren Sie uns"
 
-#: mainpage/templates/mainpage/index.html:250 static/mainpage/index.html:250
+#: mainpage/templates/mainpage/index.html:250
+#: static/athens/mainpage/index.html:250 static/europe/mainpage/index.html:250
+#: static/larnaca/mainpage/index.html:250
+#: static/limassol/mainpage/index.html:250
+#: static/madrid/mainpage/index.html:250
 msgid "Заполните форму, чтобы заказать букет из индивидуального состава."
 msgstr ""
 "Füllen Sie das Formular aus, um einen Blumenstrauß mit individueller "
 "Zusammenstellung zu bestellen."
 
-#: mainpage/templates/mainpage/index.html:261 static/mainpage/index.html:261
+#: mainpage/templates/mainpage/index.html:261
+#: static/athens/mainpage/index.html:261 static/europe/mainpage/index.html:261
+#: static/larnaca/mainpage/index.html:261
+#: static/limassol/mainpage/index.html:261
+#: static/madrid/mainpage/index.html:261
 msgid "Тел. номер в любой соц. сети или ссылка профиля"
 msgstr "Telefonnummer in einem beliebigen sozialen Netzwerk oder Profil-Link"
 
