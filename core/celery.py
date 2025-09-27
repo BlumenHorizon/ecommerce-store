@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv("core/cities/envs/base.env", override=True)
 
-city = os.getenv("CITY", "dev")
+city = os.getenv("CITY")
 if not city:
     raise Exception("CITY environment variable is not set.")
 
