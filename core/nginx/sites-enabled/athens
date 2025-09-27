@@ -1,0 +1,93 @@
+upstream gunicorn_athens {
+    server 127.0.0.1:8002;
+}
+
+server {
+    listen 80;
+    server_name athensflowers.shop www.athensflowers.shop;
+
+    error_log /var/www/blumenhorizon/logs/nginx/athens/error.log;
+    access_log /var/www/blumenhorizon/logs/nginx/athens/access.log;
+
+    # Проверка хоста
+    if ($host !~ ^(athensflowers\.shop|www\.athensflowers\.shop)$) {
+        return 444;
+    }
+
+    # Редирект с HTTP на HTTPS, также с www на без www
+    location / {
+        return 301 https://athensflowers.shop$request_uri;
+    }
+}
+
+# Основной сервер для HTTPS
+server {
+    listen 443 ssl http2;
+    server_name athensflowers.shop;
+
+    error_log /var/www/blumenhorizon/logs/nginx/error_athens.log;
+    access_log /var/www/blumenhorizon/logs/nginx/access_athens.log;
+
+    if ($host !~ ^(athensflowers\.shop|www\.athensflowers\.shop)$) {
+        return 444;
+    }
+
+    # SSL настройки
+    ssl_certificate /root/ssl/athens/athensflowers_shop/athensflowers_shop_chain.crt;
+    ssl_certificate_key /root/ssl/athens/athensflowers.key;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers 'HIGH:!aNULL:!MD5';
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout 10m;
+
+    # Безопасные заголовки
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    add_header X-Content-Type-Options nosniff;
+    add_header X-Frame-Options DENY;
+    add_header X-XSS-Protection "1; mode=block";
+    add_header Referrer-Policy "no-referrer-when-downgrade";
+
+    root /var/www/blumenhorizon/;
+
+    location /static/athens/ {
+        alias /var/www/blumenhorizon/static/athens/;
+        include /etc/nginx/mime.types;
+        expires 30d;
+        add_header Cache-Control "public";
+    }
+
+    location /media/athens/ {
+        alias /var/www/blumenhorizon/media/athens/;
+        include /etc/nginx/mime.types;
+        expires 30d;
+        add_header Cache-Control "public";
+    }
+
+    location / {
+        proxy_pass http://gunicorn_athens;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $host;
+        proxy_redirect off;
+    }
+}
+
+
+server {
+    listen 443 ssl http2;
+    server_name www.athensflowers.shop;
+
+    error_log /var/www/blumenhorizon/logs/nginx/error_athens.log;
+    access_log /var/www/blumenhorizon/logs/nginx/access_athens.log;
+
+    if ($host !~ ^(athensflowers\.shop|www\.athensflowers\.shop)$) {
+        return 444;
+    }
+
+    # Редирект с www на без www
+    return 301 https://athensflowers.shop$request_uri;
+}
+
