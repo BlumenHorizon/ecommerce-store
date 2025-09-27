@@ -17,8 +17,9 @@ media/**
 !media/defaults/
 static/**
 !static/defaults/
-core/cities/*.env
-!core/cities/example.env
+core/cities/envs/*.env
+!core/cities/envs/example.env
+!core/cities/envs/base.env
 
 .env
 poetry.toml
