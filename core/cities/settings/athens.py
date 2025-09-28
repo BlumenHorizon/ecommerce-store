@@ -9,4 +9,3 @@ LANGUAGES = [
     ("el", "🇬🇷 Ελληνικά"),
 ]
 LANGUAGE_CODE = "el"
-

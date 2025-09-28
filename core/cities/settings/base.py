@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 
-CITY = os.getenv("CITY", "dev")
+CITY = os.getenv("CITY")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parents[3]
@@ -145,6 +145,7 @@ THIRDPARTY_APPS = [
     "compressor",
     "django_recaptcha",
     "django_celery_beat",
+    "django_celery_results",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRDPARTY_APPS + LOCAL_APPS
@@ -419,13 +420,6 @@ CACHEOPS = {
     "*.*": {"timeout": 60 * 15},
     "extended_contrib_models.filial": {"ops": "all", "timeout": 60 * 15},
 }
-
-# Celery
-# https://docs.celeryq.dev/en/stable/userguide/application.html#config-from-object
-
-CELERY_BROKER_URL = os.getenv("CELERY_BROKER")
-CELERY_RESULT_BACKEND = os.getenv("CELERY_BACKEND")
-CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 
 
 # Password validation
