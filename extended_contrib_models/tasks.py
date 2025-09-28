@@ -6,18 +6,18 @@ import tarfile
 from pathlib import Path
 from subprocess import SubprocessError
 
-from celery import shared_task
 from celery.exceptions import SoftTimeLimitExceeded
 from django.conf import settings
 from telegram.error import TimedOut
 
+from core.celery import app
 from extended_contrib_models.models import ExtendedSite
 from extended_contrib_models.utils.dumps import process_and_send_file
 
 logger = logging.getLogger(__name__)
 
 
-@shared_task(
+@app.task(
     autoretry_for=(
         TimedOut,
         TimeoutError,
@@ -70,7 +70,7 @@ def make_db_dump():
     )
 
 
-@shared_task(
+@app.task(
     autoretry_for=(
         TimedOut,
         TimeoutError,
