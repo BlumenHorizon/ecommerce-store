@@ -7,6 +7,7 @@ from celery.signals import setup_logging
 from django.conf import settings
 from dotenv import load_dotenv
 
+
 load_dotenv("core/cities/envs/base.env", override=True)
 
 city = os.getenv("CITY")
@@ -17,9 +18,18 @@ load_dotenv(f"core/cities/envs/{city}.env", override=True)
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"core.cities.settings.{city}")
 
-app = Celery("BlumenHorizon")
-app.config_from_object("django.conf:settings", namespace="CELERY")
+app = Celery(f"BlumenHorizon")
+app.config_from_object("django.conf:settings")
 app.autodiscover_tasks()
+
+app.conf.task_track_started = True
+app.conf.broker_url = os.getenv("CELERY_BROKER")
+app.conf.result_backend = os.getenv("CELERY_BACKEND")
+app.conf.beat_scheduler = "django_celery_beat.schedulers:DatabaseScheduler"
+
+app.conf.result_backend_transport_options = {
+    "keyprefix": f"{settings.CITY}:celery-task-meta-"
+}
 
 
 class LevelFilter(logging.Filter):
