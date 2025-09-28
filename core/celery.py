@@ -16,10 +16,9 @@ if not city:
     raise Exception("CITY environment variable is not set.")
 
 load_dotenv(f"core/cities/envs/{city}.env", override=True)
-
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", f"core.cities.settings.{city}")
 
-app = Celery(f"BlumenHorizon")
+app = Celery("BlumenHorizon")
 app.config_from_object("django.conf:settings")
 app.autodiscover_tasks()
 
@@ -27,24 +26,24 @@ app.conf.task_track_started = True
 app.conf.broker_url = os.getenv("CELERY_BROKER")
 app.conf.result_backend = os.getenv("CELERY_BACKEND")
 app.conf.beat_scheduler = "django_celery_beat.schedulers:DatabaseScheduler"
+app.conf.result_backend_transport_options = {"keyprefix": f"{city}:celery-task-meta-"}
+app.conf.result_extended = True
 
-app.conf.task_queues = [
-    Queue("berlin", Exchange("berlin"), routing_key="berlin"),
-    Queue("athens", Exchange("athens"), routing_key="athens"),
-    Queue("madrid", Exchange("madrid"), routing_key="madrid"),
-    Queue("larnaca", Exchange("larnaca"), routing_key="larnaca"),
-    Queue("limassol", Exchange("limassol"), routing_key="limassol"),
-    Queue("europe", Exchange("europe"), routing_key="europe"),
-]
+CITIES = ["berlin", "athens", "madrid", "larnaca", "limassol", "europe"]
+app.conf.task_queues = [Queue(c, Exchange(c), routing_key=c) for c in CITIES]
 app.conf.task_default_queue = "default"
 app.conf.task_default_exchange = "default"
 app.conf.task_default_routing_key = "default"
 
-app.conf.result_backend_transport_options = {
-    "keyprefix": f"{settings.CITY}:celery-task-meta-"
-}
+
+def route_task(name, args, kwargs, options, task=None, **kw):
+    task_city = kwargs.get("city") or (args[0] if args else None)
+    if task_city in CITIES:
+        return {"queue": task_city}
+    return {"queue": "default"}
 
 
+app.conf.task_routes = (route_task,)
 
 
 class LevelFilter(logging.Filter):
