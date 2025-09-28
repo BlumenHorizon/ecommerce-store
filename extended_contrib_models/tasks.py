@@ -1,5 +1,6 @@
 import gzip
 import logging
+import os
 import subprocess
 import tarfile
 from pathlib import Path
@@ -86,7 +87,7 @@ def make_db_dump():
 )
 def make_bills_archive():
     0
-    bills_dir = Path(settings.BASE_DIR) / "media" / "bills"
+    bills_dir = Path(settings.BASE_DIR) / "media" / os.getenv("CITY") / "bills"
 
     def create_bills_archive(file_path: Path):
         if not bills_dir.exists():
