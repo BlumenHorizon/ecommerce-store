@@ -6,9 +6,11 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('extended_contrib_models', '0025_merge_20250207_1515'),
-        ('extended_contrib_models', '0027_alter_filial_options_alter_filial_extended_site'),
+        ("extended_contrib_models", "0025_merge_20250207_1515"),
+        (
+            "extended_contrib_models",
+            "0027_alter_filial_options_alter_filial_extended_site",
+        ),
     ]
 
-    operations = [
-    ]
+    operations = []

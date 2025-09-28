@@ -6,12 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('extended_contrib_models', '0028_merge_20250421_0123'),
+        ("extended_contrib_models", "0028_merge_20250421_0123"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='filial',
-            options={'verbose_name': 'Филиал', 'verbose_name_plural': 'Филиалы'},
+            name="filial",
+            options={"verbose_name": "Филиал", "verbose_name_plural": "Филиалы"},
         ),
     ]

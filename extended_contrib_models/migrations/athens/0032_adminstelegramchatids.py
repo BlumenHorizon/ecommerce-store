@@ -13,7 +13,10 @@ def create_initial_admin_chat_id(apps, _):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("extended_contrib_models", "0031_remove_extendedsite_ссылка_на_родительскую_организацию_and_more"),
+        (
+            "extended_contrib_models",
+            "0031_remove_extendedsite_ссылка_на_родительскую_организацию_and_more",
+        ),
     ]
 
     operations = [

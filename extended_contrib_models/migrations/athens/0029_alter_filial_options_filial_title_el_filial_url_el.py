@@ -6,22 +6,27 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('extended_contrib_models', '0028_merge_20250421_0142'),
+        ("extended_contrib_models", "0028_merge_20250421_0142"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='filial',
-            options={'verbose_name': 'Филиал', 'verbose_name_plural': 'Филиалы'},
+            name="filial",
+            options={"verbose_name": "Филиал", "verbose_name_plural": "Филиалы"},
         ),
         migrations.AddField(
-            model_name='filial',
-            name='title_el',
-            field=models.CharField(help_text='ISO', max_length=60, null=True, verbose_name='Название “Город/Страна”'),
+            model_name="filial",
+            name="title_el",
+            field=models.CharField(
+                help_text="ISO",
+                max_length=60,
+                null=True,
+                verbose_name="Название “Город/Страна”",
+            ),
         ),
         migrations.AddField(
-            model_name='filial',
-            name='url_el',
-            field=models.URLField(null=True, verbose_name='Ссылка на филиал'),
+            model_name="filial",
+            name="url_el",
+            field=models.URLField(null=True, verbose_name="Ссылка на филиал"),
         ),
     ]
