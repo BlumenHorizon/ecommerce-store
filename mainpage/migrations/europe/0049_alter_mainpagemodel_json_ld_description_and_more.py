@@ -6,33 +6,57 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('mainpage', '0048_alter_aboutuspagemodel_meta_tags_and_more'),
+        ("mainpage", "0048_alter_aboutuspagemodel_meta_tags_and_more"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='mainpagemodel',
-            name='json_ld_description',
-            field=models.CharField(default='Blumen Horizon интернет-магазин цветов и подарков', max_length=500, verbose_name='Description в JSON LD для OnlineStore'),
+            model_name="mainpagemodel",
+            name="json_ld_description",
+            field=models.CharField(
+                default="Blumen Horizon интернет-магазин цветов и подарков",
+                max_length=500,
+                verbose_name="Description в JSON LD для OnlineStore",
+            ),
         ),
         migrations.AlterField(
-            model_name='mainpagemodel',
-            name='json_ld_description_de',
-            field=models.CharField(default='Blumen Horizon интернет-магазин цветов и подарков', max_length=500, null=True, verbose_name='Description в JSON LD для OnlineStore'),
+            model_name="mainpagemodel",
+            name="json_ld_description_de",
+            field=models.CharField(
+                default="Blumen Horizon интернет-магазин цветов и подарков",
+                max_length=500,
+                null=True,
+                verbose_name="Description в JSON LD для OnlineStore",
+            ),
         ),
         migrations.AlterField(
-            model_name='mainpagemodel',
-            name='json_ld_description_en',
-            field=models.CharField(default='Blumen Horizon интернет-магазин цветов и подарков', max_length=500, null=True, verbose_name='Description в JSON LD для OnlineStore'),
+            model_name="mainpagemodel",
+            name="json_ld_description_en",
+            field=models.CharField(
+                default="Blumen Horizon интернет-магазин цветов и подарков",
+                max_length=500,
+                null=True,
+                verbose_name="Description в JSON LD для OnlineStore",
+            ),
         ),
         migrations.AlterField(
-            model_name='mainpagemodel',
-            name='json_ld_description_ru',
-            field=models.CharField(default='Blumen Horizon интернет-магазин цветов и подарков', max_length=500, null=True, verbose_name='Description в JSON LD для OnlineStore'),
+            model_name="mainpagemodel",
+            name="json_ld_description_ru",
+            field=models.CharField(
+                default="Blumen Horizon интернет-магазин цветов и подарков",
+                max_length=500,
+                null=True,
+                verbose_name="Description в JSON LD для OnlineStore",
+            ),
         ),
         migrations.AlterField(
-            model_name='mainpagemodel',
-            name='json_ld_description_uk',
-            field=models.CharField(default='Blumen Horizon интернет-магазин цветов и подарков', max_length=500, null=True, verbose_name='Description в JSON LD для OnlineStore'),
+            model_name="mainpagemodel",
+            name="json_ld_description_uk",
+            field=models.CharField(
+                default="Blumen Horizon интернет-магазин цветов и подарков",
+                max_length=500,
+                null=True,
+                verbose_name="Description в JSON LD для OnlineStore",
+            ),
         ),
     ]
