@@ -6,6 +6,8 @@ from celery import Celery
 from celery.signals import setup_logging
 from django.conf import settings
 from dotenv import load_dotenv
+from kombu import Exchange, Queue
+
 
 load_dotenv("core/cities/envs/base.env", override=True)
 
@@ -26,9 +28,23 @@ app.conf.broker_url = os.getenv("CELERY_BROKER")
 app.conf.result_backend = os.getenv("CELERY_BACKEND")
 app.conf.beat_scheduler = "django_celery_beat.schedulers:DatabaseScheduler"
 
+app.conf.task_queues = [
+    Queue("berlin", Exchange("berlin"), routing_key="berlin"),
+    Queue("athens", Exchange("athens"), routing_key="athens"),
+    Queue("madrid", Exchange("madrid"), routing_key="madrid"),
+    Queue("larnaca", Exchange("larnaca"), routing_key="larnaca"),
+    Queue("limassol", Exchange("limassol"), routing_key="limassol"),
+    Queue("europe", Exchange("europe"), routing_key="europe"),
+]
+app.conf.task_default_queue = "default"
+app.conf.task_default_exchange = "default"
+app.conf.task_default_routing_key = "default"
+
 app.conf.result_backend_transport_options = {
     "keyprefix": f"{settings.CITY}:celery-task-meta-"
 }
+
+
 
 
 class LevelFilter(logging.Filter):

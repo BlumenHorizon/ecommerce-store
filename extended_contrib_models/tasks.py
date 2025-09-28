@@ -10,8 +10,7 @@ from celery.exceptions import SoftTimeLimitExceeded
 from django.conf import settings
 from telegram.error import TimedOut
 
-from core.celery import app
-from extended_contrib_models.models import ExtendedSite
+from core.celery import app, city
 from extended_contrib_models.utils.dumps import process_and_send_file
 
 logger = logging.getLogger(__name__)
@@ -31,6 +30,7 @@ logger = logging.getLogger(__name__)
     retry_kwargs={"max_retries": 3},
     soft_time_limit=900,
     time_limit=960,
+    queue=city,
 )
 def make_db_dump():
     """
@@ -84,6 +84,7 @@ def make_db_dump():
     retry_kwargs={"max_retries": 3},
     soft_time_limit=900,
     time_limit=960,
+    queue=city,
 )
 def make_bills_archive():
     0
@@ -95,11 +96,6 @@ def make_bills_archive():
         with tarfile.open(file_path, "w:gz") as tar:
             tar.add(bills_dir, arcname="bills")
 
-    city = (
-        ExtendedSite.objects.first().city
-        if ExtendedSite.objects.exists()
-        else "unknown"
-    )
     caption_template = (
         "📂 *Архив счетов*\n\n"
         "Папка: `media/bills`\n"
